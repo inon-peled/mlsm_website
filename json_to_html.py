@@ -15,7 +15,8 @@ def _one_pub_to_html(pub):
         ('<span class="pubTitle">%s</span>' % pub['title']) + \
         link(pub, 'pdf', 'PDF') + \
         link(pub, 'code', 'Code') + \
-        link(pub, 'data', 'Data')
+        link(pub, 'data', 'Data') + \
+        ('\n<span class="pubWhereAndWhen">in %s, %s</span>' % (pub['pub']['where'], pub['pub']['year']))
 
     # <span class="pubTitle">%s</span><span class="pubLink"><a href="https://arxiv.org/pdf/1808.05535">[PDF]</a> </span><span class="codeOrData"> <a
     #   href="https://github.com/fmpr/Combining-TimeSeries-TextData">[Code+Data]</a></span>
