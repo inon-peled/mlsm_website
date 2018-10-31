@@ -1,0 +1,682 @@
+[
+  {
+    "authors": "Rodrigues, F. and Markou, I. and Pereira, F. C.",
+    "title": "Combining time-series and textual data for taxi demand prediction in event areas: a deep learning approach",
+    "pub": {
+      "type": "journal",
+      "where": "Information Fusion, Elsevier",
+      "year": 2018
+    },
+    "links": {
+      "pdf": "https://arxiv.org/pdf/1808.05535",
+      "code": "https://github.com/fmpr/Combining-TimeSeries-TextData",
+      "data": "https://github.com/fmpr/Combining-TimeSeries-TextData"
+    }
+  },
+  {
+    "authors": "Rodrigues, F. and Pereira, F. C.",
+    "title": "Heteroscedastic Gaussian processes for uncertainty modeling in large-scale crowdsourced traffic data",
+    "pub": {
+      "where": "Transportation Research Part C, Elsevier",
+      "year": 2018
+    },
+    "links": {
+      "doi": "https://doi.org/10.1016/j.trc.2018.08.007",
+      "code": null,
+      "data": null
+    }
+  },
+  {
+    "authors": "Rodrigues, F. and Henrickson, K. and Pereira, F. C.",
+    "title": "Multi-output Gaussian processes for crowdsourced traffic data imputation",
+    "pub": {
+      "where": "IEEE Transactions on Intelligent Transportation Systems",
+      "year": 2018
+    },
+    "links": {
+      "pdf": "https://doi.org/10.1109/TITS.2018.2817879",
+      "code": "http://fprodrigues.com/multigp-imputation-code.zip",
+      "data": null
+    }
+  },
+  {
+    "authors": "Rodrigues, F. and Lourenço, M. and Ribeiro, B. and Pereira, F. C.",
+    "title": "Learning Supervised Topic Models for Classification and Regression from Crowds",
+    "pub": {
+      "where": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+      "year": 2017
+    },
+    "links": {
+      "pdf": "http://orbit.dtu.dk/files/139267460/07807338.pdf",
+      "code": "http://fprodrigues.com//publications/learning-supervised-topic-models-for-classification-and-regression-from-crowds/",
+      "data": "http://fprodrigues.com//publications/learning-supervised-topic-models-for-classification-and-regression-from-crowds/"
+    }
+  },
+  {
+    "authors": "Ioulia, M. and Rodrigues, F. and Pereira, F. C.",
+    "title": "Use of Taxi-Trip Data in Analysis of Demand Patterns for Detection and Explanation of Anomalies",
+    "pub": {
+      "where": "Transportation Research Record (TRR): Journal of the Transportation Research Board",
+      "year": 2017
+    },
+    "links": {
+      "pdf": null,
+      "code": null,
+      "data": null
+    }
+  },
+  {
+    "authors": "Rodrigues, F. and Borysov, S. and Ribeiro, B. and Pereira, F. C.",
+    "title": "A Bayesian additive model for understanding public transport usage in special events",
+    "pub": {
+      "where": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+      "year": 2016
+    },
+    "links": {
+      "pdf": "http://orbit.dtu.dk/files/139266561/07765036.pdf",
+      "code": "http://fprodrigues.com//bam-src.zip",
+      "data": ""
+    }
+  },
+  {
+    "authors": "Rodrigues, F. and Pereira, F. C.",
+    "title": "Deep Learning from Crowds",
+    "pub": {
+      "where": "The Thirty-Second AAAI Conference on Artificial Intelligence (oral)",
+      "year": 2018
+    },
+    "links": {
+      "pdf": "https://arxiv.org/pdf/1709.01779.pdf",
+      "code": "https://github.com/fmpr/CrowdLayer",
+      "data": "http://fprodrigues.com//publications/deep-crowds/"
+    }
+  },
+    {
+    "authors": "Markou, I. and Rodrigues, F. and Pereira, F. C.",
+    "title": "Event characteristics that disrupt transport system’s balance",
+    "pub": {
+      "where": "International Conference on Intelligent Transport Systems in Theory and Practice, mobil. TUM 2017, Munich, Germany",
+      "year": 2017
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "Markou, I. and Rodrigues, F. and Pereira, F. C.",
+    "title": "Demand pattern analysis of taxi trip data for anomalies detection and explanation",
+    "pub": {
+      "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+      "year": 2017
+    },
+    "links": {
+      "pdf": "http://orbit.dtu.dk/files/142181716/17_04252.pdf",
+      "code": "",
+      "data": ""
+    }
+  },
+    {
+    "authors": "Borysov, S. and Lourenco, M. and Rodrigues, F. and Balatsky, A. and Pereira, F. C.",
+    "title": "Using internet search queries to predict human mobility in social events",
+    "pub": {
+      "where": "Proceedings of 2016 IEEE 19th International Conference on Intelligent Transportation Systems (ITSC)",
+      "year": 2016
+    },
+    "links": {
+      "doi": "https://doi.org/10.1109/ITSC.2016.7795731",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "Borysov, S. and Rich, J. and Pereira, F. C.",
+    "title": "Scalable Population Synthesis with Deep Generative Modeling",
+    "pub": {
+      "where": "ArXiv",
+      "year": 2018
+    },
+    "links": {
+      "pdf": "https://arxiv.org/pdf/1808.06910",
+      "code": "",
+      "data": ""
+    }
+  },
+    {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+    {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+    {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+    {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+    {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+    {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+    {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "authors": "",
+    "title": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  }
+
+
+
+]
