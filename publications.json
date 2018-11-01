@@ -1,7 +1,7 @@
 [
   {
-    "authors": "Rodrigues, F. and Markou, I. and Pereira, F. C.",
     "title": "Combining time-series and textual data for taxi demand prediction in event areas: a deep learning approach",
+    "authors": "Rodrigues, F. and Markou, I. and Pereira, F. C.",
     "pub": {
       "where": "Information Fusion, Elsevier",
       "year": 2018
@@ -13,8 +13,8 @@
     }
   },
   {
-    "authors": "Rodrigues, F. and Pereira, F. C.",
     "title": "Heteroscedastic Gaussian processes for uncertainty modeling in large-scale crowdsourced traffic data",
+    "authors": "Rodrigues, F. and Pereira, F. C.",
     "pub": {
       "where": "Transportation Research Part C, Elsevier",
       "year": 2018
@@ -26,8 +26,8 @@
     }
   },
   {
-    "authors": "Rodrigues, F. and Henrickson, K. and Pereira, F. C.",
     "title": "Multi-output Gaussian processes for crowdsourced traffic data imputation",
+    "authors": "Rodrigues, F. and Henrickson, K. and Pereira, F. C.",
     "pub": {
       "where": "IEEE Transactions on Intelligent Transportation Systems",
       "year": 2018
@@ -39,8 +39,8 @@
     }
   },
   {
-    "authors": "Rodrigues, F. and Lourenço, M. and Ribeiro, B. and Pereira, F. C.",
     "title": "Learning Supervised Topic Models for Classification and Regression from Crowds",
+    "authors": "Rodrigues, F. and Lourenço, M. and Ribeiro, B. and Pereira, F. C.",
     "pub": {
       "where": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
       "year": 2017
@@ -52,8 +52,8 @@
     }
   },
   {
-    "authors": "Ioulia, M. and Rodrigues, F. and Pereira, F. C.",
     "title": "Use of Taxi-Trip Data in Analysis of Demand Patterns for Detection and Explanation of Anomalies",
+    "authors": "Ioulia, M. and Rodrigues, F. and Pereira, F. C.",
     "pub": {
       "where": "Transportation Research Record (TRR): Journal of the Transportation Research Board",
       "year": 2017
@@ -65,8 +65,8 @@
     }
   },
   {
-    "authors": "Rodrigues, F. and Borysov, S. and Ribeiro, B. and Pereira, F. C.",
     "title": "A Bayesian additive model for understanding public transport usage in special events",
+    "authors": "Rodrigues, F. and Borysov, S. and Ribeiro, B. and Pereira, F. C.",
     "pub": {
       "where": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
       "year": 2016
@@ -78,8 +78,8 @@
     }
   },
   {
-    "authors": "Rodrigues, F. and Pereira, F. C.",
     "title": "Deep Learning from Crowds",
+    "authors": "Rodrigues, F. and Pereira, F. C.",
     "pub": {
       "where": "The Thirty-Second AAAI Conference on Artificial Intelligence (oral)",
       "year": 2018
@@ -91,8 +91,8 @@
     }
   },
   {
-    "authors": "Markou, I. and Rodrigues, F. and Pereira, F. C.",
     "title": "Event characteristics that disrupt transport system’s balance",
+    "authors": "Markou, I. and Rodrigues, F. and Pereira, F. C.",
     "pub": {
       "where": "International Conference on Intelligent Transport Systems in Theory and Practice, mobil. TUM 2017, Munich, Germany",
       "year": 2017
@@ -104,8 +104,8 @@
     }
   },
   {
-    "authors": "Markou, I. and Rodrigues, F. and Pereira, F. C.",
     "title": "Demand pattern analysis of taxi trip data for anomalies detection and explanation",
+    "authors": "Markou, I. and Rodrigues, F. and Pereira, F. C.",
     "pub": {
       "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
       "year": 2017
@@ -117,8 +117,8 @@
     }
   },
   {
-    "authors": "Borysov, S. and Lourenco, M. and Rodrigues, F. and Balatsky, A. and Pereira, F. C.",
     "title": "Using internet search queries to predict human mobility in social events",
+    "authors": "Borysov, S. and Lourenco, M. and Rodrigues, F. and Balatsky, A. and Pereira, F. C.",
     "pub": {
       "where": "Proceedings of 2016 IEEE 19th International Conference on Intelligent Transportation Systems (ITSC)",
       "year": 2016
@@ -131,8 +131,8 @@
     }
   },
   {
-    "authors": "Borysov, S. and Rich, J. and Pereira, F. C.",
     "title": "Scalable Population Synthesis with Deep Generative Modeling",
+    "authors": "Borysov, S. and Rich, J. and Pereira, F. C.",
     "pub": {
       "where": "ArXiv",
       "year": 2018
@@ -144,8 +144,8 @@
     }
   },
   {
-    "authors": "Antunes, F. and Ribeiro, B. and Pereira, F. C. and Gomes, R.",
     "title": "Efficient Transport Simulation With Restricted Batch-Mode Active Learning",
+    "authors": "Antunes, F. and Ribeiro, B. and Pereira, F. C. and Gomes, R.",
     "pub": {
       "where": "IEEE Transactions on Intelligent Transportation Systems",
       "year": 2018
@@ -214,6 +214,90 @@
     }
   },
   {
+    "title": "Enhancing Resilience to Disasters using Social Media",
+    "authors": "Chaniotakis, E. and Antoniou, C. and  Pereira, F. C.",
+    "pub": {
+      "where": "Proceedings of the 2017 5th Ieee International Conference on Models and Technologies for Intelligent Transportation Systems (mt-its)",
+      "year": 2017
+    },
+    "links": {
+      "doi": "https://doi.org/10.1109/MTITS.2017.8005602",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Probabilistic Modeling and Visualization for Bankruptcy Prediction",
+    "authors": "Antunes, F. and Ribeiro, B. and Pereira, F. C.",
+    "pub": {
+      "where": "Applied Soft Computing, Vol. 60",
+      "year": 2017
+    },
+    "links": {
+      "doi": "https://doi.org/10.1016/j.asoc.2017.06.043",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Mapping Social Media for Transportation Studies",
+    "authors": "Chaniotakis, E. and Antoniou, C. and Pereira, F. C.",
+    "pub": {
+      "where": "IEEE Intelligent Systems, Vol. 31, No. 6",
+      "year": 2016
+    },
+    "links": {
+      "doi": "https://doi.org/10.1109/MIS.2016.98",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Uncertainty in Bus Arrival Time Predictions: Treating Heteroscedasticity With a Metamodel Approach",
+    "authors": "O'Sullivan, A. and Pereira, F. C. and Zhao, J. and Koutsopoulos, H. N.",
+    "pub": {
+      "where": "IEEE Transactions on Intelligent Transportation Systems, Vol. 17, No. 11",
+      "year": 2016
+    },
+    "links": {
+      "doi": "https://doi.org/10.1109/TITS.2016.2547184",
+      "pdf": "http://orbit.dtu.dk/files/138800259/QRbus.pdf",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "DynaMIT2.0: architecture design and preliminary results on real-time data fusion for traffic prediction and crisis management",
+    "authors": "Lu, Y. and Pereira, F. C. and Seshadri, R. and O'Sullivan, A. and Antoniou, C. and Ben-Akiva, M.",
+    "pub": {
+      "where": "Proceedings of the 2015 IEEE 18th International Conference on Intelligent Transportation Systems (ITSC)",
+      "year": 2015
+    },
+    "links": {
+      "doi": "https://doi.org/10.1109/ITSC.2015.363",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Intelligent Transport Systems in the Smart City",
+    "authors": "Pereira, F. C.",
+    "pub": {
+      "where": "Book of Abstracts. DTU's Sustain Conference 2015",
+      "year": 2015
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://orbit.dtu.dk/files/119753377/L9_DTU_Sustain_2015.pdf",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
     "title": "",
     "authors": "",
     "pub": {
@@ -221,6 +305,7 @@
       "year": null
     },
     "links": {
+      "doi": "",
       "pdf": "",
       "code": "",
       "data": ""
@@ -234,6 +319,7 @@
       "year": null
     },
     "links": {
+      "doi": "",
       "pdf": "",
       "code": "",
       "data": ""
@@ -247,6 +333,7 @@
       "year": null
     },
     "links": {
+      "doi": "",
       "pdf": "",
       "code": "",
       "data": ""
@@ -260,6 +347,7 @@
       "year": null
     },
     "links": {
+      "doi": "",
       "pdf": "",
       "code": "",
       "data": ""
@@ -273,6 +361,7 @@
       "year": null
     },
     "links": {
+      "doi": "",
       "pdf": "",
       "code": "",
       "data": ""
@@ -286,6 +375,7 @@
       "year": null
     },
     "links": {
+      "doi": "",
       "pdf": "",
       "code": "",
       "data": ""
@@ -299,6 +389,119 @@
       "year": null
     },
     "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
       "pdf": "",
       "code": "",
       "data": ""
