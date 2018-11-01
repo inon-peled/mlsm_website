@@ -1,4 +1,4 @@
-# mlsm_website
+# Auto-generated Pages for MLSM Website
 
 To edit the *Pubications* page:
 
