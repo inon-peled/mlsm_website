@@ -1,5 +1,117 @@
 [
   {
+    "title": "Integrated simulation of activity-based demand and multi-modal dynamic supply for energy assessment",
+    "authors": "Akkinepally, A. P., Chen, S., Fournier, N., Needell, Z., Viegas de Lima, I. H., Araldo, A., Deliali, A., Trancik, J., Christofa, E., Lima de Azevedo, C., Ben-Akiva, M.",
+    "pub": {
+      "where": "The 21st IEEE International Conference on Intelligent Transportation Systems (IEEE-ITSC)",
+      "year": 2018
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://web.mit.edu/cami/Public/CLA_SimMobBoston_ieee_2018_preprint.pdf",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Modeling travel behavior with on-demand systems: the case of real-time sustainable travel incentives",
+    "authors": "Xie, Y., Danaf, M., Lima de Azevedo, C., Akkinepally, A. P., Atasoy, B., Jeong, K., Seshadri, R., Ben-Akiva, M.",
+    "pub": {
+      "where": "hEART 2018, 7th Symposium of the European Association for Research in Transportation",
+      "year": 2018
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://web.mit.edu/cami/Public/CLA_TripodBehavior_heart_2018_extabs.pdf",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Context-aware stated preferences surveys for smart mobility",
+    "authors": "Danaf, M., Atasoy, B., Lima de Azevedo, C., Ding-Mastera, J., Abou-Zeid, M., Cox., N., Zhao, F., Ben-Akiva, M.",
+    "pub": {
+      "where": "15th International Conference on Travel Behaviour Research",
+      "year": 2018
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://web.mit.edu/cami/Public/CLA_FMODbehavior_iatbr_2018_extabs.pdf",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Discovering robust urban mobility futures via agent based simulation in prototype cities",
+    "authors": "Oke, J., Gross, E., Lima Azevedo, C., Zegras, C., Ferreira, J., Ben-Akiva, M.",
+    "pub": {
+      "where": "7th Conference on Innovations in Travel Modeling, Transportation Research Board",
+      "year": 2018
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://web.mit.edu/cami/Public/CLA_ScenarioDiscovery_TRB-TM_2018_presentation.pdf",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
     "title": "A User Experience Model for Privacy and Context Aware Over-the-Top (OTT) TV Recommendations",
     "authors": "Servizi, V. and Kosta, S. and Hammershøj, A. D. and Olesen, H.",
     "pub": {

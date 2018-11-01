@@ -19,8 +19,8 @@ def _one_pub_to_html(pub):
         ('\n<span class="pubWhereAndWhen">in %s, %s</span>' % (pub['pub']['where'], pub['pub']['year']))
 
 
-def _group_by_year(pubs):
-    years = map(lambda pub: pub['pub']['year'], pubs)
+def _group_by_year_and_ignore_entries_without_year(pubs):
+    years = filter(lambda x: x is not None, map(lambda pub: pub['pub']['year'], pubs))
     return {year: list(filter(lambda x: x['pub']['year'] == year, pubs)) for year in years}
 
 
@@ -33,7 +33,9 @@ def main(json_path, output_path):
                '***************************************************************\n' \
                '-->\n\n'
         html += '<div class="publications">\n'
-        for year, pubs in sorted(_group_by_year(json.load(pubs_f)).items(), reverse=True):
+        grouped_and_sorted_by_year = sorted(
+            _group_by_year_and_ignore_entries_without_year(json.load(pubs_f)).items(), reverse=True)
+        for year, pubs in grouped_and_sorted_by_year:
             html += '<h1 class="headerYear">%s</h1>\n<ul>\n' % year
             for pub in pubs:
                 html += '<li>\n%s\n</li>\n' % _one_pub_to_html(pub)
