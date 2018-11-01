@@ -1,5 +1,19 @@
 [
   {
+    "title": "A User Experience Model for Privacy and Context Aware Over-the-Top (OTT) TV Recommendations",
+    "authors": "Servizi, V. and Kosta, S. and Hammershøj, A. D. and Olesen, H.",
+    "pub": {
+      "where": "Proceedings of Conference on Information and Knowledge Management",
+      "year": 2018
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
     "title": "Combining time-series and textual data for taxi demand prediction in event areas: a deep learning approach",
     "authors": "Rodrigues, F. and Markou, I. and Pereira, F. C.",
     "pub": {
@@ -298,214 +312,18 @@
     }
   },
   {
-    "title": "",
-    "authors": "",
+    "title": "Logical Entity Level Sentiment Analysis",
+    "authors": " Petersen, N. C. and Villadsen, J.",
     "pub": {
-      "where": "",
-      "year": null
+      "where": "International Conference on Formal Grammar",
+      "year": 2017
     },
     "links": {
-      "doi": "",
-      "pdf": "",
+      "doi": "https://doi.org/10.1007/978-3-662-56343-4_4",
+      "pdf": "http://orbit.dtu.dk/files/142170970/Final.pdf",
       "code": "",
       "data": ""
     }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
+  }
 ]
 
