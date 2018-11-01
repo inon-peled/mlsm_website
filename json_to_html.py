@@ -39,6 +39,7 @@ def main(json_path, output_path):
             html += '</ul>\n'
         html += '</div>'
         out_f.write(html)
+        print('Wrote HTML to %s' % output_path)
 
 if __name__ == '__main__':
     main('publications.json', 'out.html')
