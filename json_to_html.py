@@ -27,9 +27,10 @@ def _group_by_year(pubs):
 def main(json_path, output_path):
     with open(json_path) as pubs_f, open(output_path, 'w') as out_f:
         html = '<!--\n' \
-               '*********************************************************************************\n' \
-               '* DO NOT EDIT THIS AUTOMATICALLY GENERATED HTML, INSTEAD EDIT publications.json *\n' \
-               '*********************************************************************************\n' \
+               '***************************************************************\n' \
+               '* DO NOT EDIT THIS AUTOMATICALLY GENERATED HTML, USE INSTEAD: *\n' \
+               '* https://github.com/inon-peled/mlsm_website                  *\n' \
+               '***************************************************************\n' \
                '-->\n\n'
         html += '<div class="publications">\n'
         for year, pubs in sorted(_group_by_year(json.load(pubs_f)).items(), reverse=True):
