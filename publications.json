@@ -1,5 +1,19 @@
 [
   {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
     "title": "Integrated simulation of activity-based demand and multi-modal dynamic supply for energy assessment",
     "authors": "Akkinepally, A. P., Chen, S., Fournier, N., Needell, Z., Viegas de Lima, I. H., Araldo, A., Deliali, A., Trancik, J., Christofa, E., Lima de Azevedo, C., Ben-Akiva, M.",
     "pub": {
@@ -56,11 +70,11 @@
     }
   },
   {
-    "title": "",
-    "authors": "",
+    "title": "Real-Time Taxi Demand Prediction Using Data from the Web",
+    "authors": "Markou, I. and Rodrigues, F. and Pereira, F. C.",
     "pub": {
-      "where": "",
-      "year": null
+      "where": "Proceedings of the 21st IEEE International Conference on Intelligent Transporttion Systems",
+      "year": 2018
     },
     "links": {
       "doi": "",
@@ -70,39 +84,11 @@
     }
   },
   {
-    "title": "",
-    "authors": "",
+    "title": "A two-stage model for real-time taxi demand prediction using data from the Web",
+    "authors": "Markou, I. and Pereira, F. C. and Rodrigues, F.",
     "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
-    },
-    "links": {
-      "doi": "",
-      "pdf": "",
-      "code": "",
-      "data": ""
-    }
-  },
-  {
-    "title": "",
-    "authors": "",
-    "pub": {
-      "where": "",
-      "year": null
+      "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+      "year": 2019
     },
     "links": {
       "doi": "",
