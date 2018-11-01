@@ -31,7 +31,10 @@ def _group_by_year(pubs):
 def main(json_path, output_path):
     with open(json_path) as pubs_f, open(output_path, 'w') as out_f:
         grouped = _group_by_year(json.load(pubs_f))
-        html = '<div class="publications_page">\n'
+        html = '<!-- ************ ' \
+               'DO NOT EDIT THIS AUTOMATICALLY GENERATED HTML, INSTEAD EDIT publications.json ' \
+               '************ -->'
+        html += '<div class="publications_page">\n'
         for year, pubs in sorted(grouped.items(), reverse=True):
             html += '<h1 class="header">%s</h1>\n<ul>\n' % year
             for pub in pubs:

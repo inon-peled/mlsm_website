@@ -3,7 +3,6 @@
     "authors": "Rodrigues, F. and Markou, I. and Pereira, F. C.",
     "title": "Combining time-series and textual data for taxi demand prediction in event areas: a deep learning approach",
     "pub": {
-      "type": "journal",
       "where": "Information Fusion, Elsevier",
       "year": 2018
     },
@@ -143,5 +142,167 @@
       "code": "",
       "data": ""
     }
-  }
+  },
+  {
+    "authors": "Antunes, F. and Ribeiro, B. and Pereira, F. C. and Gomes, R.",
+    "title": "Efficient Transport Simulation With Restricted Batch-Mode Active Learning",
+    "pub": {
+      "where": "IEEE Transactions on Intelligent Transportation Systems",
+      "year": 2018
+    },
+    "links": {
+      "doi": "https://doi.org/10.1109/TITS.2018.2842695",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Comparison of Four Types of Artificial Neural Network and a Multinomial Logit Model for Travel Mode Choice Modeling",
+    "authors": "Lee, D. and Derrible, S. and Pereira, F. C.",
+    "pub": {
+      "where": "Transportation Research Record",
+      "year": 2018
+    },
+    "links": {
+      "doi": "https://doi.org/10.1177/0361198118796971",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Overview of traffic incident duration analysis and prediction",
+    "authors": "Li, R. and Pereira, F. C. and Ben-Akiva, M. E.",
+    "pub": {
+      "where": "European Transport Research Review",
+      "year": 2018
+    },
+    "links": {
+      "doi": "https://doi.org/10.1186/s12544-018-0300-1",
+      "pdf": "http://orbit.dtu.dk/files/149877717/filestore_2_.pdf",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Social network analysis in future transportation systems: Contributions on observability, behaviour and structure",
+    "authors": "Pereira, F. C. and Antoniou, C. and Dimitriou, L.",
+    "pub": {
+      "where": "Transportation Research. Part C: Emerging Technologies, Vol. 91",
+      "year": 2018
+    },
+    "links": {
+      "doi": "https://doi.org/10.1016/j.trc.2018.04.002",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Enabling Bus Transit Service Quality Co-Monitoring Through Smartphone-Based Platform",
+    "authors": "Li, C. and Zegras, P. C. and Zhao, F. and Qin, Z. and Shahid, A. and Ben-Akiva, M. and Pereira, F. C. and Zhao, J.",
+    "pub": {
+      "where": "Transportation Research Record, Vol. 2649",
+      "year": 2017
+    },
+    "links": {
+      "doi": "https://doi.org/10.3141/2649-05",
+      "pdf": "http://dspace.mit.edu/bitstream/1721.1/112777/1/TRBPaper17-04615%20Li%20et%20al_FMS-TQ_TRR_new.pdf",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
 ]
+
