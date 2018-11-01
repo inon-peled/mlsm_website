@@ -33,7 +33,7 @@ def main(json_path, output_path):
                '-->\n\n'
         html += '<div class="publications">\n'
         for year, pubs in sorted(_group_by_year(json.load(pubs_f)).items(), reverse=True):
-            html += '<h1 class="header">%s</h1>\n<ul>\n' % year
+            html += '<h1 class="headerYear">%s</h1>\n<ul>\n' % year
             for pub in pubs:
                 html += '<li>\n%s\n</li>\n' % _one_pub_to_html(pub)
             html += '</ul>\n'
