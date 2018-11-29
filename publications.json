@@ -14,6 +14,76 @@
     }
   },
   {
+    "title": "",
+    "authors": "",
+    "pub": {
+      "where": "",
+      "year": null
+    },
+    "links": {
+      "doi": "",
+      "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Chapter 2: Machine Learning Fundamentals",
+    "authors": "Pereira, F. C., Borysov, S. S.",
+    "pub": {
+      "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling, Elsevier",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "https://www.elsevier.com/books/mobility-patterns-big-data-and-transport-analytics/antoniou/978-0-12-812970-8",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Chapter 5: Data Preparation",
+    "authors": "Henrickson, K., Rodrigues, F., Pereira, F. C.",
+    "pub": {
+      "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling, Elsevier",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "https://www.elsevier.com/books/mobility-patterns-big-data-and-transport-analytics/antoniou/978-0-12-812970-8",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Chapter 7: Model-Based Machine Learning for Transportation",
+    "authors": "Peled, I., Rodrigues, F., Pereira, F. C.",
+    "pub": {
+      "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling, Elsevier",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "https://www.elsevier.com/books/mobility-patterns-big-data-and-transport-analytics/antoniou/978-0-12-812970-8",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Chapter 8: Textual Data in Transportation Research: Techniques and Opportunities",
+    "authors": "Kinra, A., Kashi, S. B., Pereira, F. C., Combes F., Rothengatter W.",
+    "pub": {
+      "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling, Elsevier",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "https://www.elsevier.com/books/mobility-patterns-big-data-and-transport-analytics/antoniou/978-0-12-812970-8",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
     "title": "Integrated simulation of activity-based demand and multi-modal dynamic supply for energy assessment",
     "authors": "Akkinepally, A. P., Chen, S., Fournier, N., Needell, Z., Viegas de Lima, I. H., Araldo, A., Deliali, A., Trancik, J., Christofa, E., Lima de Azevedo, C., Ben-Akiva, M.",
     "pub": {
