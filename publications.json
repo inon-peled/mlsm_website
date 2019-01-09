@@ -355,14 +355,14 @@
   },
   {
     "title": "A two-stage model for real-time taxi demand prediction using data from the Web",
-    "authors": "Markou, I. and Pereira, F. C. and Rodrigues, F.",
+    "authors": ["Ioulia Markou", "Francisco Camara Pereira", "Filipe Rodrigues"],
     "pub": {
       "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
       "year": 2019
     },
     "links": {
       "doi": "",
-      "pdf": "",
+      "pdf": "http://amonline.trb.org/68387-trb-1.4353651/t005-1.4370696/1298-1.4370986/19-04063-1.4368687/19-04063-1.4371013",
       "code": "",
       "data": ""
     }

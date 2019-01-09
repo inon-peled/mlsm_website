@@ -49,10 +49,7 @@ def main(json_path, output_path):
             for pub in pubs:
                 html += '<li>\n%s\n</li>\n' % _one_pub_to_html(pub)
             html += '</ul>\n'
-            html += '<div class="su-divider su-divider-style-default" ' + \
-                        'style="margin:15px 0;border-width:3px;border-color:#990000">' + \
-                    '<a href="#" style="color:#990000">Go to top</a>' + \
-                    '</div>\n'
+            html += '[su_divider top="yes" text="Go to top" style="default" divider_color="#990000" link_color="#990000" size="3" margin="15" class=""]\n'
         html += '</div>'
         out_f.write(html)
         print('Wrote HTML to %s' % output_path)
