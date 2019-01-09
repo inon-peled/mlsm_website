@@ -14,15 +14,215 @@
     }
   },
   {
-    "title": "",
-    "authors": "",
+    "title": "An Active Learning Metamodeling Approach for Policy Analysis: Application to an Emergency Medical Service Simulator",
+    "authors": [
+      "Francisco Nibau Antunes",
+      "Marco Amorim",
+      "Bernardete Ribeiro",
+      "Francisco Camara Pereira"
+    ],
     "pub": {
-      "where": "",
-      "year": null
+      "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+      "year": 2019
     },
     "links": {
       "doi": "",
+      "pdf": "http://amonline.trb.org/68387-trb-1.4353651/t0014-1.4368858/1150-1.4368977/19-05677-1.4361946/19-05677-1.4368980",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Factors Driving The Adoption Of Mobility-Management Travel App: A Bayesian Structural Equation Modelling Analysis",
+    "authors": [
+      "Aliasghar Mehdizadeh Dastjerdi",
+      "Sigal Kaplan",
+      "João de Abreu e Silva",
+      "Otto Anker Nielsen",
+      "Francisco Camara Pereira"
+    ],
+    "pub": {
+      "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+      "year": 2019
+    },
+    "links": {
+      "doi": "http://amonline.trb.org/68387-trb-1.4353651/t0027-1.4364077/1104-1.4365054/19-02192-1.4365064/19-02192-1.4365065",
       "pdf": "",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Behavioral Modeling Of On-Demand Mobility Services: General Framework And Application To Sustainable Travel Incentives",
+    "authors": [
+      "Yifei Xie",
+      "Mazen Danaf",
+      "Carlos Lima Azevedo",
+      "Arun Akkinepally",
+      "Bilge Atasoy",
+      "Kyungsoo Jeong",
+      "Ravi Seshadri",
+      "Moshe Ben-Akiva"
+    ],
+    "pub": {
+      "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://amonline.trb.org/68387-trb-1.4353651/t0015-1.4368127/1699-1.4368212/19-03379-1.4364523/19-03379-1.4368239",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Understanding Preferences for Automated Mobility on Demand Using a Smartphone-Based Stated Preference Survey: A Case Study of Singapore",
+    "authors": [
+      "Ravi Seshadri",
+      "Lemuel Kumarga",
+      "Bilge Atasoy",
+      "Mazen Danaf",
+      "Yifei Xie",
+      "Carlos Lima Azevedo",
+      "Fang Zhao",
+      "P. Christopher Zegras",
+      "Moshe Ben-Akiva"
+    ],
+    "pub": {
+      "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://amonline.trb.org/68387-trb-1.4353651/t0015-1.4368127/1693-1.4368278/19-02589-1.4364650/19-02589-1.4368285",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Calibrating Activity-Based Travel Demand Model Systems Via Microsimulation  ",
+    "authors": [
+      "Siyu Chen",
+      "Arun Akkinepally",
+      "Carlos Lima Azevedo",
+      "Moshe Ben-Akiva"
+    ],
+    "pub": {
+      "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://amonline.trb.org/68387-trb-1.4353651/t0010-1.4369516/1720-1.4369544/19-05633-1.4363879/19-05633-1.4369545",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Incorporating the Mobility as a Service Concept into Transport Modelling and Simulation Frameworks",
+    "authors": [
+      "Maria Kamargianni",
+      "Lampros Yfantis",
+      "Jakub Muscat",
+      "Carlos Lima Azevedo",
+      "Moshe Ben-Akiva"
+    ],
+    "pub": {
+      "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://amonline.trb.org/68387-trb-1.4353651/t0015-1.4368127/1699-1.4368212/19-05003-1.4364512/19-05003-1.4368217",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Accessibility and Energy Consumption Evaluation under Different Strategies of Mobility On-Demand Deployment",
+    "authors": [
+      "Eytan Gross",
+      "Jimi Oke",
+      "Arun Akkinepally",
+      "Bat-Hen Nahmias-Biran",
+      "Carlos Lima Azevedo",
+      "P. Christopher Zegras",
+      "Joseph Ferreira",
+      "Moshe Ben-Akiva"
+    ],
+    "pub": {
+      "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://amonline.trb.org/68387-trb-1.4353651/t0015-1.4368127/1176-1.4368766/19-02656-1.4365029/19-02656-1.4368773",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "System-Level Optimization of Multi-Modal Transportation Networks for Energy Efficiency Using Personalized Incentives: Formulation, Implementation and Performance",
+    "authors": [
+      "Andrea Araldo",
+      "Song Gao",
+      "Ravi Seshadri",
+      "Carlos Lima Azevedo",
+      "Hossein Ghafourian",
+      "Yihang Sui",
+      "Sayeeda Ayaz",
+      "David Sukhin",
+      "Moshe Ben-Akiva"
+    ],
+    "pub": {
+      "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://amonline.trb.org/68387-trb-1.4353651/t001-1.4372474/1288-1.4372649/19-03092-1.4363986/19-03092-1.4372660",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "Demand Calibration of Multimodal Microscopic Traffic Simulation Using W-DSPSA",
+    "authors": [
+      "Simon Oh",
+      "Ravi Seshadri",
+      "Carlos Lima Azevedo",
+      "Moshe Ben-Akiva"
+    ],
+    "pub": {
+      "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://amonline.trb.org/68387-trb-1.4353651/t0023-1.4366018/1528-1.4366641/19-01910-1.4366651/19-01910-1.4366652",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
+    "title": "From Traditional to Automated Mobility on Demand: A Comprehensive Framework for Modelling Mobility on Demand Services in SimMobility",
+    "authors": [
+      "Bat-hen Nahmias",
+      "Jimi Oke",
+      "Nishant Kumar",
+      "Kakali Basak",
+      "Andrea Araldo",
+      "Ravi Seshadri",
+      "Carlos Lima Azevedo",
+      "Moshe Ben-Akiva"
+    ],
+    "pub": {
+      "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "http://amonline.trb.org/68387-trb-1.4353651/t001-1.4372474/1508-1.4372544/19-01690-1.4364793/19-01690-1.4372549",
       "code": "",
       "data": ""
     }

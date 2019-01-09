@@ -1,6 +1,15 @@
 import json
 
 
+def get_authors_string(authors):
+    def to_stylized_string(author):
+        surname = author.split(' ')[-1]
+        first_names_initials = ' '.join(map(lambda x: x[0].capitalize() + '.', author.split(' ')[:-1]))
+        return ', '.join([surname, first_names_initials]
+                        )
+    return authors if type(authors) is str else ', '.join(map(to_stylized_string, authors))
+
+
 def _one_pub_to_html(pub):
     def link(pub, link_key, link_name):
         try:
@@ -11,7 +20,7 @@ def _one_pub_to_html(pub):
             return ''
 
     return \
-        ('<span class="authors">%s</span>\n' % pub['authors']) + \
+        ('<span class="authors">%s</span>\n' % get_authors_string(pub['authors'])) + \
         ('<span class="pubTitle">%s</span>' % pub['title']) + \
         link(pub, 'pdf', 'PDF') + \
         link(pub, 'code', 'Code') + \
