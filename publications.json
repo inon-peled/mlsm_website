@@ -14,6 +14,20 @@
     }
   },
   {
+    "title": "Participating in environmental loyalty program with a real-time multimodal travel app: User needs, environmental and privacy motivators",
+    "authors": ["Aliasghar Mehdizadeh Dastjerdi", "Sigal Kaplan", "Joaode Abreu e Silva", "Otto Anker Nielsen", "Francisco Camara Pereira"],
+    "pub": {
+      "where": "Transportation Research Part D: Transport and Environment, Vol. 67, pp. 223-243",
+      "year": 2019
+    },
+    "links": {
+      "doi": "",
+      "pdf": "https://www.sciencedirect.com/science/article/pii/S1361920918304735?via%3Dihub",
+      "code": "",
+      "data": ""
+    }
+  },
+  {
     "title": "An Active Learning Metamodeling Approach for Policy Analysis: Application to an Emergency Medical Service Simulator",
     "authors": [
       "Francisco Nibau Antunes",
