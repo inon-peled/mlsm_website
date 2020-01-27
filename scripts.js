@@ -1,4 +1,14 @@
 <script type="text/javascript">
+	function getPubType(item) {
+		return item.type ? item.type : "other";
+	}
+
+	function publishedPubTypes(pubsObj) {
+		return Array.from(new Set(pubsObj.map(function (item) { 
+			return getPubType(item); 
+		}))).sort();	
+	}
+
 	function toggleYears() {
 		var allYears = document.getElementsByClassName("pubYear");
 		for(var i = 0; i < allYears.length; i++) {
@@ -25,58 +35,54 @@
 			elmnt.style.display = "none";
 		}
 	}
-
-	function toggleFaded(pubType) {
-		var img = document.getElementById('selection' + pubType);
-		if (img.src.indexOf('_faded.png') > -1) {
-			img.src = img.src.replace('_faded.png', '.png');
-		}
-		else {
-			img.src = img.src.replace('.png', '_faded.png');
+	
+	function activateButton(pubType) {
+		var allButtons = document.getElementsByClassName("filterBtn");
+		for (var i = 0 ; i < allButtons.length ; i++) {
+			allButtons[i].classList.remove('active');
+			if (allButtons[i].id === 'btn_' + pubType) {
+				allButtons[i].classList.add('active');
+			}
 		}
 	}
 	
-	function togglePubType(pubType) {
-		var allPubs = document.getElementsByClassName("pubType_" + pubType);
-		for(var i = 0; i < allPubs.length; i++) {
-			toggleVisibility(allPubs[i])
+	function filterPubType(pubType) {
+		var allPubs = document.getElementsByClassName("pubDetails");
+		for (var i = 0; i < allPubs.length; i++) {
+			allPubs[i].style.display = (
+				(pubType === 'all') || 
+				(allPubs[i].classList.contains('pubType_' + pubType))) ? 
+				"block" : 
+				"none";
 		}
-		toggleFaded(pubType);
+		activateButton(pubType);
 		toggleYears();
 	}
 
-    function selection() {
-		function addToggleImg(elmnt, pubType, alt, src) {
-			elmnt.innerHTML += '<img' +
-			' class=selectionImg' +
-			' onclick=togglePubType("' + pubType + '")' + 
-			' id=selection' + pubType + 
-			' title="' + alt + '"' +
-			' alt="' + alt + '"' +
-			' src="' + src + '">' + 
-			'</img>\n';
-			// Hidden faded image, to load into local cache.
-			elmnt.innerHTML += '<img src=' + src.replace('.png', '_faded.png') + ' style="display:none"/>\n';
+	function capitalizeFirstLetter(string) {
+		return string.charAt(0).toUpperCase() + string.substring(1);
+	}
+	
+    function selection(pubs) {
+		function addSelection(elmnt, pubType, txt) {
+			elmnt.innerHTML += '<button' +
+				' class="filterBtn"' +
+				' onclick=filterPubType("' + pubType + '")' + 
+				' id=btn_' + pubType + 
+				'>' + txt + 
+			'</button>\n';
 		}
         var selDiv = document.getElementById('pubTypeSelection');
-		addToggleImg(selDiv, 'article', 'Article', 
-			'/wp-content/uploads/2020/01/journal.png');
-		addToggleImg(selDiv, 'presentation', 'Presentation', 
-			'/wp-content/uploads/2020/01/presentation.png');
-		addToggleImg(selDiv, 'book', 'Book', 
-			'/wp-content/uploads/2020/01/book.png');
-		addToggleImg(selDiv, 'poster', 'Poster', 
-			'/wp-content/uploads/2020/01/poster.png');
-		addToggleImg(selDiv, 'unknown', 'Other', 
-			'/wp-content/uploads/2020/01/unknown.png');
+		addSelection(selDiv, 'all', 'Show all');
+		var pubTypesToFilter = publishedPubTypes(pubs);
+		for (var i = 0 ; i < pubTypesToFilter.length ; i++) {
+			addSelection(selDiv, pubTypesToFilter[i], 
+						 capitalizeFirstLetter(pubTypesToFilter[i]))
+		}
+		activateButton('all');
 		selDiv.innerHTML += '<div class="pub-su-divider pub-su-divider-style-default" style="margin:15px 0;border-width:1px;border-color:#990000"></div>';
 		}
-</script>
 
-
-
-
-<script type="text/javascript">
 	function getPubTypeClass(pub) {
 		return pub['type'] ? pub['type'] : 'unknownPubType';
 	}
@@ -117,9 +123,9 @@
                 pub.links[linkKey] + '" rel="noopener noreferrer"> [' + linkName + ']</a></span>';
         }
 
-        return '<div class="pubDetails pubType_' + (pub.type ? pub.type : 'unknown') + '">\n' + 
+        return '<div class="pubDetails pubType_' + getPubType(pub) + '">\n' + 
 			'<div class=pubTypeAndAuthors>' + 
-				'<span class="pubType">' + getPubTypeImage(pub.type) + '</span>\n' +
+				'<span class="pubType">' + getPubTypeImage(getPubType(pub)) + '</span>\n' +
 				'<span class=space></span>\n' + 
 				'<span class="authors">' + getAuthorsString(pub['authors']) + '</span>\n' +
 			'</div>\n' + 
