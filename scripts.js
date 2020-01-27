@@ -26,24 +26,51 @@
 		}
 	}
 
+	function toggleFaded(pubType) {
+		var img = document.getElementById('selection' + pubType);
+		if (img.src.indexOf('_faded.png') > -1) {
+			img.src = img.src.replace('_faded.png', '.png');
+		}
+		else {
+			img.src = img.src.replace('.png', '_faded.png');
+		}
+	}
+	
 	function togglePubType(pubType) {
-		var allPubs = document.getElementsByClassName("pubType" + pubType);
+		var allPubs = document.getElementsByClassName("pubType_" + pubType);
 		for(var i = 0; i < allPubs.length; i++) {
 			toggleVisibility(allPubs[i])
 		}
+		toggleFaded(pubType);
 		toggleYears();
 	}
 
     function selection() {
+		function addToggleImg(elmnt, pubType, alt, src) {
+			elmnt.innerHTML += '<img' +
+			' class=selectionImg' +
+			' onclick=togglePubType("' + pubType + '")' + 
+			' id=selection' + pubType + 
+			' title="' + alt + '"' +
+			' alt="' + alt + '"' +
+			' src="' + src + '">' + 
+			'</img>\n';
+			// Hidden faded image, to load into local cache.
+			elmnt.innerHTML += '<img src=' + src.replace('.png', '_faded.png') + ' style="display:none"/>\n';
+		}
         var selDiv = document.getElementById('pubTypeSelection');
-		selDiv.innerHTML += '<img' +
-			' onclick=togglePubType("article")' + 
-			' id="selectArticle"' + 
-			' title="Article"' +
-			' alt="Article"' +
-			' src="/wp-content/uploads/2020/01/journal.png">' + 
-		'</img>';
-    }
+		addToggleImg(selDiv, 'article', 'Article', 
+			'/wp-content/uploads/2020/01/journal.png');
+		addToggleImg(selDiv, 'presentation', 'Presentation', 
+			'/wp-content/uploads/2020/01/presentation.png');
+		addToggleImg(selDiv, 'book', 'Book', 
+			'/wp-content/uploads/2020/01/book.png');
+		addToggleImg(selDiv, 'poster', 'Poster', 
+			'/wp-content/uploads/2020/01/poster.png');
+		addToggleImg(selDiv, 'unknown', 'Other', 
+			'/wp-content/uploads/2020/01/unknown.png');
+		selDiv.innerHTML += '<div class="pub-su-divider pub-su-divider-style-default" style="margin:15px 0;border-width:1px;border-color:#990000"></div>';
+		}
 </script>
 
 
@@ -72,7 +99,7 @@
 			techreport: {src: "/wp-content/uploads/2020/01/techreport.png", alt: 'Technical Report'},
 			presentation: {src: "/wp-content/uploads/2020/01/presentation.png", alt: 'Presentation'},
 			book: {src: "/wp-content/uploads/2020/01/book.png", alt: 'Book'},
-			unknownPubType: {src: "/wp-content/uploads/2020/01/unknown_pubtype.png", alt: 'Publication'}
+			unknownPubType: {src: "/wp-content/uploads/2020/01/unknown.png", alt: 'Publication'}
 		};
 		imgTag = '<img class=pubimg src=';
 		imgTag += (imgs[pubType] ? imgs[pubType].src : imgs.unknownPubType.src);
@@ -90,7 +117,7 @@
                 pub.links[linkKey] + '" rel="noopener noreferrer"> [' + linkName + ']</a></span>';
         }
 
-        return '<div class="pubDetails pubType' + (pub.type ? pub.type : 'unknown') + '">\n' + 
+        return '<div class="pubDetails pubType_' + (pub.type ? pub.type : 'unknown') + '">\n' + 
 			'<div class=pubTypeAndAuthors>' + 
 				'<span class="pubType">' + getPubTypeImage(pub.type) + '</span>\n' +
 				'<span class=space></span>\n' + 
