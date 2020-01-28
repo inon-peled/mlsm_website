@@ -1,3 +1,11 @@
+/* TODO:
+1. Aliasghar's thesis.
+2. Add "thesis" publication type.
+3. Enforce array of full author names.
+4. Add optional publisher field.
+5. Encode non-ascii characters in both html and bib.
+*/
+
 function _toPlainEnglishLowercase(str) {
     return str
         .normalize("NFD")
