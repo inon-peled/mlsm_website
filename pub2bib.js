@@ -36,7 +36,7 @@ function _getFirstWordInTitleForBibIdentifier(title) {
             .split(' ')
             .filter(function (s) {
                 return ![
-                    'an'
+                    'an',
                     'a',
                     'by',
                     'from',
