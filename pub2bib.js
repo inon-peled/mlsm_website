@@ -34,7 +34,18 @@ function _getFirstWordInTitleForBibIdentifier(title) {
         _get(0, 'empty', title
             .toLowerCase()
             .split(' ')
-            .filter(function (s) { return !['the', 'on', 'at', 'in'].includes(s); })
+            .filter(function (s) {
+                return ![
+                    'an'
+                    'a',
+                    'by',
+                    'from',
+                    'the',
+                    'on',
+                    'at',
+                    'in']
+                    .includes(s);
+            })
         )
     );
 }
