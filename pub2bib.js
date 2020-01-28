@@ -68,7 +68,7 @@ function _getAuthorsForBibEntry(pub) {
 }
 
 function _strOrEmpty(what, string) {
-    return string ? ('    ' + what + ' = {' + string + '}\n') : '';
+    return string ? ('    ' + what + ' = {' + string + '},\n') : '';
 }
 
 function toBibArticle(pub) {
