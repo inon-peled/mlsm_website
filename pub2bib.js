@@ -37,27 +37,38 @@ function _getBibEntryIdentifier(pub) {
         _getFirstWordInTitleForBibIdentifier(_get('title', '', pub));
 }
 
-// function toBibArticle(pub) {
-//     return `
-//     @article{${},
-//         author  = {Peter Adams},
-//         title   = {The title of the work},
-//         journal = {The name of the journal},
-//         year    = 1993,
-//         number  = 2,
-//         pages   = {201-213},
-//         month   = 7,
-//         note    = {An optional note},
-//         volume  = 4
-//     }
-//     `;
-// }
-//
-// function _onePubToBib(pub) {
-//
-//     return pub;
-// }
-//
-// function convertToBib(publications) {
-//     return publications;
-// }
+
+function _getAuthorsForBibEntry(pub) {
+    function _joinAnd(authors) {
+        return Array.isArray(authors) ?
+            authors.join(' and ') :
+            authors;
+    }
+
+    return _joinAnd(_get('authors', '', pub));
+}
+
+function _strOrEmpty(what, string) {
+    return string ? ('    ' + what + ' = {' + string + '}\n') : '';
+}
+
+function toBibArticle(pub) {
+    return '@article{' + _getBibEntryIdentifier(pub) + '\n' +
+        _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
+        _strOrEmpty('title', _get('title', '', pub)) +
+        _strOrEmpty('journal', _get('where', '',
+            _get('pub',  {}, pub))) +
+        _strOrEmpty('year', _get('year', '',
+            _get('pub',  {}, pub))) +
+        _strOrEmpty('doi', _get('doi', '', pub)) +
+        _strOrEmpty('pdf', _get('pdf', '', pub)) +
+        _strOrEmpty('code', _get('code', '', pub)) +
+        _strOrEmpty('data', _get('data', '', pub)) +
+        '}\n';
+}
+
+function allPubsToBib(publications) {
+    return publications
+        .map(toBibArticle)
+        .join('\n');
+}
