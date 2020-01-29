@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styling.css">
     <title>Pubs</title>
     <script src="publications.js"></script>
     <script src="pubscripts.js"></script>
@@ -8,10 +9,8 @@
 <body onload="go()">
 <script>
     function go() {
-        console.log('Here');
         showPublications(publications);
         selection(publications);
-        console.log('Done');
     }
 </script>
 <div class="pubTypeSelection" id="pubTypeSelection"></div>
