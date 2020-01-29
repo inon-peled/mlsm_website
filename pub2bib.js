@@ -1,9 +1,6 @@
 /* TODO:
-1. Aliasghar's thesis.
-2. Add "thesis" publication type.
-3. Enforce array of full author names.
-4. Add optional publisher field.
-5. Encode non-ascii characters in both html and bib.
+* Aliasghar's thesis.
+* MSc theses
 */
 
 function _toPlainEnglishLowercase(str) {
@@ -71,18 +68,30 @@ function _strOrEmpty(what, string) {
     return string ? ('    ' + what + ' = {' + string + '},\n') : '';
 }
 
+function _bibNoteLinks(links) {
+    function _noteOrEmpty(what) {
+        const string = _get(what, '', links);
+        return string ? (what + '={' + string + '}') : '';
+    }
+    return [
+        _noteOrEmpty('pdf'),
+        _noteOrEmpty('code'),
+        _noteOrEmpty('data')
+    ].filter(function (e) { return e !== ''})
+    .join(', ');
+}
+
 function toBibArticle(pub) {
     return '@article{' + _getBibEntryIdentifier(pub) + '\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
-        _strOrEmpty('journal', _get('where', '',
-            _get('pub',  {}, pub))) +
-        _strOrEmpty('year', _get('year', '',
-            _get('pub',  {}, pub))) +
-        _strOrEmpty('doi', _get('doi', '', pub)) +
-        _strOrEmpty('pdf', _get('pdf', '', pub)) +
-        _strOrEmpty('code', _get('code', '', pub)) +
-        _strOrEmpty('data', _get('data', '', pub)) +
+        _strOrEmpty('journal', _get('where', '', pub)) +
+        _strOrEmpty('publisher', _get('publisher', '', pub)) +
+        _strOrEmpty('volume', _get('volume', '', pub)) +
+        _strOrEmpty('number', _get('number', '', pub)) +
+        _strOrEmpty('year', _get('year', '', pub)) +
+        _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
+        _strOrEmpty('note', _bibNoteLinks(_get('links', {}, pub))) +
         '}\n';
 }
 
