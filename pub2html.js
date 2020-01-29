@@ -128,6 +128,16 @@ function getPubTypeImage(pubType) {
     return imgTag;
 }
 
+function getWhereAndWhenPublished(pub) {
+    return [
+        (pub['where'] || ''),
+        (pub['volume'] ? ('Vol. ' + pub['volume']) : ''),
+        (pub['number'] ? ('No. ' + pub['number']) : ''),
+        (pub['year'] || ''),
+    ].filter(function (e) { return e; })
+    .join(', ')
+}
+
 function onePubToHtml(pub) {
     function link(pub, linkKey, linkName) {
         return !pub.links[linkKey] ? '' : '<span class="pubLink"> <a target="_blank" href="' +
@@ -146,9 +156,8 @@ function onePubToHtml(pub) {
         link(pub, 'code', 'Code') +
         link(pub, 'data', 'Data') +
         '</div>\n' +
-        '<div class="pubWhereAndWhen">in ' +
-        pub.where + ', ' +
-        pub.year +
+        '<div class="pubWhereAndWhen">' +
+        'in ' + getWhereAndWhenPublished(pub) +
         '</div>' +
         '</div>';
 }
