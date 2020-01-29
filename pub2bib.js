@@ -85,7 +85,7 @@ function _bibNoteLinks(links) {
 
 function _toBibArticle(pub) {
     return '@article{' +
-        _getBibEntryIdentifier(pub) + '\n' +
+        _getBibEntryIdentifier(pub) + ',\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
         _strOrEmpty('journal', _get('where', '', pub)) +
@@ -100,7 +100,7 @@ function _toBibArticle(pub) {
 
 function _toBibPhdThesis(pub) {
     return '@phdthesis{' +
-        _getBibEntryIdentifier(pub) + '\n' +
+        _getBibEntryIdentifier(pub) + ',\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
         _strOrEmpty('school', _get('where', '', pub)) +
@@ -112,7 +112,7 @@ function _toBibPhdThesis(pub) {
 
 function _toBibBook(pub) {
     return '@incollection{' +
-        _getBibEntryIdentifier(pub) + '\n' +
+        _getBibEntryIdentifier(pub) + ',\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
         _strOrEmpty('booktitle', _get('where', '', pub)) +
@@ -125,7 +125,7 @@ function _toBibBook(pub) {
 
 function _toBibConference(pub) {
     return '@conference{' +
-        _getBibEntryIdentifier(pub) + '\n' +
+        _getBibEntryIdentifier(pub) + ',\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
         _strOrEmpty('booktitle', _get('where', '', pub)) +
@@ -137,7 +137,7 @@ function _toBibConference(pub) {
 
 function _toBibMisc(pub) {
     return '@misc{' +
-        _getBibEntryIdentifier(pub) + '\n' +
+        _getBibEntryIdentifier(pub) + ',\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
         _strOrEmpty('howpublished', _get('where', '', pub)) +
