@@ -2,7 +2,10 @@
 {
         "type": "",
         "title": "",
-        "authors": ["Doe, John"],
+        "authors": [
+            "Doe, John",
+            "J{\\o}rgen, Gar{\\c{c}}on"
+        ],
         "where": "",
         "year": null
         "links": {
@@ -181,7 +184,7 @@ const publications = [
         "title": "A blockchain-based user-centric emission monitoring and trading system for multi-modal mobility",
         "authors": [
             "Eckert, Johannes",
-            "L{\'o}pez, David",
+            "L{\\'o}pez, David",
             "Azevedo, Carlos Lima",
             "Farooq, Bilal"
         ],
@@ -379,7 +382,7 @@ const publications = [
         "authors": [
             "Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
-            "Silva, Jo{\~a}o de Abreu e",
+            "Silva, Jo{\\~a}o de Abreu e",
             "Nielsen, Otto Anker",
             "Pereira, Francisco Camara"
         ],
@@ -418,7 +421,7 @@ const publications = [
         "authors": [
             "Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
-            "Silva, Jo{\~a}o de Abreu e",
+            "Silva, Jo{\\~a}o de Abreu e",
             "Nielsen, Otto Anker",
             "Pereira, Francisco Camara"
         ],
@@ -657,8 +660,8 @@ const publications = [
         "authors": [
             "Kinra, Aseem",
             "Kashi, Samaneh Beheshti",
-            "Pereira, Francisco C{\^a}mara",
-            "Combes, Fran{\c{c}}ois",
+            "Pereira, Francisco C{\\^a}mara",
+            "Combes, Fran{\\c{c}}ois",
             "Rothengatter, Werner"
         ],
         "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
@@ -801,7 +804,7 @@ const publications = [
         "authors": [
             "Servizi, Valentino",
             "Kosta, Sokol",
-            "Hammersh{\o}j, Allan Dyhr",
+            "Hammersh{\\o}j, Allan Dyhr",
             "Olesen, Henning"
         ],
         "where": "Proceedings of Conference on Information and Knowledge Management",
@@ -867,7 +870,7 @@ const publications = [
         "title": "Learning Supervised Topic Models for Classification and Regression from Crowds",
         "authors": [
             "Rodrigues, Filipe",
-            "Louren{\c{c}}o, Mariana",
+            "Louren{\\c{c}}o, Mariana",
             "Ribeiro, Bernardete",
             "Pereira, Francisco Camara"
         ],
@@ -964,7 +967,7 @@ const publications = [
         "title": "Using internet search queries to predict human mobility in social events",
         "authors": [
             "Borysov, Stanislav",
-            "Louren{\c{c}}o, Mariana",
+            "Louren{\\c{c}}o, Mariana",
             "Rodrigues, Filipe",
             "Balatsky, Alexander",
             "Pereira, Francisco Camara"
@@ -1201,7 +1204,7 @@ const publications = [
         "title": "Logical Entity Level Sentiment Analysis",
         "authors": [
             "Petersen, Niklas Christoffer",
-            "Villadsen, J{\o}rgen"
+            "Villadsen, J{\\o}rgen"
         ],
         "where": "International Conference on Formal Grammar",
         "year": 2017,

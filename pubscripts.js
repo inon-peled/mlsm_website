@@ -1,10 +1,10 @@
 function latexToHtml(string) {
     return string
-        .replace("{\'o}", "&oacute;")
-        .replace("{\o}", "&oslash;")
-        .replace("{\~a}", "&atilde;")
-        .replace("{\^a}", "&acirc;")
-        .replace("{\c{c}}", "&ccedil;")
+        .replace("{\\'o}", "&oacute;")
+        .replace("{\\o}", "&oslash;")
+        .replace("{\\~a}", "&atilde;")
+        .replace("{\\^a}", "&acirc;")
+        .replace("{\\c{c}}", "&ccedil;")
 }
 
 function getPubType(item) {
