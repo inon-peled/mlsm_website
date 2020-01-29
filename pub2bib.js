@@ -17,9 +17,8 @@ function _get(item, dflt, collection) {
 
 function _getFirstAuthorSurname(authors) {
     if (Array.isArray(authors)) {
-        return _get(0, 'unknown unknown', authors)
-            .split(' ')
-            .slice(-1)
+        return _get(0, 'wxyz, wxyz', authors)
+            .split(', ')
             [0];
     } else {
         return authors.split(',')[0]
@@ -49,7 +48,7 @@ function _getFirstWordInTitleForBibIdentifier(title) {
 
 function _getBibEntryIdentifier(pub) {
     return _toPlainEnglishLowercase(_getFirstAuthorSurname(_get('authors', '', pub))) +
-        _get('year', '0000', _get('pub', {}, pub)) +
+        _get('year', '0000', pub) +
         _getFirstWordInTitleForBibIdentifier(_get('title', '', pub));
 }
 
@@ -82,7 +81,8 @@ function _bibNoteLinks(links) {
 }
 
 function toBibArticle(pub) {
-    return '@article{' + _getBibEntryIdentifier(pub) + '\n' +
+    return '@article{' +
+        _getBibEntryIdentifier(pub) + '\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
         _strOrEmpty('journal', _get('where', '', pub)) +
@@ -95,8 +95,34 @@ function toBibArticle(pub) {
         '}\n';
 }
 
+
+function toBibPhdThesis(pub) {
+    return '@phdthesis{' +
+        _getBibEntryIdentifier(pub) + '\n' +
+        _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
+        _strOrEmpty('title', _get('title', '', pub)) +
+        _strOrEmpty('school', _get('where', '', pub)) +
+        _strOrEmpty('year', _get('year', '', pub)) +
+        _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
+        _strOrEmpty('note', _bibNoteLinks(_get('links', {}, pub))) +
+        '}\n';
+}
+
+function toBibBook(pub) {
+    return '@incollection{' +
+        _getBibEntryIdentifier(pub) + '\n' +
+        _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
+        _strOrEmpty('title', _get('title', '', pub)) +
+        _strOrEmpty('booktitle', _get('where', '', pub)) +
+        _strOrEmpty('publisher', _get('publisher', '', pub)) +
+        _strOrEmpty('year', _get('year', '', pub)) +
+        _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
+        _strOrEmpty('note', _bibNoteLinks(_get('links', {}, pub))) +
+        '}\n';
+}
+
 function allPubsToBib(publications) {
     return publications
-        .map(toBibArticle)
+        .map(toBibBook)
         .join('\n');
 }
