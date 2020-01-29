@@ -83,7 +83,7 @@ function _bibNoteLinks(links) {
         .join(', ');
 }
 
-function toBibArticle(pub) {
+function _toBibArticle(pub) {
     return '@article{' +
         _getBibEntryIdentifier(pub) + '\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
@@ -98,7 +98,7 @@ function toBibArticle(pub) {
         '}\n';
 }
 
-function toBibPhdThesis(pub) {
+function _toBibPhdThesis(pub) {
     return '@phdthesis{' +
         _getBibEntryIdentifier(pub) + '\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
@@ -110,7 +110,7 @@ function toBibPhdThesis(pub) {
         '}\n';
 }
 
-function toBibBook(pub) {
+function _toBibBook(pub) {
     return '@incollection{' +
         _getBibEntryIdentifier(pub) + '\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
@@ -123,7 +123,7 @@ function toBibBook(pub) {
         '}\n';
 }
 
-function toBibConference(pub) {
+function _toBibConference(pub) {
     return '@conference{' +
         _getBibEntryIdentifier(pub) + '\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
@@ -135,8 +135,33 @@ function toBibConference(pub) {
         '}\n';
 }
 
+function _toBibMisc(pub) {
+    return '@misc{' +
+        _getBibEntryIdentifier(pub) + '\n' +
+        _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
+        _strOrEmpty('title', _get('title', '', pub)) +
+        _strOrEmpty('howpublished', _get('where', '', pub)) +
+        _strOrEmpty('publisher', _get('publisher', '', pub)) +
+        _strOrEmpty('volume', _get('volume', '', pub)) +
+        _strOrEmpty('number', _get('number', '', pub)) +
+        _strOrEmpty('year', _get('year', '', pub)) +
+        _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
+        _strOrEmpty('note', _bibNoteLinks(_get('links', {}, pub))) +
+        '}\n';
+}
+
+function _toBibOnePub(pub) {
+    return {
+        book: _toBibBook,
+        conference: _toBibConference,
+        article: _toBibArticle,
+        phdthesis: _toBibPhdThesis,
+        misc: _toBibMisc
+    }[_get('type', 'misc', pub)](pub);
+}
+
 function allPubsToBib(publications) {
     return publications
-        .map(toBibConference)
+        .map(_toBibOnePub)
         .join('\n');
 }
