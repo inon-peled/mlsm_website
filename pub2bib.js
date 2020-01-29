@@ -67,20 +67,10 @@ function _strOrEmpty(what, string) {
     return string ? ('    ' + what + ' = {' + string + '},\n') : '';
 }
 
-function _bibNoteLinks(links) {
-    function _noteOrEmpty(what) {
-        const string = _get(what, '', links);
-        return string ? (what + '={' + string + '}') : '';
-    }
-
-    return [
-        _noteOrEmpty('pdf'),
-        _noteOrEmpty('code'),
-        _noteOrEmpty('data')
-    ].filter(function (e) {
-        return e !== ''
-    })
-        .join(', ');
+function _bibLinks(links) {
+    return _strOrEmpty('pdf', _get('pdf', '', links)) +
+        _strOrEmpty('code', _get('code', '', links)) +
+        _strOrEmpty('data', _get('data', '', links));
 }
 
 function _toBibArticle(pub) {
@@ -92,9 +82,10 @@ function _toBibArticle(pub) {
         _strOrEmpty('publisher', _get('publisher', '', pub)) +
         _strOrEmpty('volume', _get('volume', '', pub)) +
         _strOrEmpty('number', _get('number', '', pub)) +
+        _strOrEmpty('pages', _get('pages', '', pub)) +
         _strOrEmpty('year', _get('year', '', pub)) +
         _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
-        _strOrEmpty('note', _bibNoteLinks(_get('links', {}, pub))) +
+        _bibLinks(_get('links', {}, pub)) +
         '}\n';
 }
 
@@ -106,7 +97,7 @@ function _toBibPhdThesis(pub) {
         _strOrEmpty('school', _get('where', '', pub)) +
         _strOrEmpty('year', _get('year', '', pub)) +
         _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
-        _strOrEmpty('note', _bibNoteLinks(_get('links', {}, pub))) +
+        _bibLinks(_get('links', {}, pub)) +
         '}\n';
 }
 
@@ -117,9 +108,10 @@ function _toBibBook(pub) {
         _strOrEmpty('title', _get('title', '', pub)) +
         _strOrEmpty('booktitle', _get('where', '', pub)) +
         _strOrEmpty('publisher', _get('publisher', '', pub)) +
+        _strOrEmpty('pages', _get('pages', '', pub)) +
         _strOrEmpty('year', _get('year', '', pub)) +
         _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
-        _strOrEmpty('note', _bibNoteLinks(_get('links', {}, pub))) +
+        _bibLinks(_get('links', {}, pub)) +
         '}\n';
 }
 
@@ -129,9 +121,10 @@ function _toBibConference(pub) {
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
         _strOrEmpty('booktitle', _get('where', '', pub)) +
+        _strOrEmpty('pages', _get('pages', '', pub)) +
         _strOrEmpty('year', _get('year', '', pub)) +
         _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
-        _strOrEmpty('note', _bibNoteLinks(_get('links', {}, pub))) +
+        _bibLinks(_get('links', {}, pub)) +
         '}\n';
 }
 
@@ -144,9 +137,10 @@ function _toBibMisc(pub) {
         _strOrEmpty('publisher', _get('publisher', '', pub)) +
         _strOrEmpty('volume', _get('volume', '', pub)) +
         _strOrEmpty('number', _get('number', '', pub)) +
+        _strOrEmpty('pages', _get('pages', '', pub)) +
         _strOrEmpty('year', _get('year', '', pub)) +
         _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
-        _strOrEmpty('note', _bibNoteLinks(_get('links', {}, pub))) +
+        _bibLinks(_get('links', {}, pub)) +
         '}\n';
 }
 

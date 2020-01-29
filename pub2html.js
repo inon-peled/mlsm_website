@@ -133,6 +133,7 @@ function getWhereAndWhenPublished(pub) {
         (pub['where'] || ''),
         (pub['volume'] ? ('Vol. ' + pub['volume']) : ''),
         (pub['number'] ? ('No. ' + pub['number']) : ''),
+        (pub['pages'] ? ('pp. ' + pub['pages']) : ''),
         (pub['year'] || ''),
     ].filter(function (e) { return e; })
     .join(', ')
