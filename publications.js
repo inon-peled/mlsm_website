@@ -275,7 +275,8 @@ const publications = [
             "Rodrigues, Filipe",
             "Pereira, Francisco Camara"
         ],
-        "where": "Expert Systems with Applications, Volume 120",
+        "where": "Expert Systems with Applications",
+        "volume": 120,
         "year": 2019,
         "links": {
             "doi": "https://doi.org/10.1016/j.eswa.2018.11.028",
@@ -1149,7 +1150,9 @@ const publications = [
             "Zhao, Jinhua",
             "Koutsopoulos, Harilaos N"
         ],
-        "where": "IEEE Transactions on Intelligent Transportation Systems, Vol. 17, No. 11",
+        "where": "IEEE Transactions on Intelligent Transportation Systems",
+        "volume": 17,
+        "number": 11,
         "year": 2016,
         "links": {
             "doi": "https://doi.org/10.1109/TITS.2016.2547184",
