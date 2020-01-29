@@ -619,8 +619,8 @@ const publications = [
         "type": "book",
         "title": "Data Preparation",
         "authors": [
-            "Henrickson, Kristian, ",
-            "Rodrigues, Filipe, ",
+            "Henrickson, Kristian",
+            "Rodrigues, Filipe",
             "Pereira, Francisco Camara"
         ],
         "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
