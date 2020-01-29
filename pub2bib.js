@@ -72,12 +72,15 @@ function _bibNoteLinks(links) {
         const string = _get(what, '', links);
         return string ? (what + '={' + string + '}') : '';
     }
+
     return [
         _noteOrEmpty('pdf'),
         _noteOrEmpty('code'),
         _noteOrEmpty('data')
-    ].filter(function (e) { return e !== ''})
-    .join(', ');
+    ].filter(function (e) {
+        return e !== ''
+    })
+        .join(', ');
 }
 
 function toBibArticle(pub) {
@@ -94,7 +97,6 @@ function toBibArticle(pub) {
         _strOrEmpty('note', _bibNoteLinks(_get('links', {}, pub))) +
         '}\n';
 }
-
 
 function toBibPhdThesis(pub) {
     return '@phdthesis{' +
@@ -121,8 +123,20 @@ function toBibBook(pub) {
         '}\n';
 }
 
+function toBibConference(pub) {
+    return '@conference{' +
+        _getBibEntryIdentifier(pub) + '\n' +
+        _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
+        _strOrEmpty('title', _get('title', '', pub)) +
+        _strOrEmpty('booktitle', _get('where', '', pub)) +
+        _strOrEmpty('year', _get('year', '', pub)) +
+        _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
+        _strOrEmpty('note', _bibNoteLinks(_get('links', {}, pub))) +
+        '}\n';
+}
+
 function allPubsToBib(publications) {
     return publications
-        .map(toBibBook)
+        .map(toBibConference)
         .join('\n');
 }
