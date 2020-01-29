@@ -749,7 +749,7 @@ const publications = [
             "Azevedo, Carlos Lima",
             "Zegras, P. Christopher",
             "Ferreira, Joseph",
-            "Ben-Akiva Moshe"
+            "Ben-Akiva, Moshe"
         ],
         "where": "7th Conference on Innovations in Travel Modeling, Transportation Research Board",
         "year": 2018,

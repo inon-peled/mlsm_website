@@ -1,5 +1,8 @@
 function getPubType(item) {
-    return item.type ? item.type : "other";
+    const typeNamesForDisplay = {
+        'phdthesis': 'thesis',
+    };
+    return item.type ? (typeNamesForDisplay[item.type] || item.type) : "other";
 }
 
 function publishedPubTypes(pubsObj) {
@@ -82,24 +85,24 @@ function selection(pubs) {
     selDiv.innerHTML += '<div class="pub-su-divider pub-su-divider-style-default" style="margin:15px 0;border-width:1px;border-color:#990000"></div>';
 }
 
-function getPubTypeClass(pub) {
-    return pub['type'] ? pub['type'] : 'unknownPubType';
-}
-
 function getAuthorsString(authors) {
     function toStylizedString(author) {
-        const surname = author.split(" ").slice(-1);
-        const initials = author.split(" ").slice(0, -1).map(function (s) {
+        if (author.indexOf(',') < 0) {
+            console.log(author)
+        }
+        const surname = author.split(", ")[0];
+        const initials = author.split(", ")[1].split(" ").map(function (s) {
             return s[0].toUpperCase() + '.';
         }).join(" ");
         return surname + ", " + initials;
     }
 
-    return (typeof authors === 'string' ? authors : authors.map(toStylizedString).join(", ")) + "\n";
+    return (typeof authors === 'string') ? authors : authors.map(toStylizedString).join(", ") + "\n";
 }
 
 function getPubTypeImage(pubType) {
     imgs = {
+        thesis: {src: "/wp-content/uploads/2020/01/graduate_cap.png", alt: 'PhDThesis'},
         article: {src: "/wp-content/uploads/2020/01/journal.png", alt: 'Article'},
         techreport: {src: "/wp-content/uploads/2020/01/techreport.png", alt: 'Technical Report'},
         conference: {src: "/wp-content/uploads/2020/01/presentation.png", alt: 'Conference'},
