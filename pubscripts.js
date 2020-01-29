@@ -130,8 +130,8 @@ function getPubTypeImage(pubType) {
 
 function onePubToHtml(pub) {
     function link(pub, linkKey, linkName) {
-        return !pub.links[linkKey] ? '' : '<span class="pubLink"><a target="_blank" href="' +
-            pub.links[linkKey] + '" rel="noopener noreferrer"> [' + linkName + ']</a></span>';
+        return !pub.links[linkKey] ? '' : '<span class="pubLink"> <a target="_blank" href="' +
+            pub.links[linkKey] + '" rel="noopener noreferrer">[' + linkName + ']</a></span>';
     }
 
     return '<div class="pubDetails pubType_' + getPubType(pub) + '">\n' +
