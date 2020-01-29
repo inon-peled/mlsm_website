@@ -1,3 +1,12 @@
+function latexToHtml(string) {
+    return string
+        .replace("{\'o}", "&oacute;")
+        .replace("{\o}", "&oslash;")
+        .replace("{\~a}", "&atilde;")
+        .replace("{\^a}", "&acirc;")
+        .replace("{\c{c}}", "&ccedil;")
+}
+
 function getPubType(item) {
     const typeNamesForDisplay = {
         'phdthesis': 'thesis',
@@ -94,7 +103,7 @@ function getAuthorsString(authors) {
         const initials = author.split(", ")[1].split(" ").map(function (s) {
             return s[0].toUpperCase() + '.';
         }).join(" ");
-        return surname + ", " + initials;
+        return latexToHtml(surname) + ", " + latexToHtml(initials);
     }
 
     return (typeof authors === 'string') ? authors : authors.map(toStylizedString).join(", ") + "\n";
