@@ -46,11 +46,22 @@ function _getFirstWordInTitleForBibIdentifier(title) {
     );
 }
 
-/* TODO: unique identifier, as possible duplicates are conference + article */
+function _getPubtypeAsNumberForUniqueness(pubType) {
+    return _get(pubType, 'other', {
+        'other': 0,
+        'book': 1,
+        'article': 2,
+        'conference': 3,
+        'phdthesis': 4,
+        'misc': 5
+    });
+}
+
 function _getBibEntryIdentifier(pub) {
     return _toPlainEnglishLowercase(_getFirstAuthorSurname(_get('authors', '', pub))) +
         _get('year', '0000', pub) +
-        _getFirstWordInTitleForBibIdentifier(_get('title', '', pub));
+        _getFirstWordInTitleForBibIdentifier(_get('title', '', pub)) +
+        _getPubtypeAsNumberForUniqueness(_get('type', 'unknownPubType', pub));
 }
 
 function _getAuthorsForBibEntry(pub) {
