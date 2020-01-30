@@ -91,7 +91,6 @@ function selection(pubs) {
             capitalizeFirstLetter(pubTypesToFilter[i]))
     }
     activateButton('all');
-    selDiv.innerHTML += '<div class="pub-su-divider pub-su-divider-style-default" style="margin:15px 0;border-width:1px;border-color:#990000"></div>';
 }
 
 function getAuthorsString(authors) {
