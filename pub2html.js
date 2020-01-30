@@ -3,7 +3,7 @@ function downloadPubsNotIE(fileName, contents, contentType) {
     element.style.display = 'none';
     element.setAttribute(
         'href',
-        'data:' + contentType + contents);
+        'data:' + contentType + encodeURIComponent(contents));
     element.setAttribute(
         'download',
         fileName);
