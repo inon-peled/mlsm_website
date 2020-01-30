@@ -16,6 +16,23 @@ function downloadPubsAsBib(pubs) {
     return downloadPubs('mlsm.bib', allPubsToBib(pubs))
 }
 
+function sortPubs(pubs) {
+    function toComparisonString(pub) {
+        return _get('year', '0000', pub) +
+            _get('month', '00', pub) +
+            _get('day', '00', pub) +
+            _toPlainEnglishLowercase(_getFirstAuthorSurname(_get('authors', '', pub))) +
+            _getFirstWordInTitleForBibIdentifier(_get('title', '', pub)) +
+            _getPubtypeAsNumberForUniqueness(_get('type', 'unknownPubType', pub));
+    }
+    return pubs.sort(function (pub1, pub2) {
+        s1 = toComparisonString(pub1);
+        s2 = toComparisonString(pub2);
+        return (s1 < s2) ? -1 : (s1 > s2 ? 1 : 0);
+    }).reverse();
+
+}
+
 function sortObjectKeysShallow(obj) {
     return Object.fromEntries(Object.entries(obj).sort());
 }
@@ -30,8 +47,9 @@ function addJsonIdentifiers(pubs) {
 }
 
 function downloadPubsAsJson(pubs) {
-
-    return downloadPubs('mlsm.json', JSON.stringify(addJsonIdentifiers(pubs), null, '\t'))
+    return downloadPubs(
+        'mlsm.json',
+        JSON.stringify(addJsonIdentifiers(pubs), null, '\t'))
 }
 
 function addDownloadButton(btnId, btnText) {
@@ -47,7 +65,7 @@ function addClickListernerToDownloadButton(pubs, btnId, func) {
     return document
         .getElementById(btnId)
         .addEventListener("click", function () {
-            func(pubs);
+            func(sortPubs(pubs));
         }, false);
 }
 
