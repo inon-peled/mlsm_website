@@ -17,6 +17,18 @@
   display: table;
 }
 
+.downloadBtn {
+    border: none;
+    outline: none;
+    padding: 3px 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.downloadBtn:hover {
+    background-color: #ddd;
+}
+
 .pubSepBelowButtons {
     border-bottom-style: solid;
     margin: 11px 0;

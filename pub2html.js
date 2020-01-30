@@ -20,23 +20,28 @@ function downloadPubsAsJson(pubs) {
     return downloadPubs('mlsm.json', JSON.stringify(pubs, null, '\t'))
 }
 
-function showDownloading(pubs) {
-    function addDownloadButton(btnId, btnText, onclickFunc) {
-        pubDownloading = document.getElementById("pubDownloading");
-        pubDownloading.innerHTML += '<button ' +
-        ' class=downloadButton' +
-        ' id = ' + btnId +
+function addDownloadButton(btnId, btnText) {
+    pubDownloading = document.getElementById("pubDownloading");
+    pubDownloading.innerHTML += '<button ' +
+        ' class=downloadBtn' +
+        ' id=' + btnId +
         '>' + btnText +
         '</button>\n';
-        document
-            .getElementById(btnId)
-            .addEventListener("click", function () {
-                onclickFunc(pubs);
-            }, false);
-    }
+}
 
-    addDownloadButton('bibDonwloadBtn', 'Download bib', downloadPubsAsBib);
-    addDownloadButton('jsonDonwloadBtn', 'json', downloadPubsAsJson)
+function addClickListernerToDownloadButton(pubs, btnId, func) {
+    return document
+        .getElementById(btnId)
+        .addEventListener("click", function () {
+            func(pubs);
+        }, false);
+}
+
+function showDownloading(pubs) {
+    addDownloadButton('bibDownloadBtn', 'Download BibTeX');
+    addDownloadButton('jsonDownloadBtn', 'JSON');
+    addClickListernerToDownloadButton(pubs, 'bibDownloadBtn', downloadPubsAsBib);
+    addClickListernerToDownloadButton(pubs, 'jsonDownloadBtn', downloadPubsAsJson)
 }
 
 function latexToHtml(string) {
