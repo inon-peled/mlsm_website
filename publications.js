@@ -224,6 +224,7 @@ const publications = [
             "Pereira, Francisco Camara"
         ],
         "where": "DTU International Energy Report 2019: Transforming Urban Mobility",
+        "publisher": "DTU",
         "year": 2019,
         "links": {
             "doi": "",
