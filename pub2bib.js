@@ -1,8 +1,3 @@
-/* TODO:
-* Aliasghar's thesis.
-* MSc theses
-*/
-
 function _toPlainEnglishLowercase(str) {
     return str
         .replace(/[\u0300-\u036f]/g, "")
