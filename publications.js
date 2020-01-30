@@ -410,7 +410,7 @@ const publications = [
         "type": "conference",
         "title": "An Active Learning Metamodeling Approach for Policy Analysis: Application to an Emergency Medical Service Simulator",
         "authors": [
-            "!Antunes, Francisco",
+            "!Antunes, Francisco Nibau",
             "Amorim, Marco",
             "Ribeiro, Bernardete",
             "!Pereira, Francisco Camara"
@@ -1010,7 +1010,7 @@ const publications = [
         "type": "article",
         "title": "Efficient Transport Simulation With Restricted Batch-Mode Active Learning",
         "authors": [
-            "!Antunes, Francisco",
+            "!Antunes, Francisco Nibau",
             "Ribeiro, Bernardete",
             "!Pereira, Francisco Camara",
             "Gomes, Rui"
@@ -1120,7 +1120,7 @@ const publications = [
         "type": "article",
         "title": "Probabilistic Modeling and Visualization for Bankruptcy Prediction",
         "authors": [
-            "!Antunes, Francisco",
+            "!Antunes, Francisco Nibau",
             "Ribeiro, Bernardete",
             "!Pereira, Francisco Camara"
         ],
