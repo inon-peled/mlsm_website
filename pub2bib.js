@@ -46,12 +46,12 @@ function _getFirstWordInTitleForBibIdentifier(title) {
     );
 }
 
+/* TODO: unique identifier, as possible duplicates are conference + article */
 function _getBibEntryIdentifier(pub) {
     return _toPlainEnglishLowercase(_getFirstAuthorSurname(_get('authors', '', pub))) +
         _get('year', '0000', pub) +
         _getFirstWordInTitleForBibIdentifier(_get('title', '', pub));
 }
-
 
 function _getAuthorsForBibEntry(pub) {
     function _joinAnd(authors) {

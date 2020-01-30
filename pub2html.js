@@ -1,3 +1,35 @@
+function downloadPubs(fileName, contents) {
+    var element = document.createElement('a');
+    element.style.display = 'none';
+    element.setAttribute(
+        'href',
+        'data:text/plain;charset=utf-8,' + encodeURIComponent(contents));
+    element.setAttribute(
+        'download',
+        fileName);
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+}
+
+function downloadPubsAsBib(pubs) {
+    return downloadPubs('mlsm.bib', allPubsToBib(pubs))
+}
+
+function showDownloading(pubs) {
+    pubDownloading = document.getElementById("pubDownloading");
+    pubDownloading.innerHTML += '<button' +
+        ' class=downloadButton' +
+        ' id=downloadButton' +
+        '>' + 'Download' +
+        '</button>\n';
+    document
+        .getElementById("downloadButton")
+        .addEventListener("click", function() {
+                downloadPubsAsBib(pubs);
+            }, false);
+}
+
 function latexToHtml(string) {
     return string
         .replace("{\\'o}", "&oacute;")
