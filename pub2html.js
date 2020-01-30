@@ -92,10 +92,20 @@ function getPubType(item) {
     return item.type ? (typeNamesForDisplay[item.type] || item.type) : "other";
 }
 
+function _uniqueValues(arr) {
+    var uniques = [];
+    for (var i = 0 ; i < arr.length ; i++) {
+        if (uniques.indexOf(arr[i]) < 0) {
+            uniques.push(arr[i])
+        }
+    }
+    return uniques;
+}
+
 function publishedPubTypes(pubsObj) {
-    return Array.from(new Set(pubsObj.map(function (item) {
+    return _uniqueValues(pubsObj.map(function (item) {
         return getPubType(item);
-    }))).sort();
+    })).sort();
 }
 
 function toggleYears() {
