@@ -1,4 +1,4 @@
-function downloadPubs(fileName, contents) {
+function downloadNotIE(fileName, contents) {
     var element = document.createElement('a');
     element.style.display = 'none';
     element.setAttribute(
@@ -12,8 +12,20 @@ function downloadPubs(fileName, contents) {
     document.body.removeChild(element);
 }
 
+function downloadIE(fileName, contents) {
+    return navigator
+        .msSaveBlob(new Blob(
+            [contents],
+            { type: 'text/plain;charset=utf-8;' }
+            ), fileName);
+}
+
+function download(fileName, contents) {
+    return navigator.msSaveBlob ? downloadIE(fileName, contents) : downloadNotIE(fileName, contents);
+}
+
 function downloadPubsAsBib(pubs) {
-    return downloadPubs('mlsm.bib', allPubsToBib(pubs))
+    return download('mlsm.bib', allPubsToBib(pubs));
 }
 
 function sortPubs(pubs) {
@@ -34,7 +46,12 @@ function sortPubs(pubs) {
 }
 
 function sortObjectKeysShallow(obj) {
-    return Object.fromEntries(Object.entries(obj).sort());
+    var sortedObj = {};
+    var keysSorted = Object.keys(obj).sort();
+    for (var i = 0 ; i < keysSorted.length ; i++) {
+        sortedObj[keysSorted[i]] = obj[keysSorted[i]];
+    }
+    return sortedObj;
 }
 
 function addJsonIdentifiers(pubs) {
@@ -47,9 +64,10 @@ function addJsonIdentifiers(pubs) {
 }
 
 function downloadPubsAsJson(pubs) {
-    return downloadPubs(
+    console.log('Meow');
+    return download(
         'mlsm.json',
-        JSON.stringify(addJsonIdentifiers(pubs), null, '\t'))
+        JSON.stringify(addJsonIdentifiers(pubs), null, '\t'));
 }
 
 function addDownloadButton(btnId, btnText) {
