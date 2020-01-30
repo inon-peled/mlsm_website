@@ -368,7 +368,8 @@ const publications = [
             "Zhao, Fang",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Journal of Choice Modelling, Elsevier",
+        "where": "Journal of Choice Modelling",
+        "publisher": "Elsevier",
         "year": 2019,
         "links": {
             "doi": "https://doi.org/10.1016/j.jocm.2019.03.001",
