@@ -1,9 +1,9 @@
-function downloadNotIE(fileName, contents, contentType) {
+function downloadPubsNotIE(fileName, contents, contentType) {
     var element = document.createElement('a');
     element.style.display = 'none';
     element.setAttribute(
         'href',
-        contentType + encodeURIComponent(contents));
+        'data:' + contentType + contents);
     element.setAttribute(
         'download',
         fileName);
@@ -12,7 +12,7 @@ function downloadNotIE(fileName, contents, contentType) {
     document.body.removeChild(element);
 }
 
-function downloadIE(fileName, contents, contentType) {
+function downloadPubsIE(fileName, contents, contentType) {
     return navigator
         .msSaveBlob(new Blob(
             [contents],
@@ -20,14 +20,14 @@ function downloadIE(fileName, contents, contentType) {
             ), fileName);
 }
 
-function download(fileName, contents, contentType) {
+function downloadPubs(fileName, contents, contentType) {
     return navigator.msSaveBlob ?
-        downloadIE(fileName, contents, contentType) :
-        downloadNotIE(fileName, contents, contentType);
+        downloadPubsIE(fileName, contents, contentType) :
+        downloadPubsNotIE(fileName, contents, contentType);
 }
 
 function downloadPubsAsBib(pubs) {
-    return download('mlsm.bib', allPubsToBib(pubs), 'text/plain;charset=utf-8;');
+    return downloadPubs('mlsm.bib', allPubsToBib(pubs), 'text/plain;charset=utf-8,');
 }
 
 function sortPubs(pubs) {
@@ -66,10 +66,10 @@ function addJsonIdentifiers(pubs) {
 }
 
 function downloadPubsAsJson(pubs) {
-    return download(
+    return downloadPubs(
         'mlsm.json',
         JSON.stringify(addJsonIdentifiers(pubs), null, '\t'),
-        'application/json;charset=utf-8;');
+        'application/json;charset=utf-8,');
 }
 
 function addDownloadButton(btnId, btnText) {
