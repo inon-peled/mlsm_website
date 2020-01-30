@@ -10,13 +10,10 @@ function _get(item, dflt, collection) {
 }
 
 function _getFirstAuthorSurname(authors) {
-    if (Array.isArray(authors)) {
-        return _get(0, 'wxyz, wxyz', authors)
-            .split(', ')
-            [0];
-    } else {
-        return authors.split(',')[0]
-    }
+    return _get(0, 'wxyz, wxyz', authors)
+        .replace('!', '')
+        .split(', ')
+        [0];
 }
 
 function _arrayIncludes(arr, element) {
@@ -64,9 +61,7 @@ function _getBibEntryIdentifier(pub) {
 
 function _getAuthorsForBibEntry(pub) {
     function _joinAnd(authors) {
-        return Array.isArray(authors) ?
-            authors.join(' and ') :
-            authors;
+        return authors.map(function (s) { return s.replace('!', ''); }).join(' and ');
     }
 
     return _joinAnd(_get('authors', '', pub));

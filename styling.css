@@ -17,6 +17,11 @@
   display: table;
 }
 
+.mlsmAuthor {
+    color: #990000;
+    font-style: italic;
+}
+
 .pubButtons {
     margin-top: 5px;
 }

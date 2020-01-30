@@ -65,10 +65,24 @@ function addJsonIdentifiers(pubs) {
         });
 }
 
+function removeExclamationMarksFromAuthorNames(pubs) {
+    return (pubs || []).map(
+        function (pub) {
+            objCopy = JSON.parse(JSON.stringify(pub));
+            for (var i = 0 ; i < objCopy.authors.length ; i++) {
+                objCopy.authors[i] = objCopy.authors[i].replace('!', '');
+            }
+            return objCopy;
+        });
+}
+
 function downloadPubsAsJson(pubs) {
     return downloadPubs(
         'mlsm.json',
-        JSON.stringify(addJsonIdentifiers(pubs), null, '\t'),
+        JSON.stringify(
+            removeExclamationMarksFromAuthorNames(addJsonIdentifiers(pubs)),
+            null,
+            '\t'),
         'text/plain;charset=utf-8,');
 }
 
@@ -201,19 +215,24 @@ function selection(pubs) {
     activateButton('all');
 }
 
-function getAuthorsString(authors) {
-    function toStylizedString(author) {
-        if (author.indexOf(',') < 0) {
-            console.log(author)
-        }
-        const surname = author.split(", ")[0];
-        const initials = author.split(", ")[1].split(" ").map(function (s) {
-            return s[0].toUpperCase() + '.';
-        }).join(" ");
-        return latexToHtml(surname) + ", " + latexToHtml(initials);
-    }
+function toStylizedString(author) {
+    const surname = author.split(", ")[0];
+    const initials = author.split(", ")[1].split(" ").map(function (s) {
+        return s[0].toUpperCase() + '.';
+    }).join(" ");
+    return latexToHtml(surname) + ", " + latexToHtml(initials);
+}
 
-    return (typeof authors === 'string') ? authors : authors.map(toStylizedString).join(", ") + "\n";
+function getAuthorSpan(author) {
+    return '<span' +
+        ' class=' + (author[0] === '!' ? 'mlsmAuthor' : 'nonMlsmAuthor') +
+        '>' +
+        toStylizedString(author[0] === '!' ? author.slice(1) : author) +
+        '</span>';
+}
+
+function getAuthorsString(authors) {
+    return authors.map(getAuthorSpan).join(", ") + "\n";
 }
 
 function getPubTypeImage(pubType) {

@@ -33,7 +33,7 @@ const publications = [
             "Seshadri, Ravi",
             "Atasoy, Bilge",
             "Prakash, A Arun",
-            "Pereira, Francisco",
+            "!Pereira, Francisco Camara",
             "Tan, Gary",
             "Ben-Akiva, Moshe"
         ],
@@ -55,7 +55,7 @@ const publications = [
             "Seshadri, Ravi",
             "Atasoy, Bilge",
             "Akkinepally, Arun",
-            "Pereira, Francisco",
+            "!Pereira, Francisco Camara",
             "Tan, Gary",
             "Ben-Akiva, Moshe"
         ],
@@ -76,7 +76,7 @@ const publications = [
             "Oke, Jimi",
             "Kumar, Nishant",
             "Akkinepally, Arun Prakash",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Ferreira, Joseph",
             "Zegras, P. Christopher",
             "Ben-Akiva, Moshe"
@@ -100,7 +100,7 @@ const publications = [
             "Aboutaleb, Youssef Medhat",
             "Xie, Yifei",
             "Nahmias-Biran, Bat-hen",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Zegras, P. Christopher",
             "Ferreira, Joseph",
             "Ben-Akiva, Moshe"
@@ -118,10 +118,10 @@ const publications = [
         "type": "conference",
         "title": "Gaussian Mixture Models Meet Econometric Models",
         "authors": [
-            "Sfeir, Georges",
+            "!Sfeir, Georges",
             "Abou-Zeid, Maya",
-            "Rodrigues, Filipe",
-            "Pereira, Francisco Camara"
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
         ],
         "where": "Proceedings of the 99th Annual Meeting of the Transportation Research Board",
         "year": 2020,
@@ -136,11 +136,11 @@ const publications = [
         "type": "conference",
         "title": "A Machine Learning Approach to Censored Bike-Sharing Demand Modeling",
         "authors": [
-            "Gammelli, Daniele",
-            "Rodrigues, Filipe",
+            "!Gammeli, Daniele",
+            "!Rodrigues, Filipe",
             "Pacino, Dario",
             "Kurtaran, Haci Ahmet",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "Proceedings of the 99th Annual Meeting of the Transportation Research Board",
         "year": 2020,
@@ -155,8 +155,8 @@ const publications = [
         "type": "conference",
         "title": "Towards Robust Deep Reinforcement Learning for Traffic Signal Control: Demand Surges, Incidents and Sensor Failures",
         "authors": [
-            "Rodrigues, Filipe",
-            "Azevedo, Carlos Lima"
+            "!Rodrigues, Filipe",
+            "!Azevedo, Carlos Lima"
         ],
         "where": "Proceedings of the 2019 IEEE Intelligent Transportation Systems Conference (ITSC)",
         "year": 2019,
@@ -171,11 +171,11 @@ const publications = [
         "type": "conference",
         "title": "Preserving Uncertainty in Demand Prediction for Autonomous Mobility Services",
         "authors": [
-            "Peled, Inon",
+            "!Peled, Inon",
             "Lee, Kelvin",
             "Jiang, Yu",
             "Dauwels, Justin",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "Proceedings of the 2019 IEEE Intelligent Transportation Systems Conference (ITSC)",
         "year": 2019,
@@ -190,9 +190,9 @@ const publications = [
         "type": "article",
         "title": "A blockchain-based user-centric emission monitoring and trading system for multi-modal mobility",
         "authors": [
-            "Eckert, Johannes",
+            "!Eckert, Johannes Benjamin",
             "L{\\'o}pez, David",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Farooq, Bilal"
         ],
         "where": "ArXiV",
@@ -209,7 +209,7 @@ const publications = [
         "title": "Road safety of passing maneuvers: A bivariate extreme value theory approach under non-stationary conditions",
         "authors": [
             "Cavadas, Joana",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Farah, Haneen",
             "Ferreira, Ana"
         ],
@@ -226,9 +226,9 @@ const publications = [
         "type": "book",
         "title": "Smart Mobility",
         "authors": [
-            "Borysov, Stanislav S.",
-            "Azevedo, Carlos Lima",
-            "Pereira, Francisco Camara"
+            "!Borysov, Stanislav",
+            "!Azevedo, Carlos Lima",
+            "!Pereira, Francisco Camara"
         ],
         "where": "DTU International Energy Report 2019: Transforming Urban Mobility",
         "publisher": "DTU",
@@ -244,9 +244,9 @@ const publications = [
         "type": "article",
         "title": "How to generate micro-agents? A deep generative modeling approach to population synthesis",
         "authors": [
-            "Borysov, Stanislav S.",
+            "!Borysov, Stanislav",
             "Rich, Jeppe",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "Transportation Research Part C: Emerging Technologies",
         "year": 2019,
@@ -264,8 +264,8 @@ const publications = [
             "Oke, Olufolajimi",
             "Aboutaleb, Youssef Medhat",
             "Akkinepally, Arun Prakash",
-            "Azevedo, Carlos Lima",
-            "Han, Yafei",
+            "!Azevedo, Carlos Lima",
+            "!Han, Yafei",
             "Zegras, P. Christopher",
             "Ferreira, Joseph",
             "Ben-Akiva, Moshe"],
@@ -282,9 +282,9 @@ const publications = [
         "type": "article",
         "title": "Multi-output bus travel time prediction with convolutional LSTM neural network",
         "authors": [
-            "Petersen, Niklas Christoffer",
-            "Rodrigues, Filipe",
-            "Pereira, Francisco Camara"
+            "!Petersen, Niklas Christopher",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
         ],
         "where": "Expert Systems with Applications",
         "volume": 120,
@@ -302,7 +302,7 @@ const publications = [
         "authors": [
             "Oh, Simon",
             "Seshadri, Ravi",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Ben-Akiva, Moshe E."
         ],
         "where": "Transportation Research Record: Journal of the Transportation Research Board",
@@ -317,7 +317,7 @@ const publications = [
     {
         "type": "phdthesis",
         "title": "Detection, analysis and prediction of traffic anomalies due to special events",
-        "authors": ["Markou, Ioulia"],
+        "authors": ["!Markou, Ioulia"],
         "where": "DTU Management",
         "year": 2019,
         "links": {
@@ -331,9 +331,9 @@ const publications = [
         "type": "article",
         "title": "Predicting taxi demand hotspots using automated Internet Search Queries",
         "authors": [
-            "Markou, Ioulia",
+            "!Markou, Ioulia",
             "Kaiser, Kevin",
-            "Pereira, Francisco Camara"],
+            "!Pereira, Francisco Camara"],
         "where": "Transportation Research Part C: Emerging Technologies",
         "volume": 102,
         "pages": "73--86",
@@ -349,9 +349,9 @@ const publications = [
         "type": "article",
         "title": "Is Travel Demand Actually Deep? An Application in Event Areas Using Semantic Information",
         "authors": [
-            "Markou, Ioulia",
-            "Rodrigues, Filipe",
-            "Pereira, Francisco Camara"
+            "!Markou, Ioulia",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
         ],
         "where": "IEEE Transactions on Intelligent Transportation Systems",
         "year": 2019,
@@ -368,7 +368,7 @@ const publications = [
         "authors": [
             "Danaf, Mazen",
             "Atasoy, Bilge",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Ding-Mastera, Jing",
             "Abou-Zeid, Maya",
             "Cox, Nathaniel",
@@ -389,11 +389,11 @@ const publications = [
         "type": "article",
         "title": "Participating in environmental loyalty program with a real-time multimodal travel app: User needs, environmental and privacy motivators",
         "authors": [
-            "Dastjerdi, Aliasghar Mehdizadeh",
+            "!Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
             "Silva, Jo{\\~a}o de Abreu e",
             "Nielsen, Otto Anker",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "Transportation Research Part D: Transport and Environment",
         "volume": 67,
@@ -410,10 +410,10 @@ const publications = [
         "type": "conference",
         "title": "An Active Learning Metamodeling Approach for Policy Analysis: Application to an Emergency Medical Service Simulator",
         "authors": [
-            "Antunes, Francisco Nibau",
+            "!Antunes, Francisco",
             "Amorim, Marco",
             "Ribeiro, Bernardete",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
         "year": 2019,
@@ -428,11 +428,11 @@ const publications = [
         "type": "conference",
         "title": "Factors Driving The Adoption Of Mobility-Management Travel App: A Bayesian Structural Equation Modelling Analysis",
         "authors": [
-            "Dastjerdi, Aliasghar Mehdizadeh",
+            "!Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
             "Silva, Jo{\\~a}o de Abreu e",
             "Nielsen, Otto Anker",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
         "year": 2019,
@@ -449,7 +449,7 @@ const publications = [
         "authors": [
             "Xie, Yifei",
             "Danaf, Mazen",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Akkinepally, Arun",
             "Atasoy, Bilge",
             "Jeong, Kyungsoo",
@@ -474,7 +474,7 @@ const publications = [
             "Atasoy, Bilge",
             "Danaf, Mazen",
             "Xie, Yifei",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Zhao, Fang",
             "Zegras, P. Christopher",
             "Ben-Akiva, Moshe"
@@ -494,7 +494,7 @@ const publications = [
         "authors": [
             "Chen, Siyu",
             "Akkinepally, Arun",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Ben-Akiva, Moshe"
         ],
         "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
@@ -511,9 +511,9 @@ const publications = [
         "title": "Incorporating the Mobility as a Service Concept into Transport Modelling and Simulation Frameworks",
         "authors": [
             "Kamargianni, Maria",
-            "Yfantis, Lampros",
+            "!Lampros, Yfantis",
             "Muscat, Jakub",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Ben-Akiva, Moshe"
         ],
         "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
@@ -533,7 +533,7 @@ const publications = [
             "Oke, Jimi",
             "Akkinepally, Arun",
             "Nahmias-Biran, Bat-Hen",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Zegras, P. Christopher",
             "Ferreira, Joseph",
             "Ben-Akiva, Moshe"
@@ -554,7 +554,7 @@ const publications = [
             "Araldo, Andrea",
             "Gao, Song",
             "Seshadri, Ravi",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Ghafourian, Hossein",
             "Sui, Yihang",
             "Ayaz, Sayeeda",
@@ -576,7 +576,7 @@ const publications = [
         "authors": [
             "Oh, Simon",
             "Seshadri, Ravi",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Ben-Akiva, Moshe"
         ],
         "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
@@ -598,7 +598,7 @@ const publications = [
             "Basak, Kakali",
             "Araldo, Andrea",
             "Seshadri, Ravi",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Ben-Akiva, Moshe"
         ],
         "where": "Transportation Research Record: Journal of the Transportation Research Board",
@@ -614,8 +614,8 @@ const publications = [
         "type": "book",
         "title": "Machine Learning Fundamentals",
         "authors": [
-            "Pereira, Francisco Camara",
-            "Borysov, Stanislav S."
+            "!Pereira, Francisco Camara",
+            "!Borysov, Stanislav"
         ],
         "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
         "publisher": "Elsevier",
@@ -631,9 +631,9 @@ const publications = [
         "type": "book",
         "title": "Data Preparation",
         "authors": [
-            "Henrickson, Kristian",
-            "Rodrigues, Filipe",
-            "Pereira, Francisco Camara"
+            "!Henrickson, Kristian",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
         ],
         "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
         "publisher": "Elsevier",
@@ -649,9 +649,9 @@ const publications = [
         "type": "book",
         "title": "Model-Based Machine Learning for Transportation",
         "authors": [
-            "Peled, Inon",
-            "Rodrigues, Filipe",
-            "Pereira, Francisco Camara"
+            "!Peled, Inon",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
         ],
         "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
         "publisher": "Elsevier",
@@ -669,7 +669,7 @@ const publications = [
         "authors": [
             "Kinra, Aseem",
             "Kashi, Samaneh Beheshti",
-            "Pereira, Francisco C{\\^a}mara",
+            "!Pereira, Francisco Camara",
             "Combes, Fran{\\c{c}}ois",
             "Rothengatter, Werner"
         ],
@@ -696,7 +696,7 @@ const publications = [
             "Deliali, Aikaterini",
             "Trancik, Jessica",
             "Christofa, Eleni",
-            "Lima de Azevedo, Carlos",
+            "!Azevedo, Carlos Lima",
             "Ben-Akiva, Moshe"
         ],
         "where": "The 21st IEEE International Conference on Intelligent Transportation Systems (IEEE-ITSC)",
@@ -714,7 +714,7 @@ const publications = [
         "authors": [
             "Xie, Yifei",
             "Danaf, Mazen",
-            "Lima de Azevedo, Carlos",
+            "!Azevedo, Carlos Lima",
             "Akkinepally, Arun P",
             "Atasoy, Bilge",
             "Jeong, K",
@@ -736,7 +736,7 @@ const publications = [
         "authors": [
             "Danaf, Mazen",
             "Atasoy, Bilge",
-            "Lima de Azevedo, Carlos",
+            "!Azevedo, Carlos Lima",
             "Ding-Mastera, Jing",
             "Abou-Zeid, Maya",
             "Cox, Nathanael",
@@ -759,7 +759,7 @@ const publications = [
             "Oke, Jimi",
             "Gross, Eytan",
             "Nahmias-Biran, Bat-Hen",
-            "Azevedo, Carlos Lima",
+            "!Azevedo, Carlos Lima",
             "Zegras, P. Christopher",
             "Ferreira, Joseph",
             "Ben-Akiva, Moshe"
@@ -777,9 +777,9 @@ const publications = [
         "type": "conference",
         "title": "Real-Time Taxi Demand Prediction Using Data from the Web",
         "authors": [
-            "Markou, Ioulia",
-            "Rodrigues, Filipe",
-            "Pereira, Francisco Camara"
+            "!Markou, Ioulia",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
         ],
         "where": "Proceedings of the 21st IEEE International Conference on Intelligent Transporttion Systems",
         "year": 2018,
@@ -794,9 +794,9 @@ const publications = [
         "type": "conference",
         "title": "A two-stage model for real-time taxi demand prediction using data from the Web",
         "authors": [
-            "Markou, Ioulia",
-            "Pereira, Francisco Camara",
-            "Rodrigues, Filipe"
+            "!Markou, Ioulia",
+            "!Pereira, Francisco Camara",
+            "!Rodrigues, Filipe"
         ],
         "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
         "year": 2019,
@@ -829,9 +829,9 @@ const publications = [
         "type": "article",
         "title": "Combining time-series and textual data for taxi demand prediction in event areas: a deep learning approach",
         "authors": [
-            "Rodrigues, Filipe",
-            "Markou, Ioulia",
-            "Pereira, Francisco Camara"
+            "!Rodrigues, Filipe",
+            "!Markou, Ioulia",
+            "!Pereira, Francisco Camara"
         ],
         "where": "Information Fusion",
         "publisher": "Elsevier",
@@ -846,8 +846,8 @@ const publications = [
         "type": "article",
         "title": "Heteroscedastic Gaussian processes for uncertainty modeling in large-scale crowdsourced traffic data",
         "authors": [
-            "Rodrigues, Filipe",
-            "Pereira, Francisco Camara"
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
         ],
         "where": "Transportation Research Part C",
         "publisher": "Elsevier",
@@ -862,9 +862,9 @@ const publications = [
         "type": "article",
         "title": "Multi-output Gaussian processes for crowdsourced traffic data imputation",
         "authors": [
-            "Rodrigues, Filipe",
-            "Henrickson, Kristian",
-            "Pereira, Francisco Camara"
+            "!Rodrigues, Filipe",
+            "!Henrickson, Kristian",
+            "!Pereira, Francisco Camara"
         ],
         "where": "IEEE Transactions on Intelligent Transportation Systems",
         "year": 2018,
@@ -878,10 +878,10 @@ const publications = [
         "type": "article",
         "title": "Learning Supervised Topic Models for Classification and Regression from Crowds",
         "authors": [
-            "Rodrigues, Filipe",
+            "!Rodrigues, Filipe",
             "Louren{\\c{c}}o, Mariana",
             "Ribeiro, Bernardete",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
         "year": 2017,
@@ -895,9 +895,9 @@ const publications = [
         "type": "article",
         "title": "Use of Taxi-Trip Data in Analysis of Demand Patterns for Detection and Explanation of Anomalies",
         "authors": [
-            "Markou, Ioulia",
-            "Rodrigues, Filipe",
-            "Pereira, Francisco Camara"
+            "!Markou, Ioulia",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
         ],
         "where": "Transportation Research Record (TRR): Journal of the Transportation Research Board",
         "year": 2017,
@@ -911,10 +911,10 @@ const publications = [
         "type": "article",
         "title": "A Bayesian additive model for understanding public transport usage in special events",
         "authors": [
-            "Rodrigues, Filipe",
-            "Borysov, Stanislav S",
+            "!Rodrigues, Filipe",
+            "!Borysov, Stanislav",
             "Ribeiro, Bernardete",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
         "year": 2016,
@@ -928,8 +928,8 @@ const publications = [
         "type": "conference",
         "title": "Deep Learning from Crowds",
         "authors": [
-            "Rodrigues, Filipe",
-            "Pereira, Francisco Camara"
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
         ],
         "where": "The Thirty-Second AAAI Conference on Artificial Intelligence (oral)",
         "year": 2018,
@@ -943,9 +943,9 @@ const publications = [
         "type": "conference",
         "title": "Event characteristics that disrupt transport system's balance",
         "authors": [
-            "Markou, Ioulia",
-            "Rodrigues, Filipe",
-            "Pereira, Francisco Camara"
+            "!Markou, Ioulia",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
         ],
         "where": "International Conference on Intelligent Transport Systems in Theory and Practice, mobil. TUM 2017, Munich, Germany",
         "year": 2017,
@@ -959,9 +959,9 @@ const publications = [
         "type": "conference",
         "title": "Demand pattern analysis of taxi trip data for anomalies detection and explanation",
         "authors": [
-            "Markou, Ioulia",
-            "Rodrigues, Filipe",
-            "Pereira, Francisco Camara"
+            "!Markou, Ioulia",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
         ],
         "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
         "year": 2017,
@@ -975,11 +975,11 @@ const publications = [
         "type": "conference",
         "title": "Using internet search queries to predict human mobility in social events",
         "authors": [
-            "Borysov, Stanislav",
+            "!Borysov, Stanislav",
             "Louren{\\c{c}}o, Mariana",
-            "Rodrigues, Filipe",
+            "!Rodrigues, Filipe",
             "Balatsky, Alexander",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "Proceedings of 2016 IEEE 19th International Conference on Intelligent Transportation Systems (ITSC)",
         "year": 2016,
@@ -994,9 +994,9 @@ const publications = [
         "type": "article",
         "title": "Scalable Population Synthesis with Deep Generative Modeling",
         "authors": [
-            "Borysov, Stanislav S",
+            "!Borysov, Stanislav",
             "Rich, Jeppe",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "ArXiv",
         "year": 2018,
@@ -1010,9 +1010,9 @@ const publications = [
         "type": "article",
         "title": "Efficient Transport Simulation With Restricted Batch-Mode Active Learning",
         "authors": [
-            "Antunes, Francisco",
+            "!Antunes, Francisco",
             "Ribeiro, Bernardete",
-            "Pereira, Francisco Camara",
+            "!Pereira, Francisco Camara",
             "Gomes, Rui"
         ],
         "where": "IEEE Transactions on Intelligent Transportation Systems",
@@ -1028,9 +1028,9 @@ const publications = [
         "type": "article",
         "title": "Comparison of Four Types of Artificial Neural Network and a Multinomial Logit Model for Travel Mode Choice Modeling",
         "authors": [
-            "Lee, Dongwoo",
+            "!Lee, Dongwoo",
             "Derrible, Sybil",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "Transportation Research Record",
         "year": 2018,
@@ -1046,7 +1046,7 @@ const publications = [
         "title": "Overview of traffic incident duration analysis and prediction",
         "authors": [
             "Li, Ruimin",
-            "Pereira, Francisco Camara",
+            "!Pereira, Francisco Camara",
             "Ben-Akiva, Moshe E"
         ],
         "where": "European Transport Research Review",
@@ -1062,7 +1062,7 @@ const publications = [
         "type": "article",
         "title": "Social network analysis in future transportation systems: Contributions on observability, behaviour and structure",
         "authors": [
-            "Pereira, Francisco Camara",
+            "!Pereira, Francisco Camara",
             "Antoniou, Constantinos",
             "Dimitriou, Loukas"
         ],
@@ -1086,7 +1086,7 @@ const publications = [
             "Qin, Zhengquan",
             "Shahid, Ayesha",
             "Ben-Akiva, Moshe",
-            "Pereira, Francisco Camara",
+            "!Pereira, Francisco Camara",
             "Zhao, Jinhua"
         ],
         "where": "Transportation Research Record",
@@ -1105,7 +1105,7 @@ const publications = [
         "authors": [
             "Chaniotakis, Emmanouil",
             "Antoniou, Constantinos",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "Proceedings of the 2017 5th Ieee International Conference on Models and Technologies for Intelligent Transportation Systems (mt-its)",
         "year": 2017,
@@ -1120,9 +1120,9 @@ const publications = [
         "type": "article",
         "title": "Probabilistic Modeling and Visualization for Bankruptcy Prediction",
         "authors": [
-            "Antunes, Francisco",
+            "!Antunes, Francisco",
             "Ribeiro, Bernardete",
-            "Pereira, Francisco"
+            "!Pereira, Francisco Camara"
         ],
         "where": "Applied Soft Computing",
         "volume": 60,
@@ -1140,7 +1140,7 @@ const publications = [
         "authors": [
             "Chaniotakis, Emmanouil",
             "Antoniou, Constantinos",
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "IEEE Intelligent Systems",
         "volume": 31,
@@ -1158,7 +1158,7 @@ const publications = [
         "title": "Uncertainty in Bus Arrival Time Predictions: Treating Heteroscedasticity With a Metamodel Approach",
         "authors": [
             "O'Sullivan, Aidan",
-            "Pereira, Francisco Camara",
+            "!Pereira, Francisco Camara",
             "Zhao, Jinhua",
             "Koutsopoulos, Harilaos N"
         ],
@@ -1179,7 +1179,7 @@ const publications = [
         "authors": [
             "Lu, Yang",
             "Seshadri, Ravi",
-            "Pereira, Francisco Camara",
+            "!Pereira, Francisco Camara",
             "O'Sullivan, Aidan",
             "Antoniou, Constantinos",
             "Ben-Akiva, Moshe"
@@ -1197,7 +1197,7 @@ const publications = [
         "type": "conference",
         "title": "Intelligent Transport Systems in the Smart City",
         "authors": [
-            "Pereira, Francisco Camara"
+            "!Pereira, Francisco Camara"
         ],
         "where": "Book of Abstracts. DTU's Sustain Conference 2015",
         "year": 2015,
@@ -1212,7 +1212,7 @@ const publications = [
         "type": "conference",
         "title": "Logical Entity Level Sentiment Analysis",
         "authors": [
-            "Petersen, Niklas Christoffer",
+            "!Petersen, Niklas Christopher",
             "Villadsen, J{\\o}rgen"
         ],
         "where": "International Conference on Formal Grammar",

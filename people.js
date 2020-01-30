@@ -14,10 +14,10 @@ const mlsmPeople = {
         last: 'Motamedi',
         image: '',
     },
-    yafeiH: {
-        given: 'Han',
+    hanY: {
+        given: 'Yafei',
         middle: '',
-        last: 'Yafei',
+        last: 'Han',
         image: '',
     },
     dastjerdiA: {
@@ -82,7 +82,7 @@ const mlsmPeople = {
     },
     antunesF: {
         given: 'Francisco',
-        middle: '',
+        middle: 'Nibau',
         last: 'Antunes',
         image: '',
     },
@@ -104,7 +104,7 @@ const mlsmPeople = {
         last: 'Monteiro',
         image: '',
     },
-    renmingL: {
+    liuR: {
         given: 'Renming',
         middle: '',
         last: 'Liu',
@@ -128,7 +128,7 @@ const mlsmPeople = {
         last: 'Petersen',
         image: '',
     },
-    dongwooL: {
+    leeD: {
         given: 'Dongwoo',
         last: 'Lee',
         image: '',
@@ -144,7 +144,7 @@ const mlsmPeople = {
         last: 'Borysov',
         image: '',
     },
-    azevedoCL: {
+    azevedoC: {
         given: 'Carlos',
         last: 'Lima Azevedo',
         image: '',
