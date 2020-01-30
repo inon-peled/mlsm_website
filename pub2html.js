@@ -1,9 +1,9 @@
-function downloadNotIE(fileName, contents) {
+function downloadNotIE(fileName, contents, contentType) {
     var element = document.createElement('a');
     element.style.display = 'none';
     element.setAttribute(
         'href',
-        'data:text/plain;charset=utf-8,' + encodeURIComponent(contents));
+        contentType + encodeURIComponent(contents));
     element.setAttribute(
         'download',
         fileName);
@@ -12,20 +12,22 @@ function downloadNotIE(fileName, contents) {
     document.body.removeChild(element);
 }
 
-function downloadIE(fileName, contents) {
+function downloadIE(fileName, contents, contentType) {
     return navigator
         .msSaveBlob(new Blob(
             [contents],
-            { type: 'text/plain;charset=utf-8;' }
+            { type: contentType }
             ), fileName);
 }
 
-function download(fileName, contents) {
-    return navigator.msSaveBlob ? downloadIE(fileName, contents) : downloadNotIE(fileName, contents);
+function download(fileName, contents, contentType) {
+    return navigator.msSaveBlob ?
+        downloadIE(fileName, contents, contentType) :
+        downloadNotIE(fileName, contents, contentType);
 }
 
 function downloadPubsAsBib(pubs) {
-    return download('mlsm.bib', allPubsToBib(pubs));
+    return download('mlsm.bib', allPubsToBib(pubs), 'text/plain;charset=utf-8;');
 }
 
 function sortPubs(pubs) {
@@ -64,10 +66,10 @@ function addJsonIdentifiers(pubs) {
 }
 
 function downloadPubsAsJson(pubs) {
-    console.log('Meow');
     return download(
         'mlsm.json',
-        JSON.stringify(addJsonIdentifiers(pubs), null, '\t'));
+        JSON.stringify(addJsonIdentifiers(pubs), null, '\t'),
+        'application/json;charset=utf-8;');
 }
 
 function addDownloadButton(btnId, btnText) {
