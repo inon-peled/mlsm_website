@@ -16,8 +16,22 @@ function downloadPubsAsBib(pubs) {
     return downloadPubs('mlsm.bib', allPubsToBib(pubs))
 }
 
+function sortObjectKeysShallow(obj) {
+    return Object.fromEntries(Object.entries(obj).sort());
+}
+
+function addJsonIdentifiers(pubs) {
+    return (pubs || []).map(
+        function (pub) {
+            objCopy = JSON.parse(JSON.stringify(pub));
+            objCopy['@id'] = _getBibEntryIdentifier(pub);
+            return sortObjectKeysShallow(objCopy);
+        });
+}
+
 function downloadPubsAsJson(pubs) {
-    return downloadPubs('mlsm.json', JSON.stringify(pubs, null, '\t'))
+
+    return downloadPubs('mlsm.json', JSON.stringify(addJsonIdentifiers(pubs), null, '\t'))
 }
 
 function addDownloadButton(btnId, btnText) {
