@@ -17,6 +17,10 @@
   display: table;
 }
 
+.pubButtons {
+    margin-top: 3px;
+}
+
 .downloadBtn {
     border: none;
     outline: none;
