@@ -5,7 +5,6 @@
 
 function _toPlainEnglishLowercase(str) {
     return str
-        .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .replace(/[^a-zA-z]/g, "")
         .toLowerCase()
@@ -25,13 +24,17 @@ function _getFirstAuthorSurname(authors) {
     }
 }
 
+function _arrayIncludes(arr, element) {
+    return arr.indexOf(element) >= 0;
+}
+
 function _getFirstWordInTitleForBibIdentifier(title) {
     return _toPlainEnglishLowercase(
         _get(0, 'empty', title
             .toLowerCase()
             .split(' ')
             .filter(function (s) {
-                return ![
+                return !_arrayIncludes([
                     'an',
                     'a',
                     'by',
@@ -39,8 +42,8 @@ function _getFirstWordInTitleForBibIdentifier(title) {
                     'the',
                     'on',
                     'at',
-                    'in']
-                    .includes(s);
+                    'in'
+                ], s);
             })
         )
     );
