@@ -16,18 +16,27 @@ function downloadPubsAsBib(pubs) {
     return downloadPubs('mlsm.bib', allPubsToBib(pubs))
 }
 
+function downloadPubsAsJson(pubs) {
+    return downloadPubs('mlsm.json', JSON.stringify(pubs, null, '\t'))
+}
+
 function showDownloading(pubs) {
-    pubDownloading = document.getElementById("pubDownloading");
-    pubDownloading.innerHTML += '<button' +
+    function addDownloadButton(btnId, btnText, onclickFunc) {
+        pubDownloading = document.getElementById("pubDownloading");
+        pubDownloading.innerHTML += '<button ' +
         ' class=downloadButton' +
-        ' id=downloadButton' +
-        '>' + 'Download' +
+        ' id = ' + btnId +
+        '>' + btnText +
         '</button>\n';
-    document
-        .getElementById("downloadButton")
-        .addEventListener("click", function() {
-                downloadPubsAsBib(pubs);
+        document
+            .getElementById(btnId)
+            .addEventListener("click", function () {
+                onclickFunc(pubs);
             }, false);
+    }
+
+    addDownloadButton('bibDonwloadBtn', 'Download bib', downloadPubsAsBib);
+    addDownloadButton('jsonDonwloadBtn', 'json', downloadPubsAsJson)
 }
 
 function latexToHtml(string) {
