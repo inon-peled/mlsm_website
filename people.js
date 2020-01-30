@@ -105,9 +105,9 @@ const mlsmPeople = {
         image: '',
     },
     renmingL: {
-        given: 'Liu',
+        given: 'Renming',
         middle: '',
-        last: 'Renming',
+        last: 'Liu',
         image: '',
     },
     arkoudiI: {
@@ -129,8 +129,8 @@ const mlsmPeople = {
         image: '',
     },
     dongwooL: {
-        given: 'Lee',
-        last: 'Dongwoo',
+        given: 'Dongwoo',
+        last: 'Lee',
         image: '',
     },
     kosticB: {
