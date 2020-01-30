@@ -69,7 +69,7 @@ function downloadPubsAsJson(pubs) {
     return downloadPubs(
         'mlsm.json',
         JSON.stringify(addJsonIdentifiers(pubs), null, '\t'),
-        'application/json;charset=utf-8,');
+        'text/plain;charset=utf-8,');
 }
 
 function addDownloadButton(btnId, btnText) {
@@ -241,6 +241,7 @@ function getWhereAndWhenPublished(pub) {
         (pub['volume'] ? ('Vol. ' + pub['volume']) : ''),
         (pub['number'] ? ('No. ' + pub['number']) : ''),
         (pub['pages'] ? ('pp. ' + pub['pages']) : ''),
+        // (pub['publisher'] || ''),
         (pub['year'] || ''),
     ].filter(function (e) { return e; })
     .join(', ')
