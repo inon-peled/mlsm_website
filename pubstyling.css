@@ -20,20 +20,10 @@
 .publications .shown {
     display: block;
     padding-bottom: 25px;
-    /*transform: scale(1);*/
-    /*max-height: 10000px;*/
-    /*max-width: 10000px;*/
-    /*transition: all 0.5s ease-out;*/
-    /*transition-duration: 0.5s;*/
 }
 
 .publications .hidden {
     display: none;
-    /*!*transform: scale(0);*!*/
-    /*max-width: 0;*/
-    /*max-height: 0;*/
-    /*transition: all 0.5s ease-out;*/
-    /*transition-duration: 0.5s;*/
 }
 
 .mlsmAuthor {
