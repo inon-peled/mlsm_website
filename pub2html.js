@@ -1,6 +1,6 @@
 function addFiltering(pubs) {
     addPubTypeSelection(pubs);
-    addAuthorFiltering(pubs);
+    // addAuthorFiltering(pubs);
 }
 
 function getMlsmAuthors(pubs) {
