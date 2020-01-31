@@ -29,6 +29,26 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Estimating Latent Demand of Shared Mobility through Censored Gaussian Processes",
+        "authors": [
+            "!Gammelli, Daniele",
+            "!Peled, Inon",
+            "!Rodrigues, Filipe",
+            "Pacino, Dario",
+            "Kurtaran, Haci A.",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": "arXiv",
+        "year": 2020,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/2001.07402",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Uncovering life-course patterns with causal discovery and survival analysis",
         "authors": [
             "!Kostic, Bojan",
