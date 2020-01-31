@@ -5,16 +5,18 @@
 */
 
 
-/* Empty template for copy-paste below:
+/* Empty template for copy-paste below.
+ * NOTE 1: To highlight an MLSM author, prepend a "!" to their name.
+ * NOTE 2: Use latex escaping for accented letters, e.g., "Cam{\\^a}ra" (note the double slash).
 {
         "type": "",
         "title": "",
         "authors": [
-            "Doe, John",
+            "!Rodrigues, Filipe",
             "J{\\o}rgen, Gar{\\c{c}}on"
         ],
         "where": "",
-        "year": null
+        "year": null,
         "links": {
             "doi": "",
             "pdf": "",
@@ -25,6 +27,26 @@
 */
 
 const publications = [
+    {
+        "type": "article",
+        "title": "Uncovering life-course patterns with causal discovery and survival analysis",
+        "authors": [
+            "!Kostic, Bojan",
+            "Crastes dit Sourd, Romain",
+            "Hess, Stephane",
+            "Scheiner, Joachim",
+            "Holz-Rau, Christian",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": "arXiv",
+        "year": 2020,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/2001.11399",
+            "code": "",
+            "data": ""
+        }
+    },
     {
         "type": "book",
         "title": "SMART mobility via prediction, optimization and personalization",
@@ -195,7 +217,7 @@ const publications = [
             "!Azevedo, Carlos Lima",
             "Farooq, Bilal"
         ],
-        "where": "ArXiV",
+        "where": "arXiv",
         "year": 2019,
         "links": {
             "doi": "",
@@ -742,7 +764,7 @@ const publications = [
             "Cox, Nathanael",
             "Zhao, Fang",
             "Ben-Akiva, Moshe"
-        ] ,
+        ],
         "where": "15th International Conference on Travel Behaviour Research",
         "year": 2018,
         "links": {
@@ -998,7 +1020,7 @@ const publications = [
             "Rich, Jeppe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "ArXiv",
+        "where": "arXiv",
         "year": 2018,
         "links": {
             "pdf": "https://arxiv.org/pdf/1808.06910",
