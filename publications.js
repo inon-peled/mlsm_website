@@ -33,8 +33,8 @@ const mlsmPubs = [
         "authors": [
             "!Servizi, Valentino",
             "!Pereira, Francisco Camara",
-            "Anderson, Marie K.",
-            "Nielsen, Otto A."
+            "Anderson, Marie Karen",
+            "Nielsen, Otto Anker"
         ],
         "where": "arXiv",
         "year": 2019,
