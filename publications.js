@@ -29,6 +29,24 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Mining User Behaviour from Smartphone data, a literature review",
+        "authors": [
+            "!Servizi, Valentino",
+            "!Pereira, Francisco Camara",
+            "Anderson, Marie K.",
+            "Nielsen, Otto A."
+        ],
+        "where": "arXiv",
+        "year": 2019,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/1912.11259",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Estimating Latent Demand of Shared Mobility through Censored Gaussian Processes",
         "authors": [
             "!Gammeli, Daniele",
