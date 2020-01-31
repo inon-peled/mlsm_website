@@ -1,3 +1,8 @@
+function addFiltering(pubs) {
+    addPubTypeSelection(pubs);
+    addAuthorFiltering(pubs);
+}
+
 function getMlsmAuthors(pubs) {
     return _uniqueValues(
         pubs.map(function (pub) {
@@ -13,6 +18,22 @@ function getMlsmAuthors(pubs) {
     ).map(function (name) {
         return name.slice(1);
     }).sort();
+}
+
+function addAuthorFiltering(pubs) {
+    const mlsmAuthors = getMlsmAuthors(pubs)
+        .map(toStylizedString);
+    let mlsmAuthorSelectionBox = document.createElement('select');
+    mlsmAuthorSelectionBox.id = 'mlsmAuthorSelectionBox';
+    for (let i = 0 ; i < mlsmAuthors.length ; i++) {
+        let option = document.createElement('option');
+        option.value = mlsmAuthors[i];
+        option.text = mlsmAuthors[i];
+        mlsmAuthorSelectionBox.appendChild(option);
+    }
+    document
+        .getElementById('authorSelection')
+        .appendChild(mlsmAuthorSelectionBox);
 }
 
 function isShown(element) {
@@ -230,7 +251,7 @@ function capitalizeFirstLetter(string) {
     return string[0].toUpperCase() + string.slice(1);
 }
 
-function selection(pubs) {
+function addPubTypeSelection(pubs) {
     function addSelection(elmnt, pubType, txt) {
         elmnt.innerHTML += '<button' +
             ' class="filterBtn"' +
@@ -372,6 +393,6 @@ function showPublications(pubs) {
 
 function main(pubs) {
     showPublications(pubs);
-    selection(pubs);
+    addFiltering(pubs);
     showDownloading(pubs);
 }
