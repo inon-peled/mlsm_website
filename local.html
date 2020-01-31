@@ -7,14 +7,7 @@
     <script src="pub2html.js"></script>
     <script src="pub2bib.js"></script>
 </head>
-<body onload="go()">
-<script>
-    function go() {
-        showPublications(publications);
-        selection(publications);
-        showDownloading(publications);
-    }
-</script>
+<body onload="main(publications)">
 <div id="pubButtons" class="pubButtons">
     <span class="pubTypeSelection" id="pubTypeSelection"></span>
     <span class="pubVerticalSeparator"></span>

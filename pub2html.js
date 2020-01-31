@@ -25,7 +25,7 @@ function showDiv(divElement) {
 }
 
 function downloadPubsNotIE(fileName, contents, contentType) {
-    var element = document.createElement('a');
+    let element = document.createElement('a');
     element.style.display = 'none';
     element.setAttribute(
         'href',
@@ -66,17 +66,17 @@ function sortPubs(pubs) {
             _getPubtypeAsNumberForUniqueness(_get('type', 'unknownPubType', pub));
     }
     return pubs.sort(function (pub1, pub2) {
-        s1 = toComparisonString(pub1);
-        s2 = toComparisonString(pub2);
+        const s1 = toComparisonString(pub1);
+        const s2 = toComparisonString(pub2);
         return (s1 < s2) ? -1 : (s1 > s2 ? 1 : 0);
     }).reverse();
 
 }
 
 function sortObjectKeysShallow(obj) {
-    var sortedObj = {};
-    var keysSorted = Object.keys(obj).sort();
-    for (var i = 0 ; i < keysSorted.length ; i++) {
+    let sortedObj = {};
+    let keysSorted = Object.keys(obj).sort();
+    for (let i = 0 ; i < keysSorted.length ; i++) {
         sortedObj[keysSorted[i]] = obj[keysSorted[i]];
     }
     return sortedObj;
@@ -85,7 +85,7 @@ function sortObjectKeysShallow(obj) {
 function addJsonIdentifiers(pubs) {
     return (pubs || []).map(
         function (pub) {
-            objCopy = JSON.parse(JSON.stringify(pub));
+            let objCopy = JSON.parse(JSON.stringify(pub));
             objCopy['@id'] = _getBibEntryIdentifier(pub);
             return sortObjectKeysShallow(objCopy);
         });
@@ -94,8 +94,8 @@ function addJsonIdentifiers(pubs) {
 function removeExclamationMarksFromAuthorNames(pubs) {
     return (pubs || []).map(
         function (pub) {
-            objCopy = JSON.parse(JSON.stringify(pub));
-            for (var i = 0 ; i < objCopy.authors.length ; i++) {
+            let objCopy = JSON.parse(JSON.stringify(pub));
+            for (let i = 0 ; i < objCopy.authors.length ; i++) {
                 objCopy.authors[i] = objCopy.authors[i].replace('!', '');
             }
             return objCopy;
@@ -113,7 +113,7 @@ function downloadPubsAsJson(pubs) {
 }
 
 function addDownloadButton(btnId, btnText) {
-    pubDownloading = document.getElementById("pubDownloading");
+    const pubDownloading = document.getElementById("pubDownloading");
     pubDownloading.innerHTML += '<button ' +
         ' class=downloadBtn' +
         ' id=' + btnId +
@@ -153,8 +153,8 @@ function getPubType(item) {
 }
 
 function _uniqueValues(arr) {
-    var uniques = [];
-    for (var i = 0 ; i < arr.length ; i++) {
+    let uniques = [];
+    for (let i = 0 ; i < arr.length ; i++) {
         if (uniques.indexOf(arr[i]) < 0) {
             uniques.push(arr[i])
         }
@@ -169,9 +169,9 @@ function publishedPubTypes(pubsObj) {
 }
 
 function toggleYears() {
-    var allYears = document.getElementsByClassName("pubYear");
-    for (var i = 0; i < allYears.length; i++) {
-        var visiblePubsInYear = [].filter.call(
+    let allYears = document.getElementsByClassName("pubYear");
+    for (let i = 0; i < allYears.length; i++) {
+        let visiblePubsInYear = [].filter.call(
             allYears[i].childNodes,
             function(child) {
                 return child.classList && child.classList.contains('pubDetails') && isShown(child);
@@ -185,8 +185,8 @@ function toggleYears() {
 }
 
 function activateButton(pubType) {
-    var allButtons = document.getElementsByClassName("filterBtn");
-    for (var i = 0; i < allButtons.length; i++) {
+    let allButtons = document.getElementsByClassName("filterBtn");
+    for (let i = 0; i < allButtons.length; i++) {
         allButtons[i].classList.remove('active');
         if (allButtons[i].id === 'btn_' + pubType) {
             allButtons[i].classList.add('active');
@@ -195,8 +195,8 @@ function activateButton(pubType) {
 }
 
 function filterPubType(pubType) {
-    var allPubs = document.getElementsByClassName("pubDetails");
-    for (var i = 0; i < allPubs.length; i++) {
+    let allPubs = document.getElementsByClassName("pubDetails");
+    for (let i = 0; i < allPubs.length; i++) {
         if ((pubType === 'all') ||
             (allPubs[i].classList.contains('pubType_' + pubType))) {
             showDiv(allPubs[i]);
@@ -209,7 +209,7 @@ function filterPubType(pubType) {
 }
 
 function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.substring(1);
+    return string[0].toUpperCase() + string.slice(1);
 }
 
 function selection(pubs) {
@@ -222,10 +222,10 @@ function selection(pubs) {
             '</button>\n';
     }
 
-    var selDiv = document.getElementById('pubTypeSelection');
+    let selDiv = document.getElementById('pubTypeSelection');
     addSelection(selDiv, 'all', 'Show all');
-    var pubTypesToFilter = publishedPubTypes(pubs);
-    for (var i = 0; i < pubTypesToFilter.length; i++) {
+    let pubTypesToFilter = publishedPubTypes(pubs);
+    for (let i = 0; i < pubTypesToFilter.length; i++) {
         addSelection(selDiv, pubTypesToFilter[i],
             capitalizeFirstLetter(pubTypesToFilter[i]))
     }
@@ -253,7 +253,7 @@ function getAuthorsString(authors) {
 }
 
 function getPubTypeImage(pubType) {
-    imgs = {
+    const imgs = {
         thesis: {src: "/wp-content/uploads/2020/01/graduate_cap.png", alt: 'PhDThesis'},
         article: {src: "/wp-content/uploads/2020/01/journal.png", alt: 'Article'},
         techreport: {src: "/wp-content/uploads/2020/01/techreport.png", alt: 'Technical Report'},
@@ -261,7 +261,7 @@ function getPubTypeImage(pubType) {
         book: {src: "/wp-content/uploads/2020/01/book_big.png", alt: 'Book'},
         unknownPubType: {src: "/wp-content/uploads/2020/01/unknown.png", alt: 'Publication'}
     };
-    imgTag = '<img class=pubimg src=';
+    let imgTag = '<img class=pubimg src=';
     imgTag += (imgs[pubType] ? imgs[pubType].src : imgs.unknownPubType.src);
     imgTag += ' alt=';
     imgTag += (imgs[pubType] ? imgs[pubType].alt : imgs.unknownPubType.alt);
@@ -308,9 +308,9 @@ function onePubToHtml(pub) {
 }
 
 function groupByYear(pubs) {
-    groups = {};
-    for (var i = 0; i < pubs.length; i += 1) {
-        var year = pubs[i].year;
+    let groups = {};
+    for (let i = 0; i < pubs.length; i += 1) {
+        let year = pubs[i].year;
         if (year) {
             if (!(year in groups)) {
                 groups[year] = [];
@@ -322,24 +322,24 @@ function groupByYear(pubs) {
 }
 
 function getItemsAsString(pubs) {
-    items = '';
-    for (var j = 0; j < pubs.length; j += 1) {
+    let items = '';
+    for (let j = 0; j < pubs.length; j += 1) {
         items += onePubToHtml(pubs[j]);
     }
     return items;
 }
 
 function showPublications(pubs) {
-    var pubsDiv = document.getElementById("publications");
-    var pubsGroupedByYear = groupByYear(pubs);
-    var yearsInDescendingOrder = Object
+    let pubsDiv = document.getElementById("publications");
+    let pubsGroupedByYear = groupByYear(pubs);
+    let yearsInDescendingOrder = Object
         .keys(pubsGroupedByYear)
         .sort(function (a, b) {
             return b - a;
         });
-    for (var i = 0; i < yearsInDescendingOrder.length; i += 1) {
-        var year = yearsInDescendingOrder[i];
-        var pubsOfYear = pubsGroupedByYear[year];
+    for (let i = 0; i < yearsInDescendingOrder.length; i += 1) {
+        let year = yearsInDescendingOrder[i];
+        let pubsOfYear = pubsGroupedByYear[year];
         pubsDiv.innerHTML += '<div class="pubYear shown" id=pubYear' + year + '>\n' +
             '<h1 class="headerYear">' + year + '</h1>\n' +
             getItemsAsString(pubsOfYear) +
@@ -348,4 +348,10 @@ function showPublications(pubs) {
             '</div>' +
             '</div>';
     }
+}
+
+function main(pubs) {
+    showPublications(pubs);
+    selection(pubs);
+    showDownloading(pubs);
 }
