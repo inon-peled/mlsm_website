@@ -161,7 +161,7 @@ const publications = [
         "where": "Proceedings of the 2019 IEEE Intelligent Transportation Systems Conference (ITSC)",
         "year": 2019,
         "links": {
-            "doi": "https://doi.org/10.1109/ITSC.2019.8917451",
+            "doi": "10.1109/ITSC.2019.8917451",
             "pdf": "https://ieeexplore.ieee.org/document/8917451",
             "code": "http://github.com/fmpr/CAREL",
             "data": ""
@@ -216,7 +216,7 @@ const publications = [
         "where": "Accident Analysis & Prevention, in press",
         "year": 2019,
         "links": {
-            "doi": "https://doi.org/10.1016/j.aap.2019.105315",
+            "doi": "10.1016/j.aap.2019.105315",
             "pdf": "https://www.sciencedirect.com/science/article/abs/pii/S0001457519313880",
             "code": "",
             "data": ""
@@ -251,7 +251,7 @@ const publications = [
         "where": "Transportation Research Part C: Emerging Technologies",
         "year": 2019,
         "links": {
-            "doi": "https://doi.org/10.1016/j.trc.2019.07.006",
+            "doi": "10.1016/j.trc.2019.07.006",
             "pdf": "https://www.sciencedirect.com/science/article/pii/S0968090X1831180X",
             "code": "",
             "data": ""
@@ -272,7 +272,7 @@ const publications = [
         "where": "Environmental Research Letters, in press",
         "year": 2019,
         "links": {
-            "doi": "https://doi.org/10.1088/1748-9326/ab22c7",
+            "doi": "10.1088/1748-9326/ab22c7",
             "pdf": "https://iopscience.iop.org/article/10.1088/1748-9326/ab22c7",
             "code": "",
             "data": ""
@@ -290,7 +290,7 @@ const publications = [
         "volume": 120,
         "year": 2019,
         "links": {
-            "doi": "https://doi.org/10.1016/j.eswa.2018.11.028",
+            "doi": "10.1016/j.eswa.2018.11.028",
             "pdf": "https://www.sciencedirect.com/science/article/pii/S0957417418307486",
             "code": "",
             "data": ""
@@ -308,7 +308,7 @@ const publications = [
         "where": "Transportation Research Record: Journal of the Transportation Research Board",
         "year": 2019,
         "links": {
-            "doi": "https://doi.org/10.1177%2F0361198119842107",
+            "doi": "10.1177%2F0361198119842107",
             "pdf": "https://journals.sagepub.com/doi/10.1177/0361198119842107",
             "code": "",
             "data": ""
@@ -339,7 +339,7 @@ const publications = [
         "pages": "73--86",
         "year": 2019,
         "links": {
-            "doi": "https://doi.org/10.1016/j.trc.2019.03.001",
+            "doi": "10.1016/j.trc.2019.03.001",
             "pdf": "https://www.sciencedirect.com/science/article/pii/S0968090X18311999",
             "code": "",
             "data": ""
@@ -379,7 +379,7 @@ const publications = [
         "publisher": "Elsevier",
         "year": 2019,
         "links": {
-            "doi": "https://doi.org/10.1016/j.jocm.2019.03.001",
+            "doi": "10.1016/j.jocm.2019.03.001",
             "pdf": "https://www.sciencedirect.com/science/article/pii/S1755534518300381/pdfft?md5=b1d980240f292082d1dad401f6f41875&pid=1-s2.0-S1755534518300381-main.pdf",
             "code": "",
             "data": ""
@@ -853,7 +853,7 @@ const publications = [
         "publisher": "Elsevier",
         "year": 2018,
         "links": {
-            "doi": "https://doi.org/10.1016/j.trc.2018.08.007",
+            "doi": "10.1016/j.trc.2018.08.007",
             "code": null,
             "data": null
         }
@@ -869,7 +869,7 @@ const publications = [
         "where": "IEEE Transactions on Intelligent Transportation Systems",
         "year": 2018,
         "links": {
-            "pdf": "https://doi.org/10.1109/TITS.2018.2817879",
+            "pdf": "10.1109/TITS.2018.2817879",
             "code": "http://fprodrigues.com/multigp-imputation-code.zip",
             "data": null
         }
@@ -984,7 +984,7 @@ const publications = [
         "where": "Proceedings of 2016 IEEE 19th International Conference on Intelligent Transportation Systems (ITSC)",
         "year": 2016,
         "links": {
-            "doi": "https://doi.org/10.1109/ITSC.2016.7795731",
+            "doi": "10.1109/ITSC.2016.7795731",
             "pdf": "",
             "code": "",
             "data": ""
@@ -1018,7 +1018,7 @@ const publications = [
         "where": "IEEE Transactions on Intelligent Transportation Systems",
         "year": 2018,
         "links": {
-            "doi": "https://doi.org/10.1109/TITS.2018.2842695",
+            "doi": "10.1109/TITS.2018.2842695",
             "pdf": "",
             "code": "",
             "data": ""
@@ -1035,7 +1035,7 @@ const publications = [
         "where": "Transportation Research Record",
         "year": 2018,
         "links": {
-            "doi": "https://doi.org/10.1177/0361198118796971",
+            "doi": "10.1177/0361198118796971",
             "pdf": "",
             "code": "",
             "data": ""
@@ -1052,7 +1052,7 @@ const publications = [
         "where": "European Transport Research Review",
         "year": 2018,
         "links": {
-            "doi": "https://doi.org/10.1186/s12544-018-0300-1",
+            "doi": "10.1186/s12544-018-0300-1",
             "pdf": "http://orbit.dtu.dk/files/149877717/filestore_2_.pdf",
             "code": "",
             "data": ""
@@ -1070,7 +1070,7 @@ const publications = [
         "volume": 91,
         "year": 2018,
         "links": {
-            "doi": "https://doi.org/10.1016/j.trc.2018.04.002",
+            "doi": "10.1016/j.trc.2018.04.002",
             "pdf": "",
             "code": "",
             "data": ""
@@ -1093,7 +1093,7 @@ const publications = [
         "volume": 2649,
         "year": 2017,
         "links": {
-            "doi": "https://doi.org/10.3141/2649-05",
+            "doi": "10.3141/2649-05",
             "pdf": "http://dspace.mit.edu/bitstream/1721.1/112777/1/TRBPaper17-04615%20Li%20et%20al_FMS-TQ_TRR_new.pdf",
             "code": "",
             "data": ""
@@ -1110,7 +1110,7 @@ const publications = [
         "where": "Proceedings of the 2017 5th Ieee International Conference on Models and Technologies for Intelligent Transportation Systems (mt-its)",
         "year": 2017,
         "links": {
-            "doi": "https://doi.org/10.1109/MTITS.2017.8005602",
+            "doi": "10.1109/MTITS.2017.8005602",
             "pdf": "",
             "code": "",
             "data": ""
@@ -1128,7 +1128,7 @@ const publications = [
         "volume": 60,
         "year": 2017,
         "links": {
-            "doi": "https://doi.org/10.1016/j.asoc.2017.06.043",
+            "doi": "10.1016/j.asoc.2017.06.043",
             "pdf": "",
             "code": "",
             "data": ""
@@ -1147,7 +1147,7 @@ const publications = [
         "number": 6,
         "year": 2016,
         "links": {
-            "doi": "https://doi.org/10.1109/MIS.2016.98",
+            "doi": "10.1109/MIS.2016.98",
             "pdf": "",
             "code": "",
             "data": ""
@@ -1167,7 +1167,7 @@ const publications = [
         "number": 11,
         "year": 2016,
         "links": {
-            "doi": "https://doi.org/10.1109/TITS.2016.2547184",
+            "doi": "10.1109/TITS.2016.2547184",
             "pdf": "http://orbit.dtu.dk/files/138800259/QRbus.pdf",
             "code": "",
             "data": ""
@@ -1187,7 +1187,7 @@ const publications = [
         "where": "Proceedings of the 2015 IEEE 18th International Conference on Intelligent Transportation Systems (ITSC)",
         "year": 2015,
         "links": {
-            "doi": "https://doi.org/10.1109/ITSC.2015.363",
+            "doi": "10.1109/ITSC.2015.363",
             "pdf": "",
             "code": "",
             "data": ""
@@ -1218,7 +1218,7 @@ const publications = [
         "where": "International Conference on Formal Grammar",
         "year": 2017,
         "links": {
-            "doi": "https://doi.org/10.1007/978-3-662-56343-4_4",
+            "doi": "10.1007/978-3-662-56343-4_4",
             "pdf": "http://orbit.dtu.dk/files/142170970/Final.pdf",
             "code": "",
             "data": ""
