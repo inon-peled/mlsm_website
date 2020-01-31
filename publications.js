@@ -28,6 +28,42 @@
 
 const mlsmPubs = [
     {
+        "type": "phdthesis",
+        "title": "ATIS and Commuters Behavior: Factors Affecting Behavioral Intentions Toward the Use of Travel Information Technology",
+        "authors": [
+            "!Dastjerdi, Aliasghar Mehdizadeh",
+        ],
+        "where": "DTU Management",
+        "year": 2018,
+        "links": {
+            "doi": "",
+            "pdf": "https://backend.orbit.dtu.dk/ws/portalfiles/portal/185950047/My_thesis_Final_version_.pdf",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
+        "title": "Use intention of mobility-management travel apps: The role of users goals, technophile attitude and community trust",
+        "authors": [
+            "!Dastjerdi, Aliasghar Mehdizadeh",
+            "Kaplan, Sigal",
+            "Silva, Jo{\\~a}o de Abreu e",
+            "Nielsen, Otto Anker",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": "Transportation Research Part A: Policy and Practice",
+        "volume": 126,
+        "pages": "114--135",
+        "year": 2019,
+        "links": {
+            "doi": "10.1016/j.tra.2019.06.001",
+            "pdf": "https://www.sciencedirect.com/science/article/abs/pii/S0965856418312187",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "article",
         "title": "Mining User Behaviour from Smartphone data, a literature review",
         "authors": [
