@@ -343,7 +343,9 @@ function showPublications(pubs) {
         pubsDiv.innerHTML += '<div class="pubYear shown" id=pubYear' + year + '>\n' +
             '<h1 class="headerYear">' + year + '</h1>\n' +
             getItemsAsString(pubsOfYear) +
-            '<div class="pub-su-divider pub-su-divider-style-default" style="margin:15px 0;border-width:3px;border-color:#990000"><a href="#" style="color:#990000">Go to top</a></div>' +
+            '<div class="pub-su-divider pub-su-divider-style-default">' +
+            '   <a href="#">Go to top</a>' +
+            '</div>' +
             '</div>';
     }
 }
