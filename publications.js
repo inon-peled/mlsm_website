@@ -26,7 +26,7 @@
 },
 */
 
-const publications = [
+const mlsmPubs = [
     {
         "type": "article",
         "title": "Uncovering life-course patterns with causal discovery and survival analysis",
