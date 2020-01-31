@@ -35,7 +35,7 @@ const mlsmPubs = [
             "!Peled, Inon",
             "!Rodrigues, Filipe",
             "Pacino, Dario",
-            "Kurtaran, Haci A.",
+            "Kurtaran, Haci Ahmet",
             "!Pereira, Francisco Camara"
         ],
         "where": "arXiv",
