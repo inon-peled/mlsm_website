@@ -17,7 +17,17 @@
     display: table;
 }
 
-.publications .shown {
+.pubYear h1 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.pubYear.shown {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.pubDetails.shown {
     display: block;
     padding-bottom: 25px;
 }
