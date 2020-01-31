@@ -1,3 +1,20 @@
+function getMlsmAuthors(pubs) {
+    return _uniqueValues(
+        pubs.map(function (pub) {
+            return [].filter.call(
+                pub.authors,
+                function (author) {
+                    return author[0] === '!';
+                }
+            )
+        }).reduce(function (a1, a2) {
+            return a1.concat(a2);
+        })
+    ).map(function (name) {
+        return name.slice(1);
+    }).sort();
+}
+
 function isShown(element) {
     return element.classList.contains('shown');
 }
@@ -42,8 +59,8 @@ function downloadPubsIE(fileName, contents, contentType) {
     return navigator
         .msSaveBlob(new Blob(
             [contents],
-            { type: contentType }
-            ), fileName);
+            {type: contentType}
+        ), fileName);
 }
 
 function downloadPubs(fileName, contents, contentType) {
@@ -65,6 +82,7 @@ function sortPubs(pubs) {
             _getFirstWordInTitleForBibIdentifier(_get('title', '', pub)) +
             _getPubtypeAsNumberForUniqueness(_get('type', 'unknownPubType', pub));
     }
+
     return pubs.sort(function (pub1, pub2) {
         const s1 = toComparisonString(pub1);
         const s2 = toComparisonString(pub2);
@@ -76,7 +94,7 @@ function sortPubs(pubs) {
 function sortObjectKeysShallow(obj) {
     let sortedObj = {};
     let keysSorted = Object.keys(obj).sort();
-    for (let i = 0 ; i < keysSorted.length ; i++) {
+    for (let i = 0; i < keysSorted.length; i++) {
         sortedObj[keysSorted[i]] = obj[keysSorted[i]];
     }
     return sortedObj;
@@ -95,7 +113,7 @@ function removeExclamationMarksFromAuthorNames(pubs) {
     return (pubs || []).map(
         function (pub) {
             let objCopy = JSON.parse(JSON.stringify(pub));
-            for (let i = 0 ; i < objCopy.authors.length ; i++) {
+            for (let i = 0; i < objCopy.authors.length; i++) {
                 objCopy.authors[i] = objCopy.authors[i].replace('!', '');
             }
             return objCopy;
@@ -154,7 +172,7 @@ function getPubType(item) {
 
 function _uniqueValues(arr) {
     let uniques = [];
-    for (let i = 0 ; i < arr.length ; i++) {
+    for (let i = 0; i < arr.length; i++) {
         if (uniques.indexOf(arr[i]) < 0) {
             uniques.push(arr[i])
         }
@@ -173,7 +191,7 @@ function toggleYears() {
     for (let i = 0; i < allYears.length; i++) {
         let visiblePubsInYear = [].filter.call(
             allYears[i].childNodes,
-            function(child) {
+            function (child) {
                 return child.classList && child.classList.contains('pubDetails') && isShown(child);
             });
         if (visiblePubsInYear.length > 0) {
@@ -279,8 +297,10 @@ function getWhereAndWhenPublished(pub) {
         (pub['pages'] ? ('pp. ' + pub['pages']) : ''),
         // (pub['publisher'] || ''),
         (pub['year'] || ''),
-    ].filter(function (e) { return e; })
-    .join(', ')
+    ].filter(function (e) {
+        return e;
+    })
+        .join(', ')
 }
 
 function onePubToHtml(pub) {
