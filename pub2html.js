@@ -15,24 +15,59 @@ function getMlsmAuthors(pubs) {
         }).reduce(function (a1, a2) {
             return a1.concat(a2);
         })
-    ).map(function (name) {
-        return name.slice(1);
-    }).sort();
+    ).sort();
+}
+
+function getJsPub(jsPubs, htmlPub) {
+    for (let i = 0 ; i < htmlPub.children.length ; i++) {
+        if (htmlPub.children[i].classList.contains("refToPub")) {
+            return jsPubs[parseInt(htmlPub.children[i].value)];
+        }
+    }
+}
+
+function filterAuthors(pubs, authorName) {
+    let htmlPubs = document.getElementsByClassName("pubDetails");
+    for (let i = 0; i < htmlPubs.length; i++) {
+        if ((authorName === 'allmlsm') ||
+            (getJsPub(pubs, htmlPubs[i]).authors.indexOf(authorName) >= 0)) {
+            showDiv(htmlPubs[i]);
+        } else {
+            hideDiv(htmlPubs[i]);
+        }
+    }
+    document.getElementById('btn_all').click();
+    toggleYears();
 }
 
 function addAuthorFiltering(pubs) {
-    const mlsmAuthors = getMlsmAuthors(pubs)
-        .map(toStylizedString);
+    function addOption(text, value, selectionBox) {
+        let option = document.createElement('option');
+        option.value = value;
+        option.text = text;
+        selectionBox.appendChild(option);
+    }
+
+    const mlsmAuthors = getMlsmAuthors(pubs);
     let mlsmAuthorSelectionBox = document.createElement('select');
     mlsmAuthorSelectionBox.id = 'mlsmAuthorSelectionBox';
+    mlsmAuthorSelectionBox.classList.add('authorSelectionBox');
+    mlsmAuthorSelectionBox.classList.add('inactive');
+    addOption('-- All MLSM --', 'allmlsm', mlsmAuthorSelectionBox);
     for (let i = 0 ; i < mlsmAuthors.length ; i++) {
-        let option = document.createElement('option');
-        option.value = mlsmAuthors[i];
-        option.text = mlsmAuthors[i];
-        mlsmAuthorSelectionBox.appendChild(option);
+        addOption(
+            toStylizedString(mlsmAuthors[i].slice(1)),
+            mlsmAuthors[i],
+            mlsmAuthorSelectionBox);
     }
-    document
-        .getElementById('authorSelection')
+    mlsmAuthorSelectionBox.addEventListener("change", function () {
+        filterAuthors(
+            pubs,
+            mlsmAuthorSelectionBox.options[
+                mlsmAuthorSelectionBox.selectedIndex].value
+        );
+    }, false);
+    document.getElementById('authorSelection')
         .appendChild(mlsmAuthorSelectionBox);
 }
 
@@ -324,13 +359,14 @@ function getWhereAndWhenPublished(pub) {
         .join(', ')
 }
 
-function onePubToHtml(pub) {
+function onePubToHtml(pub, pubId) {
     function link(pub, linkKey, linkName) {
         return !pub.links[linkKey] ? '' : '<span class="pubLink"> <a target="_blank" href="' +
             pub.links[linkKey] + '" rel="noopener noreferrer">[' + linkName + ']</a></span>';
     }
 
     return '<div class="pubDetails pubType_' + getPubType(pub) + ' shown">\n' +
+        '<input type=hidden class="refToPub" value="' + pubId + '">\n' +
         '<div class=pubTypeAndAuthors>' +
         '<span class="pubType">' + getPubTypeImage(getPubType(pub)) + '</span>\n' +
         '<span class=space></span>\n' +
@@ -365,7 +401,7 @@ function groupByYear(pubs) {
 function getItemsAsString(pubs) {
     let items = '';
     for (let j = 0; j < pubs.length; j += 1) {
-        items += onePubToHtml(pubs[j]);
+        items += onePubToHtml(pubs[j], j);
     }
     return items;
 }
