@@ -31,9 +31,9 @@ const mlsmPubs = [
         "type": "article",
         "title": "Active learning metamodeling for policy analysis: Application to an emergency medical service simulator",
         "authors": [
-            "!Antunes Francisco" +
-            "Amorim, Marco" +
-            "!Pereira, Francisco Camara, " +
+            "!Antunes, Francisco",
+            "Amorim, Marco",
+            "!Pereira, Francisco Camara",
             "Ribeiro, Bernardete"
         ],
         "where": "Simulation Notes Europe",
