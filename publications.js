@@ -209,7 +209,7 @@ const mlsmPubs = [
             "Oke, Jimi",
             "Kumar, Nishant",
             "Akkinepally, Arun Prakash",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Ferreira, Joseph",
             "Zegras, P. Christopher",
             "Ben-Akiva, Moshe"
@@ -233,7 +233,7 @@ const mlsmPubs = [
             "Aboutaleb, Youssef Medhat",
             "Xie, Yifei",
             "Nahmias-Biran, Bat-hen",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Zegras, P. Christopher",
             "Ferreira, Joseph",
             "Ben-Akiva, Moshe"
@@ -289,7 +289,7 @@ const mlsmPubs = [
         "title": "Towards Robust Deep Reinforcement Learning for Traffic Signal Control: Demand Surges, Incidents and Sensor Failures",
         "authors": [
             "!Rodrigues, Filipe",
-            "!Azevedo, Carlos Lima"
+            "!Lima Azevedo, Carlos M"
         ],
         "where": "Proceedings of the 2019 IEEE Intelligent Transportation Systems Conference (ITSC)",
         "year": 2019,
@@ -325,7 +325,7 @@ const mlsmPubs = [
         "authors": [
             "!Eckert, Johannes Benjamin",
             "L{\\'o}pez, David",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Farooq, Bilal"
         ],
         "where": "arXiv",
@@ -342,7 +342,7 @@ const mlsmPubs = [
         "title": "Road safety of passing maneuvers: A bivariate extreme value theory approach under non-stationary conditions",
         "authors": [
             "Cavadas, Joana",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Farah, Haneen",
             "Ferreira, Ana"
         ],
@@ -360,7 +360,7 @@ const mlsmPubs = [
         "title": "Smart Mobility",
         "authors": [
             "!Borysov, Stanislav",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "!Pereira, Francisco Camara"
         ],
         "where": "DTU International Energy Report 2019: Transforming Urban Mobility",
@@ -397,7 +397,7 @@ const mlsmPubs = [
             "Oke, Olufolajimi",
             "Aboutaleb, Youssef Medhat",
             "Akkinepally, Arun Prakash",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "!Han, Yafei",
             "Zegras, P. Christopher",
             "Ferreira, Joseph",
@@ -435,7 +435,7 @@ const mlsmPubs = [
         "authors": [
             "Oh, Simon",
             "Seshadri, Ravi",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Ben-Akiva, Moshe E."
         ],
         "where": "Transportation Research Record: Journal of the Transportation Research Board",
@@ -501,7 +501,7 @@ const mlsmPubs = [
         "authors": [
             "Danaf, Mazen",
             "Atasoy, Bilge",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Ding-Mastera, Jing",
             "Abou-Zeid, Maya",
             "Cox, Nathaniel",
@@ -582,7 +582,7 @@ const mlsmPubs = [
         "authors": [
             "Xie, Yifei",
             "Danaf, Mazen",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Akkinepally, Arun",
             "Atasoy, Bilge",
             "Jeong, Kyungsoo",
@@ -607,7 +607,7 @@ const mlsmPubs = [
             "Atasoy, Bilge",
             "Danaf, Mazen",
             "Xie, Yifei",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Zhao, Fang",
             "Zegras, P. Christopher",
             "Ben-Akiva, Moshe"
@@ -627,7 +627,7 @@ const mlsmPubs = [
         "authors": [
             "Chen, Siyu",
             "Akkinepally, Arun",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Ben-Akiva, Moshe"
         ],
         "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
@@ -646,7 +646,7 @@ const mlsmPubs = [
             "Kamargianni, Maria",
             "!Lampros, Yfantis",
             "Muscat, Jakub",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Ben-Akiva, Moshe"
         ],
         "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
@@ -666,7 +666,7 @@ const mlsmPubs = [
             "Oke, Jimi",
             "Akkinepally, Arun",
             "Nahmias-Biran, Bat-Hen",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Zegras, P. Christopher",
             "Ferreira, Joseph",
             "Ben-Akiva, Moshe"
@@ -687,7 +687,7 @@ const mlsmPubs = [
             "Araldo, Andrea",
             "Gao, Song",
             "Seshadri, Ravi",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Ghafourian, Hossein",
             "Sui, Yihang",
             "Ayaz, Sayeeda",
@@ -709,7 +709,7 @@ const mlsmPubs = [
         "authors": [
             "Oh, Simon",
             "Seshadri, Ravi",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Ben-Akiva, Moshe"
         ],
         "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
@@ -731,7 +731,7 @@ const mlsmPubs = [
             "Basak, Kakali",
             "Araldo, Andrea",
             "Seshadri, Ravi",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Ben-Akiva, Moshe"
         ],
         "where": "Transportation Research Record: Journal of the Transportation Research Board",
@@ -829,7 +829,7 @@ const mlsmPubs = [
             "Deliali, Aikaterini",
             "Trancik, Jessica",
             "Christofa, Eleni",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Ben-Akiva, Moshe"
         ],
         "where": "The 21st IEEE International Conference on Intelligent Transportation Systems (IEEE-ITSC)",
@@ -847,7 +847,7 @@ const mlsmPubs = [
         "authors": [
             "Xie, Yifei",
             "Danaf, Mazen",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Akkinepally, Arun P",
             "Atasoy, Bilge",
             "Jeong, K",
@@ -869,7 +869,7 @@ const mlsmPubs = [
         "authors": [
             "Danaf, Mazen",
             "Atasoy, Bilge",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Ding-Mastera, Jing",
             "Abou-Zeid, Maya",
             "Cox, Nathanael",
@@ -892,7 +892,7 @@ const mlsmPubs = [
             "Oke, Jimi",
             "Gross, Eytan",
             "Nahmias-Biran, Bat-Hen",
-            "!Azevedo, Carlos Lima",
+            "!Lima Azevedo, Carlos M",
             "Zegras, P. Christopher",
             "Ferreira, Joseph",
             "Ben-Akiva, Moshe"
