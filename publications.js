@@ -1,10 +1,3 @@
-/* TODO:
-* Aliasghar's thesis.
-* MSc theses
-* Kris H. as past member in Team page.
-*/
-
-
 /* Empty template for copy-paste below.
  * NOTE 1: To highlight an MLSM author, prepend a "!" to their name.
  * NOTE 2: Use latex escaping for accented letters, e.g., "Cam{\\^a}ra" (note the double slash).
@@ -27,6 +20,26 @@
 */
 
 const mlsmPubs = [
+    {
+        "type": "conference",
+        "title": "Multi-output Deep Learning for Bus Arrival Time Predictions",
+        "authors": [
+            "!Petersen, Niklas Christoffer",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": "Transportation Research Procedia",
+        "publisher": "Elsevier",
+        "volume": 41,
+        "pages": "138--145",
+        "year": 2019,
+        "links": {
+            "doi": "10.1016/j.trpro.2019.09.025",
+            "pdf": "https://www.sciencedirect.com/science/article/pii/S2352146519304375",
+            "code": "",
+            "data": ""
+        }
+    },
     {
         "type": "article",
         "title": "Active learning metamodeling for policy analysis: Application to an emergency medical service simulator",
