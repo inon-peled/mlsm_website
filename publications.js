@@ -28,6 +28,23 @@
 
 const mlsmPubs = [
     {
+        "type": "conference",
+        "title": "Active Learning for Input Space Exploration in Traffic Simulators",
+        "authors": [
+            "!Antunes, Francisco" +
+            "Ribeiro, Bernardete" +
+            "!Pereira, Francisco Camara"
+        ],
+        "where": "2018 International Joint Conference on Neural Networks (IJCNN)",
+        "year": 2018,
+        "links": {
+            "doi": "10.1109/IJCNN.2018.8489302",
+            "pdf": "https://ieeexplore.ieee.org/document/8489302",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "phdthesis",
         "title": "ATIS and Commuters Behavior: Factors Affecting Behavioral Intentions Toward the Use of Travel Information Technology",
         "authors": [
