@@ -22,6 +22,25 @@
 const mlsmPubs = [
     {
         "type": "conference",
+        "title": "Opening Up the Conversation: Topic Modeling for Automated Text Analysis in Travel Survey",
+        "authors": [
+            "!Baburajan, Vishnu",
+            "De Abreu e Silva, Jo\{\\~a}o",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": "2018 21st International Conference on Intelligent Transportation Systems (ITSC)",
+        "pages": "3657--3661",
+        "publisher": "IEEE",
+        "year": 2018,
+        "links": {
+            "doi": "10.1109/ITSC.2018.856938",
+            "pdf": "https://ieeexplore.ieee.org/document/8569380",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "conference",
         "title": "Multi-output Deep Learning for Bus Arrival Time Predictions",
         "authors": [
             "!Petersen, Niklas Christoffer",
@@ -98,7 +117,7 @@ const mlsmPubs = [
         "authors": [
             "!Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
-            "Silva, Jo{\\~a}o de Abreu e",
+            "De Abreu e Silva, Jo\{\\~a}o",
             "Nielsen, Otto Anker",
             "!Pereira, Francisco Camara"
         ],
@@ -537,7 +556,7 @@ const mlsmPubs = [
         "authors": [
             "!Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
-            "Silva, Jo{\\~a}o de Abreu e",
+            "De Abreu e Silva, Jo\{\\~a}o",
             "Nielsen, Otto Anker",
             "!Pereira, Francisco Camara"
         ],
@@ -576,7 +595,7 @@ const mlsmPubs = [
         "authors": [
             "!Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
-            "Silva, Jo{\\~a}o de Abreu e",
+            "De Abreu e Silva, Jo\{\\~a}o",
             "Nielsen, Otto Anker",
             "!Pereira, Francisco Camara"
         ],
