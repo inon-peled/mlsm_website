@@ -1,3 +1,29 @@
+function isShown(element) {
+    return element.classList.contains('shown');
+}
+
+function addClass(element, cls) {
+    if (~element.classList.contains(cls)) {
+        element.classList.add(cls);
+    }
+}
+
+function removeClass(element, cls) {
+    if (element.classList.contains(cls)) {
+        element.classList.remove(cls);
+    }
+}
+
+function hideDiv(divElement) {
+    removeClass(divElement, 'shown');
+    addClass(divElement, 'hidden');
+}
+
+function showDiv(divElement) {
+    removeClass(divElement, 'hidden');
+    addClass(divElement, 'shown');
+}
+
 function downloadPubsNotIE(fileName, contents, contentType) {
     var element = document.createElement('a');
     element.style.display = 'none';
@@ -147,24 +173,14 @@ function toggleYears() {
     for (var i = 0; i < allYears.length; i++) {
         var visiblePubsInYear = [].filter.call(
             allYears[i].childNodes,
-            function (child) {
-                return (child.className) &&
-                    (child.className.indexOf("pubDetails") > -1) &&
-                    (child.style.display !== "none");
+            function(child) {
+                return child.classList && child.classList.contains('pubDetails') && isShown(child);
             });
         if (visiblePubsInYear.length > 0) {
-            allYears[i].style.display = "block";
+            showDiv(allYears[i]);
         } else {
-            allYears[i].style.display = "none";
+            hideDiv(allYears[i]);
         }
-    }
-}
-
-function toggleVisibility(elmnt) {
-    if (elmnt.style.display === "none") {
-        elmnt.style.display = "block";
-    } else {
-        elmnt.style.display = "none";
     }
 }
 
@@ -181,11 +197,12 @@ function activateButton(pubType) {
 function filterPubType(pubType) {
     var allPubs = document.getElementsByClassName("pubDetails");
     for (var i = 0; i < allPubs.length; i++) {
-        allPubs[i].style.display = (
-            (pubType === 'all') ||
-            (allPubs[i].classList.contains('pubType_' + pubType))) ?
-            "block" :
-            "none";
+        if ((pubType === 'all') ||
+            (allPubs[i].classList.contains('pubType_' + pubType))) {
+            showDiv(allPubs[i]);
+        } else {
+            hideDiv(allPubs[i]);
+        }
     }
     activateButton(pubType);
     toggleYears();
@@ -272,7 +289,7 @@ function onePubToHtml(pub) {
             pub.links[linkKey] + '" rel="noopener noreferrer">[' + linkName + ']</a></span>';
     }
 
-    return '<div class="pubDetails pubType_' + getPubType(pub) + '">\n' +
+    return '<div class="pubDetails pubType_' + getPubType(pub) + ' shown">\n' +
         '<div class=pubTypeAndAuthors>' +
         '<span class="pubType">' + getPubTypeImage(getPubType(pub)) + '</span>\n' +
         '<span class=space></span>\n' +
@@ -323,7 +340,7 @@ function showPublications(pubs) {
     for (var i = 0; i < yearsInDescendingOrder.length; i += 1) {
         var year = yearsInDescendingOrder[i];
         var pubsOfYear = pubsGroupedByYear[year];
-        pubsDiv.innerHTML += '<div class=pubYear id=pubYear' + year + '>\n' +
+        pubsDiv.innerHTML += '<div class="pubYear shown" id=pubYear' + year + '>\n' +
             '<h1 class="headerYear">' + year + '</h1>\n' +
             getItemsAsString(pubsOfYear) +
             '<div class="pub-su-divider pub-su-divider-style-default" style="margin:15px 0;border-width:3px;border-color:#990000"><a href="#" style="color:#990000">Go to top</a></div>' +
