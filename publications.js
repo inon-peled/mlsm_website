@@ -31,7 +31,7 @@ const mlsmPubs = [
         "type": "article",
         "title": "Estimating Latent Demand of Shared Mobility through Censored Gaussian Processes",
         "authors": [
-            "!Gammelli, Daniele",
+            "!Gammeli, Daniele",
             "!Peled, Inon",
             "!Rodrigues, Filipe",
             "Pacino, Dario",
