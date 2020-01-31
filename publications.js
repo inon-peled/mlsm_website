@@ -28,6 +28,26 @@
 
 const mlsmPubs = [
     {
+        "type": "article",
+        "title": "Active learning metamodeling for policy analysis: Application to an emergency medical service simulator",
+        "authors": [
+            "!Antunes Francisco" +
+            "Amorim, Marco" +
+            "!Pereira, Francisco Camara, " +
+            "Ribeiro, Bernardete"
+        ],
+        "where": "Simulation Notes Europe",
+        "volume": 97,
+        "publisher": "Elsevier",
+        "year": 2019,
+        "links": {
+            "doi": "10.1016/j.simpat.2019.101947",
+            "pdf": "https://www.sciencedirect.com/science/article/abs/pii/S1569190X19300802",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "conference",
         "title": "Active Learning for Input Space Exploration in Traffic Simulators",
         "authors": [
