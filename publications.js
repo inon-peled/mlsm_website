@@ -63,7 +63,7 @@ const mlsmPubs = [
         "type": "article",
         "title": "Active learning metamodeling for policy analysis: Application to an emergency medical service simulator",
         "authors": [
-            "!Antunes, Francisco",
+            "!Antunes, Francisco Nibau",
             "Amorim, Marco",
             "!Pereira, Francisco Camara",
             "Ribeiro, Bernardete"
@@ -83,8 +83,8 @@ const mlsmPubs = [
         "type": "conference",
         "title": "Active Learning for Input Space Exploration in Traffic Simulators",
         "authors": [
-            "!Antunes, Francisco" +
-            "Ribeiro, Bernardete" +
+            "!Antunes, Francisco Nibau",
+            "Ribeiro, Bernardete",
             "!Pereira, Francisco Camara"
         ],
         "where": "2018 International Joint Conference on Neural Networks (IJCNN)",
@@ -447,7 +447,7 @@ const mlsmPubs = [
         "type": "article",
         "title": "Multi-output bus travel time prediction with convolutional LSTM neural network",
         "authors": [
-            "!Petersen, Niklas Christopher",
+            "!Petersen, Niklas Christoffer",
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
@@ -1377,7 +1377,7 @@ const mlsmPubs = [
         "type": "conference",
         "title": "Logical Entity Level Sentiment Analysis",
         "authors": [
-            "!Petersen, Niklas Christopher",
+            "!Petersen, Niklas Christoffer",
             "Villadsen, J{\\o}rgen"
         ],
         "where": "International Conference on Formal Grammar",
