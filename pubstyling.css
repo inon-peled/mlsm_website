@@ -1,21 +1,4 @@
-.imagesRow::after img {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.imagesColumn img {
-    float: left;
-    width: 40%;
-    padding: 10px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+/* BEGINNING OF STYLING FOR PUBLICATIONS: */
 
 #mlsmAuthorSelectionBox {
     background-color: #990000;
@@ -160,12 +143,4 @@
     font-weight: 500;
 }
 
-div.emd-container a.person-name {
-    color: #990000;
-    text-decoration: none;
-}
-
-.person-name {
-    color: #990000;
-    text-decoration: none;
-}
+/* END OF STYLING FOR PUBLICATIONS: */
