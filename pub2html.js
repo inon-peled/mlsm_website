@@ -222,6 +222,10 @@ function removeExclamationMarksFromAuthorNames(pubs) {
         });
 }
 
+function downloadPubsAsRis(pubs) {
+    return downloadPubs(pubs, pubsToRis, 'mlsm.ris', 'text/plain;charset=utf-8,');
+}
+
 function downloadPubsAsJson(pubs) {
     function toJson(chosenPubs) {
         return JSON.stringify(
@@ -252,8 +256,10 @@ function addClickListernerToDownloadButton(pubs, btnId, func) {
 function showDownloading(pubs) {
     addDownloadButton('bibDownloadBtn', 'Download BibTeX');
     addDownloadButton('jsonDownloadBtn', 'JSON');
+    addDownloadButton('risDownloadBtn', 'RIS');
     addClickListernerToDownloadButton(pubs, 'bibDownloadBtn', downloadPubsAsBib);
-    addClickListernerToDownloadButton(pubs, 'jsonDownloadBtn', downloadPubsAsJson)
+    addClickListernerToDownloadButton(pubs, 'jsonDownloadBtn', downloadPubsAsJson);
+    addClickListernerToDownloadButton(pubs, 'risDownloadBtn', downloadPubsAsRis);
 }
 
 function latexToHtml(string) {

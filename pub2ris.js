@@ -70,11 +70,13 @@ function _risPdfLink(pub) {
 }
 
 function _risCodeLink(pub) {
-    return ['UR', _get('code', null, _get('links', {}, pub))];
+    const codeLink = _get('code', null, _get('links', {}, pub));
+    return ['C1', codeLink ? 'code:' + codeLink : null];
 }
 
 function _risDataLink(pub) {
-    return ['UR', _get('data', null, _get('links', {}, pub))];
+    const dataLink = _get('code', null, _get('links', {}, pub));
+    return ['C2', dataLink ? 'data:' + dataLink : null];
 }
 
 function _risPages(pub) {
