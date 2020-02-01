@@ -1,3 +1,17 @@
+function getOnlyShownJsPubs(jsPubs) {
+    const shownPubIds = [].filter.call(
+        document.getElementsByClassName("pubDetails"),
+        function (htmlPub) {
+            return htmlPub.classList.contains('shown');
+        }
+    ).map(getRefToPub);
+    return [].filter.call(
+        jsPubs,
+        function (jsPub) {
+            return shownPubIds.indexOf(_getBibEntryIdentifier(jsPub)) >= 0;
+        });
+}
+
 function getActivePubType() {
     const pubTypeButtons = document.getElementsByClassName('filterBtn');
     for (let i = 0 ; i < pubTypeButtons.length ; i++) {
@@ -58,12 +72,16 @@ function getJsPubByPubId(jsPubs, pubId) {
     }
 }
 
-function getJsPub(jsPubs, htmlPub) {
+function getRefToPub(htmlPub) {
     for (let i = 0 ; i < htmlPub.children.length ; i++) {
         if (htmlPub.children[i].classList.contains("refToPub")) {
-            return getJsPubByPubId(jsPubs, htmlPub.children[i].value);
+            return htmlPub.children[i].value;
         }
     }
+}
+
+function getJsPub(jsPubs, htmlPub) {
+    return getJsPubByPubId(jsPubs, getRefToPub(htmlPub));
 }
 
 function filterAuthors(pubs) {
@@ -146,14 +164,15 @@ function downloadPubsIE(fileName, contents, contentType) {
         ), fileName);
 }
 
-function downloadPubs(fileName, contents, contentType) {
+function downloadPubs(pubs, contentConversionFunc, fileName, contentType) {
+    const contents = contentConversionFunc(getOnlyShownJsPubs(pubs));
     return navigator.msSaveBlob ?
         downloadPubsIE(fileName, contents, contentType) :
         downloadPubsNotIE(fileName, contents, contentType);
 }
 
 function downloadPubsAsBib(pubs) {
-    return downloadPubs('mlsm.bib', allPubsToBib(pubs), 'text/plain;charset=utf-8,');
+    return downloadPubs(pubs, allPubsToBib, 'mlsm.bib', 'text/plain;charset=utf-8,');
 }
 
 function sortPubs(pubs) {
@@ -204,13 +223,13 @@ function removeExclamationMarksFromAuthorNames(pubs) {
 }
 
 function downloadPubsAsJson(pubs) {
-    return downloadPubs(
-        'mlsm.json',
-        JSON.stringify(
-            removeExclamationMarksFromAuthorNames(addJsonIdentifiers(pubs)),
+    function toJson(chosenPubs) {
+        return JSON.stringify(
+            removeExclamationMarksFromAuthorNames(addJsonIdentifiers(chosenPubs)),
             null,
-            '\t'),
-        'text/plain;charset=utf-8,');
+            '\t');
+    }
+    return downloadPubs(pubs, toJson, 'mlsm.json', 'text/plain;charset=utf-8,');
 }
 
 function addDownloadButton(btnId, btnText) {
