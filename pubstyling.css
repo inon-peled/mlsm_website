@@ -17,6 +17,12 @@
     display: table;
 }
 
+#mlsmAuthorSelectionBox {
+    background-color: #990000;
+    color: white;
+    border: solid transparent;
+}
+
 .pubYear h1 {
     margin-top: 20px;
     margin-bottom: 25px;

@@ -73,6 +73,7 @@ function filterAuthors(pubs) {
 function addAuthorFiltering(pubs) {
     function addOption(text, value, selectionBox) {
         let option = document.createElement('option');
+        option.classList.add('authorOption');
         option.value = value;
         option.text = text;
         selectionBox.appendChild(option);
@@ -86,7 +87,7 @@ function addAuthorFiltering(pubs) {
     addOption('-- All MLSM --', 'allmlsm', mlsmAuthorSelectionBox);
     for (let i = 0 ; i < mlsmAuthors.length ; i++) {
         addOption(
-            toStylizedString(mlsmAuthors[i].slice(1)),
+            toStylizedString(mlsmAuthors[i].slice(1)).replace(',', ''),
             mlsmAuthors[i],
             mlsmAuthorSelectionBox);
     }
