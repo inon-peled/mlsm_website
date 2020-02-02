@@ -73,11 +73,7 @@ function getJsPubByPubId(jsPubs, pubId) {
 }
 
 function getRefToPub(htmlPub) {
-    for (let i = 0 ; i < htmlPub.children.length ; i++) {
-        if (htmlPub.children[i].classList.contains("refToPub")) {
-            return htmlPub.children[i].value;
-        }
-    }
+    return htmlPub.getAttribute('data-pubref');
 }
 
 function getJsPub(jsPubs, htmlPub) {
@@ -275,7 +271,9 @@ function getPubType(item) {
     const typeNamesForDisplay = {
         'phdthesis': 'thesis',
     };
-    return item.type ? (typeNamesForDisplay[item.type] || item.type) : "other";
+    return item.type ?
+        (typeNamesForDisplay[item.type] || item.type) :
+        "other";
 }
 
 function _uniqueValues(arr) {
@@ -408,8 +406,9 @@ function onePubToHtml(pub) {
             pub.links[linkKey] + '" rel="noopener noreferrer">[' + linkName + ']</a></span>';
     }
 
-    return '<div class="pubDetails pubType_' + getPubType(pub) + ' shown">\n' +
-        '<input type=hidden class="refToPub" value="' + _getBibEntryIdentifier(pub) + '">\n' +
+    return '<div' +
+            ' data-pubref="' + _getBibEntryIdentifier(pub) + '"' +
+            ' class="pubDetails pubType_' + getPubType(pub) + ' shown">\n' +
         '<div class=pubTypeAndAuthors>' +
         '<span class="pubType">' + getPubTypeImage(getPubType(pub)) + '</span>\n' +
         '<span class=space></span>\n' +
