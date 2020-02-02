@@ -127,6 +127,10 @@
     background-color: #ddd;
 }
 
+.filterBtn:disabled {
+    color: lightgrey;
+}
+
 .filterBtn.active {
     background-color: #990000;
     color: white;
