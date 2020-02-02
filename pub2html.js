@@ -1,10 +1,10 @@
 function makeAuthorNamesClickable(pubs) {
     const authorNameElements = document.getElementsByClassName('authorName');
-    for (let i = 0 ; i < authorNameElements.length ; i++) {
+    for (let i = 0; i < authorNameElements.length; i++) {
         const authorName = authorNameElements[i].getAttribute('data-js-author-name');
         authorNameElements[i].addEventListener("click", function () {
             const options = document.getElementById('mlsmAuthorSelectionBox').options;
-            for (var j = 0 ; j < options.length ; j++) {
+            for (let j = 0; j < options.length; j++) {
                 if (options[j].value === authorName) {
                     options[j].selected = true;
                     filterAuthors(pubs);
@@ -30,7 +30,7 @@ function getOnlyShownJsPubs(jsPubs) {
 
 function getActivePubType() {
     const pubTypeButtons = document.getElementsByClassName('filterBtn');
-    for (let i = 0 ; i < pubTypeButtons.length ; i++) {
+    for (let i = 0; i < pubTypeButtons.length; i++) {
         if (pubTypeButtons[i].classList.contains('active')) {
             return pubTypeButtons[i].id.slice('btn_'.length);
         }
@@ -42,17 +42,19 @@ function pubMatchesActivePubType(jsPubs, htmlPub) {
         (getActivePubType() === getPubType(getJsPub(jsPubs, htmlPub)));
 }
 
-function pubMatchesActiveAuthor(jsPubs, htmlPub) {
+function getActiveAuthor() {
     const mlsmAuthorSelectionBox = document.getElementById('mlsmAuthorSelectionBox');
-    const activeAuthor = mlsmAuthorSelectionBox.options[
-        mlsmAuthorSelectionBox.selectedIndex].value;
-    return (activeAuthor === 'allmlsm') ||
-        (getJsPub(jsPubs, htmlPub).authors.indexOf(activeAuthor) >= 0);
+    return mlsmAuthorSelectionBox.options[mlsmAuthorSelectionBox.selectedIndex].value;
+}
+
+function pubMatchesActiveAuthor(jsPubs, htmlPub) {
+    return (getActiveAuthor() === 'allmlsm') ||
+        (getJsPub(jsPubs, htmlPub).authors.indexOf(getActiveAuthor()) >= 0);
 }
 
 function toggleVisibilityOfPublications(jsPubs) {
     let htmlPubs = document.getElementsByClassName("pubDetails");
-    for (let i = 0 ; i < htmlPubs.length ; i++) {
+    for (let i = 0; i < htmlPubs.length; i++) {
         ((pubMatchesActivePubType(jsPubs, htmlPubs[i]) &&
             pubMatchesActiveAuthor(jsPubs, htmlPubs[i])) ?
             showDiv : hideDiv)(htmlPubs[i]);
@@ -81,7 +83,7 @@ function getMlsmAuthors(pubs) {
 }
 
 function getJsPubByPubId(jsPubs, pubId) {
-    for (let i = 0 ; i < jsPubs.length ; i++) {
+    for (let i = 0; i < jsPubs.length; i++) {
         if (_getBibEntryIdentifier(jsPubs[i]) === pubId) {
             return jsPubs[i];
         }
@@ -98,6 +100,7 @@ function getJsPub(jsPubs, htmlPub) {
 
 function filterAuthors(pubs) {
     toggleVisibilityOfPublications(pubs);
+    enableButtonsPerActiveAuthor(pubs);
 }
 
 function addAuthorFiltering(pubs) {
@@ -115,7 +118,7 @@ function addAuthorFiltering(pubs) {
     mlsmAuthorSelectionBox.classList.add('authorSelectionBox');
     mlsmAuthorSelectionBox.classList.add('inactive');
     addOption('-- All MLSM --', 'allmlsm', mlsmAuthorSelectionBox);
-    for (let i = 0 ; i < mlsmAuthors.length ; i++) {
+    for (let i = 0; i < mlsmAuthors.length; i++) {
         addOption(
             toStylizedString(mlsmAuthors[i].slice(1)).replace(',', ''),
             mlsmAuthors[i],
@@ -245,6 +248,7 @@ function downloadPubsAsJson(pubs) {
             null,
             '\t');
     }
+
     return downloadPubs(pubs, toJson, 'mlsm.json', 'text/plain;charset=utf-8,');
 }
 
@@ -321,6 +325,40 @@ function toggleYears() {
         } else {
             hideDiv(allYears[i]);
         }
+    }
+}
+
+function enableButton(btn) {
+    if (btn.classList.contains('disabled')) {
+        btn.classList.remove('disabled');
+    }
+}
+
+function countPubTypes(htmlPubs) {
+    let counters = { 'all': 0 };
+    for (let i = 0 ; i < htmlPubs.length ; i++) {
+        const pubType = htmlPubs[i].getAttribute('data-pub-type');
+        counters[pubType] = _get(pubType, 0, counters) + 1;
+        counters['all'] += 1;
+    }
+    return counters;
+}
+
+function enableButtonsPerActiveAuthor(jsPubs) {
+    const countsOfAuthorPubTypes = countPubTypes([].filter.call(
+        document.getElementsByClassName('pubDetails'),
+        function (htmlPub) {
+            return getJsPubByPubId(jsPubs, getRefToPub(htmlPub))
+                .authors.indexOf(getActiveAuthor()) >= 0;
+        }
+    ));
+    const pubTypeButtons = document.getElementsByClassName('filterBtn');
+    for (let i = 0 ; i < pubTypeButtons.length ; i++) {
+        pubTypeButtons[i].disabled = _get(
+            pubTypeButtons[i].id.slice('btn_'.length),
+            0,
+            countsOfAuthorPubTypes
+        ) <= 0;
     }
 }
 
@@ -424,8 +462,9 @@ function onePubToHtml(pub) {
     }
 
     return '<div' +
-            ' data-pubref="' + _getBibEntryIdentifier(pub) + '"' +
-            ' class="pubDetails pubType_' + getPubType(pub) + ' shown">\n' +
+        ' data-pub-type="' + getPubType(pub) + '"' +
+        ' data-pubref="' + _getBibEntryIdentifier(pub) + '"' +
+        ' class="pubDetails pubType_' + getPubType(pub) + ' shown">\n' +
         '<div class=pubTypeAndAuthors>' +
         '<span class="pubType">' + getPubTypeImage(getPubType(pub)) + '</span>\n' +
         '<span class=space></span>\n' +

@@ -123,7 +123,7 @@
     cursor: pointer;
 }
 
-.filterBtn:hover {
+.filterBtn:enabled:hover {
     background-color: #ddd;
 }
 
