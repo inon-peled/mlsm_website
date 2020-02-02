@@ -48,7 +48,7 @@ function getActiveAuthor() {
 }
 
 function pubMatchesActiveAuthor(jsPubs, htmlPub) {
-    return (getActiveAuthor() === 'allmlsm') ||
+    return (getActiveAuthor() === 'all') ||
         (getJsPub(jsPubs, htmlPub).authors.indexOf(getActiveAuthor()) >= 0);
 }
 
@@ -117,7 +117,7 @@ function addAuthorFiltering(pubs) {
     mlsmAuthorSelectionBox.id = 'mlsmAuthorSelectionBox';
     mlsmAuthorSelectionBox.classList.add('authorSelectionBox');
     mlsmAuthorSelectionBox.classList.add('inactive');
-    addOption('-- All MLSM --', 'allmlsm', mlsmAuthorSelectionBox);
+    addOption('-- All MLSM --', 'all', mlsmAuthorSelectionBox);
     for (let i = 0; i < mlsmAuthors.length; i++) {
         addOption(
             toStylizedString(mlsmAuthors[i].slice(1)).replace(',', ''),
@@ -342,16 +342,13 @@ function enableButtonsPerActiveAuthor(jsPubs) {
     const countsOfAuthorPubTypes = countPubTypes([].filter.call(
         document.getElementsByClassName('pubDetails'),
         function (htmlPub) {
-            return getJsPubByPubId(jsPubs, getRefToPub(htmlPub))
-                .authors.indexOf(getActiveAuthor()) >= 0;
+            return pubMatchesActiveAuthor(jsPubs, htmlPub);
         }
     ));
     const pubTypeButtons = document.getElementsByClassName('filterBtn');
     for (let i = 0 ; i < pubTypeButtons.length ; i++) {
         pubTypeButtons[i].disabled = _get(
-            pubTypeButtons[i].id.slice('btn_'.length),
-            0,
-            countsOfAuthorPubTypes
+            pubTypeButtons[i].id.slice('btn_'.length), 0, countsOfAuthorPubTypes
         ) <= 0;
     }
 }
