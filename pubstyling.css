@@ -1,5 +1,10 @@
 /* BEGINNING OF STYLING FOR PUBLICATIONS: */
 
+.mlsmAuthor:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .pubButtons * {
     margin-top: 2px;
 }

@@ -1,11 +1,11 @@
 function makeAuthorNamesClickable(pubs) {
     const authorNameElements = document.getElementsByClassName('authorName');
     for (let i = 0 ; i < authorNameElements.length ; i++) {
+        const authorName = authorNameElements[i].getAttribute('data-js-author-name');
         authorNameElements[i].addEventListener("click", function () {
             const options = document.getElementById('mlsmAuthorSelectionBox').options;
             for (var j = 0 ; j < options.length ; j++) {
-                // console.log(authorNameElements[i].getAttribute('data-js-author-name') === options[j].value)
-                if (options[j].value === authorNameElements[i].getAttribute('data-js-author-name')) {
+                if (options[j].value === authorName) {
                     options[j].selected = true;
                     filterAuthors(pubs);
                 }
