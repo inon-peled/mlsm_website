@@ -1,3 +1,19 @@
+function makeAuthorNamesClickable(pubs) {
+    const authorNameElements = document.getElementsByClassName('authorName');
+    for (let i = 0 ; i < authorNameElements.length ; i++) {
+        authorNameElements[i].addEventListener("click", function () {
+            const options = document.getElementById('mlsmAuthorSelectionBox').options;
+            for (var j = 0 ; j < options.length ; j++) {
+                // console.log(authorNameElements[i].getAttribute('data-js-author-name') === options[j].value)
+                if (options[j].value === authorNameElements[i].getAttribute('data-js-author-name')) {
+                    options[j].selected = true;
+                    filterAuthors(pubs);
+                }
+            }
+        }, false);
+    }
+}
+
 function getOnlyShownJsPubs(jsPubs) {
     const shownPubIds = [].filter.call(
         document.getElementsByClassName("pubDetails"),
@@ -357,7 +373,8 @@ function toStylizedString(author) {
 
 function getAuthorSpan(author) {
     return '<span' +
-        ' class=' + (author[0] === '!' ? 'mlsmAuthor' : 'nonMlsmAuthor') +
+        ' data-js-author-name="' + author + '"' +
+        ' class="authorName ' + (author[0] === '!' ? 'mlsmAuthor' : 'nonMlsmAuthor') + '"' +
         '>' +
         toStylizedString(author[0] === '!' ? author.slice(1) : author) +
         '</span>';
@@ -473,4 +490,5 @@ function main(pubs) {
     showPublications(pubs);
     addFiltering(pubs);
     showDownloading(pubs);
+    makeAuthorNamesClickable(pubs);
 }
