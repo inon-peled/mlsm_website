@@ -328,12 +328,6 @@ function toggleYears() {
     }
 }
 
-function enableButton(btn) {
-    if (btn.classList.contains('disabled')) {
-        btn.classList.remove('disabled');
-    }
-}
-
 function countPubTypes(htmlPubs) {
     let counters = { 'all': 0 };
     for (let i = 0 ; i < htmlPubs.length ; i++) {
