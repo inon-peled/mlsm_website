@@ -116,6 +116,8 @@
 }
 
 .filterBtn {
+    margin-right: 1px;
+    margin-left: 1px;
     border: none;
     outline: none;
     padding: 3px 10px;
