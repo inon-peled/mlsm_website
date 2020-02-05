@@ -123,8 +123,9 @@
     cursor: pointer;
 }
 
-.filterBtn:enabled:hover {
+.filterBtn:not(.active):enabled:hover {
     background-color: #ddd;
+    color: black;
 }
 
 .filterBtn:disabled {
