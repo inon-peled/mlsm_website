@@ -1,0 +1,65 @@
+#simple-contact-form form {
+    max-width: 700px;
+    padding: 5px;
+}
+
+#simple-contact-form fieldset {
+    width: 100%;
+    overflow: hidden;
+    margin: 5px 0;
+    padding: 5px 0;
+    border: 0;
+}
+
+#simple-contact-form fieldset input {
+    resize: none;
+    box-sizing: border-box;
+    float: left;
+    clear: none;
+    width: 100%;
+    margin: 0;
+}
+
+#simple-contact-form fieldset label {
+    display: none;
+    box-sizing: border-box;
+    float: left;
+    clear: both;
+    width: 25%;
+    margin-top: 5px;
+    font-size: 90%;
+}
+
+#simple-contact-form fieldset textarea {
+    height: 240px;
+    resize: none;
+    box-sizing: border-box;
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-top: 2px;
+}
+
+#scf_success pre {
+    white-space: pre-wrap;
+}
+
+p.scf_error, p.scf_spam {
+    color: #cc0000;
+}
+
+div.scf-submit {
+    margin-top: 10px;
+}
+
+p.scf_success {
+    color: #669966;
+}
+
+.scf-confirm-checkbox {
+    margin-top: 15px;
+}
+
+.scf-website3dhhsy3 {
+    display: none;
+}
