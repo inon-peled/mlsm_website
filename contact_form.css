@@ -1,3 +1,15 @@
+#scf-button:hover {
+    background-color: #990000 !important;
+    color: white !important;
+    border: #990000 !important;
+}
+
+#scf-button {
+    background-color: lightgrey !important;
+    color: black !important;
+    border: lightgrey !important;
+}
+
 #simple-contact-form form {
     max-width: 700px;
     padding: 5px;
