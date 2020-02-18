@@ -1,5 +1,9 @@
 /* BEGINNING OF STYLING FOR PUBLICATIONS: */
 
+.authorName.chosen {
+    font-weight: bold;
+}
+
 .mlsmAuthor:hover {
     text-decoration: underline;
     cursor: pointer;
