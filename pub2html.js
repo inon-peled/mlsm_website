@@ -428,7 +428,7 @@ function getAuthorsString(authors) {
 
 function getPubTypeImage(pubType) {
     const imgs = {
-        thesis: {src: "/wp-content/uploads/2020/01/graduate_cap_simple_bigger_gap.png", alt: 'PhDThesis'},
+        thesis: {src: "/wp-content/uploads/2020/02/graduate_cap_simple_bigger_gap.png", alt: 'PhDThesis'},
         article: {src: "/wp-content/uploads/2020/01/journal.png", alt: 'Article'},
         techreport: {src: "/wp-content/uploads/2020/01/techreport.png", alt: 'Technical Report'},
         conference: {src: "/wp-content/uploads/2020/01/presentation.png", alt: 'Conference'},
