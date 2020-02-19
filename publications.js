@@ -21,6 +21,24 @@
 
 const mlsmPubs = [
     {
+        "type": "article",
+        "title": "Integrated population synthesis and workplace assignment using an efficient optimization-based person-household matching method",
+        "authors": [
+            "Fournier, Nicholas",
+            "Christofa, Eleni",
+            "Akkinepally, Arun Prakash",
+            "!Lima Azevedo, Carlos M"
+        ],
+        "where": "Transportation",
+        "year": 2020,
+        "links": {
+            "doi": "10.1007/s11116-020-10090-3",
+            "pdf": "https://link.springer.com/article/10.1007%2Fs11116-020-10090-3",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "conference",
         "title": "Opening Up the Conversation: Topic Modeling for Automated Text Analysis in Travel Survey",
         "authors": [
