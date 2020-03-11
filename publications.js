@@ -22,6 +22,25 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "QTIP: Quick simulation-based adaptation of Traffic model per Incident Parameters",
+        "authors": [
+            "!Peled, Inon",
+            "Kamalakar, Raghuveer",
+            "!Lima Azevedo, Carlos",
+            "!Pereira, Francisco Camara"
+
+        ],
+        "where": "arXiv",
+        "year": 2020,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/2003.04109",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Integrated population synthesis and workplace assignment using an efficient optimization-based person-household matching method",
         "authors": [
             "Fournier, Nicholas",
