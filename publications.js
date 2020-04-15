@@ -30,10 +30,10 @@ const mlsmPubs = [
             "!Pereira, Francisco Camara"
 
         ],
-        "where": "arXiv",
+        "where": "Journal of Simulation, in press",
         "year": 2020,
         "links": {
-            "doi": "",
+            "doi": "10.1080/17477778.2020.1756702",
             "pdf": "https://arxiv.org/abs/2003.04109",
             "code": "",
             "data": ""
