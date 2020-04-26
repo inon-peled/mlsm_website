@@ -22,6 +22,25 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Evaluating the impacts of shared automated mobility on-demand services: an activity-based accessibility approach",
+        "authors": [
+            "Nahmias-Biran, Bat-hen",
+            "Oke, Jimi",
+            "Kumar, Nishant",
+            "!Lima Azevedo, Carlos",
+            "Ben-Akiva, Moshe"
+        ],
+        "where": "Transportation",
+        "year": 2020,
+        "links": {
+            "doi": "10.1007/s11116-020-10106-y",
+            "pdf": "https://link.springer.com/article/10.1007/s11116-020-10106-y?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst#citeas",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "QTIP: Quick simulation-based adaptation of Traffic model per Incident Parameters",
         "authors": [
             "!Peled, Inon",
