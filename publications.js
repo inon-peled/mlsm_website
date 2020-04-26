@@ -34,7 +34,7 @@ const mlsmPubs = [
         "year": 2020,
         "links": {
             "doi": "10.1007/s11116-020-10106-y",
-            "pdf": "https://link.springer.com/article/10.1007/s11116-020-10106-y?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst#citeas",
+            "pdf": "https://link.springer.com/article/10.1007/s11116-020-10106-y",
             "code": "",
             "data": ""
         }
