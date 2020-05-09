@@ -22,6 +22,21 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Scaling Bayesian inference of mixed multinomial logit models to very large datasets",
+        "authors": [
+            "!Rodrigues, Filipe"
+        ],
+        "where": "arXiv",
+        "year": 2020,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/2004.05426",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Evaluating the impacts of shared automated mobility on-demand services: an activity-based accessibility approach",
         "authors": [
             "Nahmias-Biran, Bat-hen",
