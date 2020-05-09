@@ -22,6 +22,24 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "A Policy-Sensitive Model of Parking Choice for Commercial Vehicles in Urban Areas",
+        "authors": [
+            "Dalla Chiara, Giacomo",
+            "Cheah, Lynette",
+            "!Lima Azevedo, Carlos",
+            "Ben-Akiva, Moshe E.",
+        ],
+        "where": "Transportation Science",
+        "year": 2020,
+        "links": {
+            "doi": "10.1287/trsc.2019.0970",
+            "pdf": "https://pubsonline.informs.org/doi/abs/10.1287/trsc.2019.0970",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Scaling Bayesian inference of mixed multinomial logit models to very large datasets",
         "authors": [
             "!Rodrigues, Filipe"
