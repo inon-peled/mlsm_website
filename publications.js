@@ -82,11 +82,11 @@ const mlsmPubs = [
             "!Pereira, Francisco Camara"
 
         ],
-        "where": "Journal of Simulation, in press",
+        "where": "Journal of Simulation",
         "year": 2020,
         "links": {
             "doi": "10.1080/17477778.2020.1756702",
-            "pdf": "https://arxiv.org/abs/2003.04109",
+            "pdf": "https://www.tandfonline.com/doi/full/10.1080/17477778.2020.1756702",
             "code": "https://github.com/inon-peled/qtip_code_pub",
             "data": ""
         }
