@@ -58,7 +58,7 @@ function _risVolume(pub) {
 }
 
 function _risWherePublished(pub) {
-    return ['JO', pub.where]
+    return ['JO', pub['where'].full]
 }
 
 function _risIssueNumber(pub) {

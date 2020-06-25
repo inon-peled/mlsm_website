@@ -1,3 +1,9 @@
+function getUniqueWhereAbbreviated(pubs) {
+    return _uniqueValues(pubs.map(function (item) {
+        return item['where'].abbreviated;
+    })).sort();
+}
+
 function highlightChosenAuthor() {
     const authors = document.getElementsByClassName('authorName');
     for (let i = 0 ; i < authors.length ; i++) {
@@ -447,7 +453,7 @@ function getPubTypeImage(pubType) {
 
 function getWhereAndWhenPublished(pub) {
     return [
-        (pub['where'] || ''),
+        (pub['where'] ? pub['where'].full : ''),
         (pub['volume'] ? ('Vol. ' + pub['volume']) : ''),
         (pub['number'] ? ('No. ' + pub['number']) : ''),
         (pub['pages'] ? ('pp. ' + pub['pages']) : ''),

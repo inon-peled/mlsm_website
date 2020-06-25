@@ -31,7 +31,10 @@ const mlsmPubs = [
             "Basak, Kakali",
             "Ben-Akiva, Moshe E."
         ],
-        "where": "Transportation Research Part A: Policy and Practice",
+        "where": {
+            "full": "Transportation Research Part A: Policy and Practice",
+            "abbreviated": "Transp. Res. Part A"
+        },
         "year": 2020,
         "links": {
             "doi": "10.1016/j.tra.2020.06.004",
@@ -47,9 +50,12 @@ const mlsmPubs = [
             "Dalla Chiara, Giacomo",
             "Cheah, Lynette",
             "!Lima Azevedo, Carlos",
-            "Ben-Akiva, Moshe E.",
+            "Ben-Akiva, Moshe E."
         ],
-        "where": "Transportation Science",
+        "where": {
+            "full": "Transportation Science",
+            "abbreviated": "Transp. Sci."
+        },
         "year": 2020,
         "links": {
             "doi": "10.1287/trsc.2019.0970",
@@ -64,7 +70,10 @@ const mlsmPubs = [
         "authors": [
             "!Rodrigues, Filipe"
         ],
-        "where": "arXiv",
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
         "year": 2020,
         "links": {
             "doi": "",
@@ -83,7 +92,10 @@ const mlsmPubs = [
             "!Lima Azevedo, Carlos",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Transportation",
+        "where": {
+            "full": "Transportation",
+            "abbreviated": "Transp."
+        },
         "year": 2020,
         "links": {
             "doi": "10.1007/s11116-020-10106-y",
@@ -100,9 +112,11 @@ const mlsmPubs = [
             "Kamalakar, Raghuveer",
             "!Lima Azevedo, Carlos",
             "!Pereira, Francisco Camara"
-
         ],
-        "where": "Journal of Simulation",
+        "where": {
+            "full": "Journal of Simulation",
+            "abbreviated": "J. Simul."
+        },
         "year": 2020,
         "links": {
             "doi": "10.1080/17477778.2020.1756702",
@@ -120,7 +134,10 @@ const mlsmPubs = [
             "Akkinepally, Arun Prakash",
             "!Lima Azevedo, Carlos"
         ],
-        "where": "Transportation",
+        "where": {
+            "full": "Transportation",
+            "abbreviated": "Transp."
+        },
         "year": 2020,
         "links": {
             "doi": "10.1007/s11116-020-10090-3",
@@ -134,10 +151,13 @@ const mlsmPubs = [
         "title": "Opening Up the Conversation: Topic Modeling for Automated Text Analysis in Travel Survey",
         "authors": [
             "!Baburajan, Vishnu",
-            "De Abreu e Silva, Jo\{\\~a}o",
+            "De Abreu e Silva, Jo{\\~a}o",
             "!Pereira, Francisco Camara"
         ],
-        "where": "2018 21st International Conference on Intelligent Transportation Systems (ITSC)",
+        "where": {
+            "full": "2018 21st International Conference on Intelligent Transportation Systems (ITSC)",
+            "abbreviated": "IEEE ITSC"
+        },
         "pages": "3657--3661",
         "publisher": "IEEE",
         "year": 2018,
@@ -156,7 +176,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Transportation Research Procedia",
+        "where": {
+            "full": "Transportation Research Procedia",
+            "abbreviated": "Transp. Res. Procedia"
+        },
         "publisher": "Elsevier",
         "volume": 41,
         "pages": "138--145",
@@ -177,7 +200,10 @@ const mlsmPubs = [
             "!Pereira, Francisco Camara",
             "Ribeiro, Bernardete"
         ],
-        "where": "Simulation Notes Europe",
+        "where": {
+            "full": "Simulation Notes Europe",
+            "abbreviated": "Simul. Notes Eur."
+        },
         "volume": 97,
         "publisher": "Elsevier",
         "year": 2019,
@@ -196,7 +222,10 @@ const mlsmPubs = [
             "Ribeiro, Bernardete",
             "!Pereira, Francisco Camara"
         ],
-        "where": "2018 International Joint Conference on Neural Networks (IJCNN)",
+        "where": {
+            "full": "2018 International Joint Conference on Neural Networks (IJCNN)",
+            "abbreviated": "IJCNN"
+        },
         "year": 2018,
         "links": {
             "doi": "10.1109/IJCNN.2018.8489302",
@@ -209,9 +238,12 @@ const mlsmPubs = [
         "type": "phdthesis",
         "title": "ATIS and Commuters Behavior: Factors Affecting Behavioral Intentions Toward the Use of Travel Information Technology",
         "authors": [
-            "!Dastjerdi, Aliasghar Mehdizadeh",
+            "!Dastjerdi, Aliasghar Mehdizadeh"
         ],
-        "where": "DTU Management",
+        "where": {
+            "full": "DTU Management",
+            "abbreviated": null
+        },
         "year": 2018,
         "links": {
             "doi": "",
@@ -226,11 +258,14 @@ const mlsmPubs = [
         "authors": [
             "!Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
-            "De Abreu e Silva, Jo\{\\~a}o",
+            "De Abreu e Silva, Jo{\\~a}o",
             "Nielsen, Otto Anker",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Transportation Research Part A: Policy and Practice",
+        "where": {
+            "full": "Transportation Research Part A: Policy and Practice",
+            "abbreviated": "Transp. Res. Part A"
+        },
         "volume": 126,
         "pages": "114--135",
         "year": 2019,
@@ -250,7 +285,10 @@ const mlsmPubs = [
             "Anderson, Marie Karen",
             "Nielsen, Otto Anker"
         ],
-        "where": "arXiv",
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -270,7 +308,10 @@ const mlsmPubs = [
             "Kurtaran, Haci Ahmet",
             "!Pereira, Francisco Camara"
         ],
-        "where": "arXiv",
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
         "year": 2020,
         "links": {
             "doi": "",
@@ -290,7 +331,10 @@ const mlsmPubs = [
             "Holz-Rau, Christian",
             "!Pereira, Francisco Camara"
         ],
-        "where": "arXiv",
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
         "year": 2020,
         "links": {
             "doi": "",
@@ -312,7 +356,10 @@ const mlsmPubs = [
             "Ben-Akiva, Moshe"
         ],
         "publisher": "Elsevier",
-        "where": "Demand for Emerging Transportation Systems: Modeling Adoption, Satisfaction, and Mobility Patterns",
+        "where": {
+            "full": "Demand for Emerging Transportation Systems: Modeling Adoption, Satisfaction, and Mobility Patterns",
+            "abbreviated": null
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -333,7 +380,10 @@ const mlsmPubs = [
             "Tan, Gary",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Proceedings of the 99th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 99th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2020,
         "links": {
             "doi": "",
@@ -355,7 +405,10 @@ const mlsmPubs = [
             "Zegras, P. Christopher",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Proceedings of the 99th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 99th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2020,
         "links": {
             "doi": "",
@@ -379,7 +432,10 @@ const mlsmPubs = [
             "Ferreira, Joseph",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Proceedings of the 99th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 99th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2020,
         "links": {
             "doi": "",
@@ -397,7 +453,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Proceedings of the 99th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 99th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2020,
         "links": {
             "doi": "",
@@ -416,7 +475,10 @@ const mlsmPubs = [
             "Kurtaran, Haci Ahmet",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Proceedings of the 99th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 99th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2020,
         "links": {
             "doi": "",
@@ -432,7 +494,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Lima Azevedo, Carlos"
         ],
-        "where": "Proceedings of the 2019 IEEE Intelligent Transportation Systems Conference (ITSC)",
+        "where": {
+            "full": "Proceedings of the 2019 IEEE Intelligent Transportation Systems Conference (ITSC)",
+            "abbreviated": "IEEE ITSC"
+        },
         "year": 2019,
         "links": {
             "doi": "10.1109/ITSC.2019.8917451",
@@ -451,7 +516,10 @@ const mlsmPubs = [
             "Dauwels, Justin",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Proceedings of the 2019 IEEE Intelligent Transportation Systems Conference (ITSC)",
+        "where": {
+            "full": "Proceedings of the 2019 IEEE Intelligent Transportation Systems Conference (ITSC)",
+            "abbreviated": "IEEE ITSC"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -469,7 +537,10 @@ const mlsmPubs = [
             "!Lima Azevedo, Carlos",
             "Farooq, Bilal"
         ],
-        "where": "arXiv",
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -487,7 +558,10 @@ const mlsmPubs = [
             "Farah, Haneen",
             "Ferreira, Ana"
         ],
-        "where": "Accident Analysis & Prevention, in press",
+        "where": {
+            "full": "Accident Analysis & Prevention, in press",
+            "abbreviated": "Accid. Anal. & Prev."
+        },
         "year": 2019,
         "links": {
             "doi": "10.1016/j.aap.2019.105315",
@@ -504,7 +578,10 @@ const mlsmPubs = [
             "!Lima Azevedo, Carlos",
             "!Pereira, Francisco Camara"
         ],
-        "where": "DTU International Energy Report 2019: Transforming Urban Mobility",
+        "where": {
+            "full": "DTU International Energy Report 2019: Transforming Urban Mobility",
+            "abbreviated": null
+        },
         "publisher": "DTU",
         "year": 2019,
         "links": {
@@ -522,7 +599,10 @@ const mlsmPubs = [
             "Rich, Jeppe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Transportation Research Part C: Emerging Technologies",
+        "where": {
+            "full": "Transportation Research Part C: Emerging Technologies",
+            "abbreviated": "Transp. Res. Part C"
+        },
         "year": 2019,
         "links": {
             "doi": "10.1016/j.trc.2019.07.006",
@@ -542,8 +622,12 @@ const mlsmPubs = [
             "!Han, Yafei",
             "Zegras, P. Christopher",
             "Ferreira, Joseph",
-            "Ben-Akiva, Moshe"],
-        "where": "Environmental Research Letters, in press",
+            "Ben-Akiva, Moshe"
+        ],
+        "where": {
+            "full": "Environmental Research Letters, in press",
+            "abbreviated": "Environ. Res. Lett."
+        },
         "year": 2019,
         "links": {
             "doi": "10.1088/1748-9326/ab22c7",
@@ -560,7 +644,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Expert Systems with Applications",
+        "where": {
+            "full": "Expert Systems with Applications",
+            "abbreviated": "Expert Syst. Appl."
+        },
         "volume": 120,
         "year": 2019,
         "links": {
@@ -579,7 +666,10 @@ const mlsmPubs = [
             "!Lima Azevedo, Carlos",
             "Ben-Akiva, Moshe E."
         ],
-        "where": "Transportation Research Record: Journal of the Transportation Research Board",
+        "where": {
+            "full": "Transportation Research Record: Journal of the Transportation Research Board",
+            "abbreviated": "Transp. Res. Rec."
+        },
         "year": 2019,
         "links": {
             "doi": "10.1177%2F0361198119842107",
@@ -591,8 +681,13 @@ const mlsmPubs = [
     {
         "type": "phdthesis",
         "title": "Detection, analysis and prediction of traffic anomalies due to special events",
-        "authors": ["!Markou, Ioulia"],
-        "where": "DTU Management",
+        "authors": [
+            "!Markou, Ioulia"
+        ],
+        "where": {
+            "full": "DTU Management",
+            "abbreviated": null
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -607,8 +702,12 @@ const mlsmPubs = [
         "authors": [
             "!Markou, Ioulia",
             "Kaiser, Kevin",
-            "!Pereira, Francisco Camara"],
-        "where": "Transportation Research Part C: Emerging Technologies",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": {
+            "full": "Transportation Research Part C: Emerging Technologies",
+            "abbreviated": "Transp. Res. Part C"
+        },
         "volume": 102,
         "pages": "73--86",
         "year": 2019,
@@ -627,7 +726,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "IEEE Transactions on Intelligent Transportation Systems",
+        "where": {
+            "full": "IEEE Transactions on Intelligent Transportation Systems",
+            "abbreviated": "IEEE T-ITS"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -649,7 +751,10 @@ const mlsmPubs = [
             "Zhao, Fang",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Journal of Choice Modelling",
+        "where": {
+            "full": "Journal of Choice Modelling",
+            "abbreviated": "J. Choice Model."
+        },
         "publisher": "Elsevier",
         "year": 2019,
         "links": {
@@ -665,11 +770,14 @@ const mlsmPubs = [
         "authors": [
             "!Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
-            "De Abreu e Silva, Jo\{\\~a}o",
+            "De Abreu e Silva, Jo{\\~a}o",
             "Nielsen, Otto Anker",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Transportation Research Part D: Transport and Environment",
+        "where": {
+            "full": "Transportation Research Part D: Transport and Environment",
+            "abbreviated": "Transp. Res. Part D"
+        },
         "volume": 67,
         "pages": "223--243",
         "year": 2019,
@@ -689,7 +797,10 @@ const mlsmPubs = [
             "Ribeiro, Bernardete",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -704,11 +815,14 @@ const mlsmPubs = [
         "authors": [
             "!Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
-            "De Abreu e Silva, Jo\{\\~a}o",
+            "De Abreu e Silva, Jo{\\~a}o",
             "Nielsen, Otto Anker",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -730,7 +844,10 @@ const mlsmPubs = [
             "Seshadri, Ravi",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Transportation Journal",
+        "where": {
+            "full": "Transportation",
+            "abbreviated": "Transp."
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -753,7 +870,10 @@ const mlsmPubs = [
             "Zegras, P. Christopher",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -771,7 +891,10 @@ const mlsmPubs = [
             "!Lima Azevedo, Carlos",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -790,7 +913,10 @@ const mlsmPubs = [
             "!Lima Azevedo, Carlos",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -812,7 +938,10 @@ const mlsmPubs = [
             "Ferreira, Joseph",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -835,7 +964,10 @@ const mlsmPubs = [
             "Sukhin, David",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Transportation Research Record: Journal of the Transportation Research Board",
+        "where": {
+            "full": "Transportation Research Record: Journal of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -853,7 +985,10 @@ const mlsmPubs = [
             "!Lima Azevedo, Carlos",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -875,7 +1010,10 @@ const mlsmPubs = [
             "!Lima Azevedo, Carlos",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Transportation Research Record: Journal of the Transportation Research Board",
+        "where": {
+            "full": "Transportation Research Record: Journal of the Transportation Research Board",
+            "abbreviated": "Transp. Res. Rec."
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -891,7 +1029,10 @@ const mlsmPubs = [
             "!Pereira, Francisco Camara",
             "!Borysov, Stanislav"
         ],
-        "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
+        "where": {
+            "full": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
+            "abbreviated": null
+        },
         "publisher": "Elsevier",
         "year": 2018,
         "links": {
@@ -909,7 +1050,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
+        "where": {
+            "full": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
+            "abbreviated": null
+        },
         "publisher": "Elsevier",
         "year": 2018,
         "links": {
@@ -927,7 +1071,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
+        "where": {
+            "full": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
+            "abbreviated": null
+        },
         "publisher": "Elsevier",
         "year": 2018,
         "links": {
@@ -947,7 +1094,10 @@ const mlsmPubs = [
             "Combes, Fran{\\c{c}}ois",
             "Rothengatter, Werner"
         ],
-        "where": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
+        "where": {
+            "full": "Mobility Patterns, Big Data and Transport Analytics: Tools and Applications for Modeling",
+            "abbreviated": null
+        },
         "publisher": "Elsevier",
         "year": 2018,
         "links": {
@@ -973,7 +1123,10 @@ const mlsmPubs = [
             "!Lima Azevedo, Carlos",
             "Ben-Akiva, Moshe"
         ],
-        "where": "The 21st IEEE International Conference on Intelligent Transportation Systems (IEEE-ITSC)",
+        "where": {
+            "full": "The 21st IEEE International Conference on Intelligent Transportation Systems (IEEE-ITSC)",
+            "abbreviated": "IEEE ITSC"
+        },
         "year": 2018,
         "links": {
             "doi": "",
@@ -995,7 +1148,10 @@ const mlsmPubs = [
             "Seshadri, Ravi",
             "Ben-Akiva, Moshe"
         ],
-        "where": "hEART 2018, 7th Symposium of the European Association for Research in Transportation",
+        "where": {
+            "full": "hEART 2018, 7th Symposium of the European Association for Research in Transportation",
+            "abbreviated": "hEART"
+        },
         "year": 2018,
         "links": {
             "doi": "",
@@ -1017,7 +1173,10 @@ const mlsmPubs = [
             "Zhao, Fang",
             "Ben-Akiva, Moshe"
         ],
-        "where": "15th International Conference on Travel Behaviour Research",
+        "where": {
+            "full": "15th International Conference on Travel Behaviour Research",
+            "abbreviated": "Conf. Travel Behav. Res."
+        },
         "year": 2018,
         "links": {
             "doi": "",
@@ -1038,7 +1197,10 @@ const mlsmPubs = [
             "Ferreira, Joseph",
             "Ben-Akiva, Moshe"
         ],
-        "where": "7th Conference on Innovations in Travel Modeling, Transportation Research Board",
+        "where": {
+            "full": "7th Conference on Innovations in Travel Modeling, Transportation Research Board",
+            "abbreviated": "Conf. Innov. Travel Model."
+        },
         "year": 2018,
         "links": {
             "doi": "",
@@ -1055,7 +1217,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Proceedings of the 21st IEEE International Conference on Intelligent Transporttion Systems",
+        "where": {
+            "full": "Proceedings of the 21st IEEE International Conference on Intelligent Transportation Systems",
+            "abbreviated": "IEEE ITSC"
+        },
         "year": 2018,
         "links": {
             "doi": "",
@@ -1072,7 +1237,10 @@ const mlsmPubs = [
             "!Pereira, Francisco Camara",
             "!Rodrigues, Filipe"
         ],
-        "where": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 98th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2019,
         "links": {
             "doi": "",
@@ -1090,7 +1258,10 @@ const mlsmPubs = [
             "Hammersh{\\o}j, Allan Dyhr",
             "Olesen, Henning"
         ],
-        "where": "Proceedings of Conference on Information and Knowledge Management",
+        "where": {
+            "full": "Proceedings of Conference on Information and Knowledge Management",
+            "abbreviated": "Inf. Knowl. Manag."
+        },
         "year": 2018,
         "links": {
             "doi": "",
@@ -1107,7 +1278,10 @@ const mlsmPubs = [
             "!Markou, Ioulia",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Information Fusion",
+        "where": {
+            "full": "Information Fusion",
+            "abbreviated": "Inf. Fusion"
+        },
         "publisher": "Elsevier",
         "year": 2018,
         "links": {
@@ -1123,7 +1297,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Transportation Research Part C",
+        "where": {
+            "full": "Transportation Research Part C",
+            "abbreviated": "Transp. Res. Part C"
+        },
         "publisher": "Elsevier",
         "year": 2018,
         "links": {
@@ -1140,7 +1317,10 @@ const mlsmPubs = [
             "!Henrickson, Kristian",
             "!Pereira, Francisco Camara"
         ],
-        "where": "IEEE Transactions on Intelligent Transportation Systems",
+        "where": {
+            "full": "IEEE Transactions on Intelligent Transportation Systems",
+            "abbreviated": "IEEE T-ITS"
+        },
         "year": 2018,
         "links": {
             "pdf": "10.1109/TITS.2018.2817879",
@@ -1157,7 +1337,10 @@ const mlsmPubs = [
             "Ribeiro, Bernardete",
             "!Pereira, Francisco Camara"
         ],
-        "where": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+        "where": {
+            "full": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+            "abbreviated": "TPAMI"
+        },
         "year": 2017,
         "links": {
             "pdf": "http://orbit.dtu.dk/files/139267460/07807338.pdf",
@@ -1173,7 +1356,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Transportation Research Record (TRR): Journal of the Transportation Research Board",
+        "where": {
+            "full": "Transportation Research Record (TRR): Journal of the Transportation Research Board",
+            "abbreviated": "Transp. Res. Rec."
+        },
         "year": 2017,
         "links": {
             "pdf": null,
@@ -1190,7 +1376,10 @@ const mlsmPubs = [
             "Ribeiro, Bernardete",
             "!Pereira, Francisco Camara"
         ],
-        "where": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+        "where": {
+            "full": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+            "abbreviated": "TPAMI"
+        },
         "year": 2016,
         "links": {
             "pdf": "http://orbit.dtu.dk/files/139266561/07765036.pdf",
@@ -1205,7 +1394,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "The Thirty-Second AAAI Conference on Artificial Intelligence (oral)",
+        "where": {
+            "full": "The Thirty-Second AAAI Conference on Artificial Intelligence (oral)",
+            "abbreviated": "AAAI Artif. Intell."
+        },
         "year": 2018,
         "links": {
             "pdf": "https://arxiv.org/pdf/1709.01779.pdf",
@@ -1221,7 +1413,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "International Conference on Intelligent Transport Systems in Theory and Practice, mobil. TUM 2017, Munich, Germany",
+        "where": {
+            "full": "International Conference on Intelligent Transport Systems in Theory and Practice, mobil. TUM 2017, Munich, Germany",
+            "abbreviated": "mobil.TUM"
+        },
         "year": 2017,
         "links": {
             "pdf": "",
@@ -1237,7 +1432,10 @@ const mlsmPubs = [
             "!Rodrigues, Filipe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+        "where": {
+            "full": "Proceedings of the 96th Annual Meeting of the Transportation Research Board",
+            "abbreviated": "TRB"
+        },
         "year": 2017,
         "links": {
             "pdf": "http://orbit.dtu.dk/files/142181716/17_04252.pdf",
@@ -1255,7 +1453,10 @@ const mlsmPubs = [
             "Balatsky, Alexander",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Proceedings of 2016 IEEE 19th International Conference on Intelligent Transportation Systems (ITSC)",
+        "where": {
+            "full": "Proceedings of 2016 IEEE 19th International Conference on Intelligent Transportation Systems (ITSC)",
+            "abbreviated": "IEEE ITSC"
+        },
         "year": 2016,
         "links": {
             "doi": "10.1109/ITSC.2016.7795731",
@@ -1272,7 +1473,10 @@ const mlsmPubs = [
             "Rich, Jeppe",
             "!Pereira, Francisco Camara"
         ],
-        "where": "arXiv",
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
         "year": 2018,
         "links": {
             "pdf": "https://arxiv.org/pdf/1808.06910",
@@ -1289,7 +1493,10 @@ const mlsmPubs = [
             "!Pereira, Francisco Camara",
             "Gomes, Rui"
         ],
-        "where": "IEEE Transactions on Intelligent Transportation Systems",
+        "where": {
+            "full": "IEEE Transactions on Intelligent Transportation Systems",
+            "abbreviated": "IEEE T-ITS"
+        },
         "year": 2018,
         "links": {
             "doi": "10.1109/TITS.2018.2842695",
@@ -1306,7 +1513,10 @@ const mlsmPubs = [
             "Derrible, Sybil",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Transportation Research Record",
+        "where": {
+            "full": "Transportation Research Record",
+            "abbreviated": "Transp. Res. Rec."
+        },
         "year": 2018,
         "links": {
             "doi": "10.1177/0361198118796971",
@@ -1323,7 +1533,10 @@ const mlsmPubs = [
             "!Pereira, Francisco Camara",
             "Ben-Akiva, Moshe E"
         ],
-        "where": "European Transport Research Review",
+        "where": {
+            "full": "European Transport Research Review",
+            "abbreviated": "Eur. Transp. Res. Rev."
+        },
         "year": 2018,
         "links": {
             "doi": "10.1186/s12544-018-0300-1",
@@ -1340,7 +1553,10 @@ const mlsmPubs = [
             "Antoniou, Constantinos",
             "Dimitriou, Loukas"
         ],
-        "where": "Transportation Research. Part C: Emerging Technologies",
+        "where": {
+            "full": "Transportation Research. Part C: Emerging Technologies",
+            "abbreviated": "Transp. Res. Part C"
+        },
         "volume": 91,
         "year": 2018,
         "links": {
@@ -1363,7 +1579,10 @@ const mlsmPubs = [
             "!Pereira, Francisco Camara",
             "Zhao, Jinhua"
         ],
-        "where": "Transportation Research Record",
+        "where": {
+            "full": "Transportation Research Record",
+            "abbreviated": "Transp. Res. Rec."
+        },
         "volume": 2649,
         "year": 2017,
         "links": {
@@ -1381,7 +1600,10 @@ const mlsmPubs = [
             "Antoniou, Constantinos",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Proceedings of the 2017 5th Ieee International Conference on Models and Technologies for Intelligent Transportation Systems (mt-its)",
+        "where": {
+            "full": "Proceedings of the 2017 5th Ieee International Conference on Models and Technologies for Intelligent Transportation Systems (mt-its)",
+            "abbreviated": "MT-ITS"
+        },
         "year": 2017,
         "links": {
             "doi": "10.1109/MTITS.2017.8005602",
@@ -1398,7 +1620,10 @@ const mlsmPubs = [
             "Ribeiro, Bernardete",
             "!Pereira, Francisco Camara"
         ],
-        "where": "Applied Soft Computing",
+        "where": {
+            "full": "Applied Soft Computing",
+            "abbreviated": "Appl. Soft. Comput."
+        },
         "volume": 60,
         "year": 2017,
         "links": {
@@ -1416,7 +1641,10 @@ const mlsmPubs = [
             "Antoniou, Constantinos",
             "!Pereira, Francisco Camara"
         ],
-        "where": "IEEE Intelligent Systems",
+        "where": {
+            "full": "IEEE Intelligent Systems",
+            "abbreviated": "Intell. Syst."
+        },
         "volume": 31,
         "number": 6,
         "year": 2016,
@@ -1436,7 +1664,10 @@ const mlsmPubs = [
             "Zhao, Jinhua",
             "Koutsopoulos, Harilaos N"
         ],
-        "where": "IEEE Transactions on Intelligent Transportation Systems",
+        "where": {
+            "full": "IEEE Transactions on Intelligent Transportation Systems",
+            "abbreviated": "IEEE T-ITS"
+        },
         "volume": 17,
         "number": 11,
         "year": 2016,
@@ -1458,7 +1689,10 @@ const mlsmPubs = [
             "Antoniou, Constantinos",
             "Ben-Akiva, Moshe"
         ],
-        "where": "Proceedings of the 2015 IEEE 18th International Conference on Intelligent Transportation Systems (ITSC)",
+        "where": {
+            "full": "Proceedings of the 2015 IEEE 18th International Conference on Intelligent Transportation Systems (ITSC)",
+            "abbreviated": "IEEE ITSC"
+        },
         "year": 2015,
         "links": {
             "doi": "10.1109/ITSC.2015.363",
@@ -1473,7 +1707,10 @@ const mlsmPubs = [
         "authors": [
             "!Pereira, Francisco Camara"
         ],
-        "where": "Book of Abstracts. DTU's Sustain Conference 2015",
+        "where": {
+            "full": "Book of Abstracts. DTU's Sustain Conference 2015",
+            "abbreviated": "DTU Sustain. Conf."
+        },
         "year": 2015,
         "links": {
             "doi": "",
@@ -1489,7 +1726,10 @@ const mlsmPubs = [
             "!Petersen, Niklas Christoffer",
             "Villadsen, J{\\o}rgen"
         ],
-        "where": "International Conference on Formal Grammar",
+        "where": {
+            "full": "International Conference on Formal Grammar",
+            "abbreviated": "Int. Conf. Form. Gramm."
+        },
         "year": 2017,
         "links": {
             "doi": "10.1007/978-3-662-56343-4_4",

@@ -1,3 +1,7 @@
+function _getWhereFull(pub) {
+    return pub ? (pub['where'] ? pub['where'].full : '') : '';
+}
+
 function _toPlainEnglishLowercase(str) {
     return str
         .replace(/[\u0300-\u036f]/g, "")
@@ -82,7 +86,7 @@ function _toBibArticle(pub) {
         _getBibEntryIdentifier(pub) + ',\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
-        _strOrEmpty('journal', _get('where', '', pub)) +
+        _strOrEmpty('journal', _getWhereFull(pub)) +
         _strOrEmpty('publisher', _get('publisher', '', pub)) +
         _strOrEmpty('volume', _get('volume', '', pub)) +
         _strOrEmpty('number', _get('number', '', pub)) +
@@ -98,7 +102,7 @@ function _toBibPhdThesis(pub) {
         _getBibEntryIdentifier(pub) + ',\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
-        _strOrEmpty('school', _get('where', '', pub)) +
+        _strOrEmpty('school', _getWhereFull(pub)) +
         _strOrEmpty('year', _get('year', '', pub)) +
         _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
         _bibLinks(_get('links', {}, pub)) +
@@ -110,7 +114,7 @@ function _toBibBook(pub) {
         _getBibEntryIdentifier(pub) + ',\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
-        _strOrEmpty('booktitle', _get('where', '', pub)) +
+        _strOrEmpty('booktitle', _getWhereFull(pub)) +
         _strOrEmpty('publisher', _get('publisher', '', pub)) +
         _strOrEmpty('pages', _get('pages', '', pub)) +
         _strOrEmpty('year', _get('year', '', pub)) +
@@ -124,7 +128,7 @@ function _toBibConference(pub) {
         _getBibEntryIdentifier(pub) + ',\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
-        _strOrEmpty('booktitle', _get('where', '', pub)) +
+        _strOrEmpty('booktitle', _getWhereFull(pub)) +
         _strOrEmpty('pages', _get('pages', '', pub)) +
         _strOrEmpty('year', _get('year', '', pub)) +
         _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
@@ -137,7 +141,7 @@ function _toBibMisc(pub) {
         _getBibEntryIdentifier(pub) + ',\n' +
         _strOrEmpty('author', _getAuthorsForBibEntry(pub)) +
         _strOrEmpty('title', _get('title', '', pub)) +
-        _strOrEmpty('howpublished', _get('where', '', pub)) +
+        _strOrEmpty('howpublished', _getWhereFull(pub)) +
         _strOrEmpty('publisher', _get('publisher', '', pub)) +
         _strOrEmpty('volume', _get('volume', '', pub)) +
         _strOrEmpty('number', _get('number', '', pub)) +
