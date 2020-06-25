@@ -22,6 +22,26 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Assessing the impacts of automated mobility-on-demand through agent-based simulation: A study of Singapore",
+        "authors": [
+            "Oh, Simon",
+            "Seshadri, Ravi",
+            "!Lima Azevedo, Carlos",
+            "Kumar, Nishant",
+            "Basak, Kakali",
+            "Ben-Akiva, Moshe E."
+        ],
+        "where": "Transportation Research Part A: Policy and Practice",
+        "year": 2020,
+        "links": {
+            "doi": "10.1016/j.tra.2020.06.004",
+            "pdf": "https://www.sciencedirect.com/science/article/abs/pii/S0965856420306133",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "A Policy-Sensitive Model of Parking Choice for Commercial Vehicles in Urban Areas",
         "authors": [
             "Dalla Chiara, Giacomo",
