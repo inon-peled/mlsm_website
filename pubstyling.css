@@ -1,6 +1,6 @@
 /* BEGINNING OF STYLING FOR PUBLICATIONS: */
 
-#pubWhereSelectionBox {
+.selectionBox {
     background-color: #990000;
     color: white;
     border: none;
@@ -20,15 +20,6 @@
 
 .pubButtons * {
     margin-top: 2px;
-}
-
-#mlsmAuthorSelectionBox {
-    background-color: #990000;
-    color: white;
-    border: none;
-    margin-left: 4px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .pubYear h1 {
