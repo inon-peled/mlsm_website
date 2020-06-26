@@ -347,13 +347,12 @@ const mlsmPubs = [
         "type": "book",
         "title": "SMART mobility via prediction, optimization and personalization",
         "authors": [
-            "Gupta, Samarth",
-            "Seshadri, Ravi",
             "Atasoy, Bilge",
-            "Prakash, A Arun",
-            "!Pereira, Francisco Camara",
-            "Tan, Gary",
-            "Ben-Akiva, Moshe"
+            "!Lima Azevedo, Carlos",
+            "Akkinepally, Arun Prakash",
+            "Seshadri, Ravi",
+            "Zhao, Fang",
+            "Abou-Zeid, Maya",
         ],
         "publisher": "Elsevier",
         "where": {
