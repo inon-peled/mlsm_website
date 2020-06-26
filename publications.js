@@ -115,7 +115,7 @@ const mlsmPubs = [
         ],
         "where": {
             "full": "Journal of Simulation",
-            "abbreviated": "J. Simul."
+            "abbreviated": "Simul."
         },
         "year": 2020,
         "links": {
@@ -966,7 +966,7 @@ const mlsmPubs = [
         ],
         "where": {
             "full": "Transportation Research Record: Journal of the Transportation Research Board",
-            "abbreviated": "TRB"
+            "abbreviated": "Transp. Res. Rec."
         },
         "year": 2019,
         "links": {

@@ -25,7 +25,7 @@ function _addPubWhereFiltering(pubs) {
     pubWhereSelectionBox.classList.add('pubWhereSelectionBox');
     pubWhereSelectionBox.classList.add('inactive');
     pubWhereSelectionBox.addEventListener("change", function () {
-        filterPubWhere(pubs);
+        toggleVisibilityOfPublications(pubs);
     }, false);
     document.getElementById('pubWhereSelection')
         .appendChild(pubWhereSelectionBox);
@@ -100,6 +100,11 @@ function getActivePubType() {
     }
 }
 
+function _pubMatchesWhereFilter(jsPubs, htmlPub) {
+    const selectedPubWhere = document.getElementById('pubWhereSelectionBox').value;
+    return (selectedPubWhere === 'all') || (selectedPubWhere === htmlPub.getAttribute('data-pub-where-abbrv'));
+}
+
 function pubMatchesActivePubType(jsPubs, htmlPub) {
     return (getActivePubType() === 'all') ||
         (getActivePubType() === getPubType(getJsPub(jsPubs, htmlPub)));
@@ -120,9 +125,12 @@ function pubMatchesActiveAuthor(jsPubs, htmlPub) {
 function toggleVisibilityOfPublications(jsPubs) {
     let htmlPubs = document.getElementsByClassName("pubDetails");
     for (let i = 0; i < htmlPubs.length; i++) {
-        ((pubMatchesActivePubType(jsPubs, htmlPubs[i]) &&
-            pubMatchesActiveAuthor(jsPubs, htmlPubs[i])) ?
-            showDiv : hideDiv)(htmlPubs[i]);
+        ((
+            _pubMatchesWhereFilter(jsPubs, htmlPubs[i]) &&
+            pubMatchesActivePubType(jsPubs, htmlPubs[i]) &&
+            pubMatchesActiveAuthor(jsPubs, htmlPubs[i])
+            ) ? showDiv : hideDiv
+        )(htmlPubs[i]);
     }
     toggleYears();
 }
@@ -513,6 +521,7 @@ function onePubToHtml(pub) {
     }
 
     return '<div' +
+        ' data-pub-where-abbrv="' + pub['where'].abbreviated + '"' +
         ' data-pub-type="' + getPubType(pub) + '"' +
         ' data-pubref="' + _getBibEntryIdentifier(pub) + '"' +
         ' class="pubDetails pubType_' + getPubType(pub) + ' shown">\n' +
