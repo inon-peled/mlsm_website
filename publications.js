@@ -753,7 +753,7 @@ const mlsmPubs = [
         ],
         "where": {
             "full": "Journal of Choice Modelling",
-            "abbreviated": "J. Choice Model."
+            "abbreviated": "Choice Model."
         },
         "publisher": "Elsevier",
         "year": 2019,
