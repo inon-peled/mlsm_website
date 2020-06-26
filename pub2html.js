@@ -1,3 +1,20 @@
+function _addResetFilteringButton(pubs) {
+    document.getElementById('resetFiltering').appendChild(function () {
+        let resetFilteringButton = document.createElement('button');
+        resetFilteringButton.id = 'resetFilteringButton';
+        resetFilteringButton.classList.add('resetFilteringButton');
+        resetFilteringButton.innerHTML = 'Reset';
+        resetFilteringButton.addEventListener("click", function() {
+            const selectionBoxes = document.getElementsByClassName('selectionBox');
+            for (let i = 0; i < selectionBoxes.length; i++) {
+                selectionBoxes[i].value = 'all';
+            }
+            filterAuthors(pubs);
+        }, false);
+        return resetFilteringButton;
+    }());
+}
+
 function _createSelectionBox(parent, identifier, onChangeFunc) {
     let selectionBox = document.createElement('select');
     selectionBox.id = identifier;
@@ -558,6 +575,7 @@ function showPublications(pubs) {
 }
 
 function main(pubs) {
+    _addResetFilteringButton(pubs);
     addFiltering(pubs);
     showDownloading(pubs);
     showPublications(pubs);
