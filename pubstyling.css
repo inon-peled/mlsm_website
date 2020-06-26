@@ -1,5 +1,18 @@
 /* BEGINNING OF STYLING FOR PUBLICATIONS: */
 
+.pubBtn {
+    color: black;
+    border: none;
+    outline: none;
+    padding: 3px 10px 3px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pubBtn:hover {
+    background-color: #ddd;
+}
+
 .selectionBox {
     background-color: #990000;
     color: white;
@@ -48,18 +61,6 @@
 
 .pubButtons {
     margin-top: 5px;
-}
-
-.btn {
-    border: none;
-    outline: none;
-    padding: 3px 10px 3px;
-    background-color: white;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #ddd;
 }
 
 .pubSepBelowButtons {

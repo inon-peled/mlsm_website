@@ -2,7 +2,7 @@ function _addResetFilteringButton(pubs) {
     document.getElementById('resetFiltering').appendChild(function () {
         let resetFilteringButton = document.createElement('button');
         resetFilteringButton.id = 'resetFilteringButton';
-        resetFilteringButton.classList.add('btn');
+        resetFilteringButton.classList.add('pubBtn');
         resetFilteringButton.innerHTML = 'Reset';
         resetFilteringButton.addEventListener("click", function() {
             const selectionBoxes = document.getElementsByClassName('selectionBox');
@@ -348,7 +348,7 @@ function downloadPubsAsJson(pubs) {
 function addDownloadButton(btnId, btnText) {
     const pubDownloading = document.getElementById("pubDownloading");
     pubDownloading.innerHTML += '<button ' +
-        ' class=btn' +
+        ' class=pubBtn' +
         ' id=' + btnId +
         '>' + btnText +
         '</button>\n';
