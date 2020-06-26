@@ -1,26 +1,34 @@
-function _addOption(cls, text, value, selectionBox) {
+function _addOption(cls, text, value, parent) {
     let option = document.createElement('option');
     option.classList.add(cls);
     option.value = value;
     option.text = text;
-    selectionBox.appendChild(option);
+    parent.appendChild(option);
+    return option;
 }
 
 function _addPubWhereFiltering(pubs) {
-    function _addWhereTypeOptions(whereType, pubWheres, pubWhereSelectionBox) {
+    function _addWhereTypeOptions(optGroupLabel, whereType, pubWheres) {
+        let optGroup = document.createElement('optGroup');
+        optGroup.label = optGroupLabel;
+        optGroup.classList.add('whereTypeOptGroup');
         for (let i = 0; i < pubWheres[whereType].length; i++) {
             _addOption(
-                whereType + 'PubWhereOption',
-                pubWheres[whereType][i],
-                pubWheres[whereType][i],
-                pubWhereSelectionBox);
+            whereType + 'PubWhereOption',
+            pubWheres[whereType][i],
+            pubWheres[whereType][i],
+            optGroup);
         }
+        return optGroup;
     }
+
     const pubWheres = _getJournalsAndConferences(pubs);
     let pubWhereSelectionBox = document.createElement('select');
-    _addOption('pubWhereOption', '-- Venue --', 'all', pubWhereSelectionBox);
-    _addWhereTypeOptions('journal', pubWheres, pubWhereSelectionBox);
-    _addWhereTypeOptions('conference', pubWheres, pubWhereSelectionBox);
+    _addOption('pubWhereOption', 'All J. and Conf.', 'all', pubWhereSelectionBox);
+    pubWhereSelectionBox.appendChild(
+        _addWhereTypeOptions('Journals', 'journal', pubWheres, pubWhereSelectionBox));
+    pubWhereSelectionBox.appendChild(
+        _addWhereTypeOptions('Conferences', 'conference', pubWheres, pubWhereSelectionBox));
     pubWhereSelectionBox.id = 'pubWhereSelectionBox';
     pubWhereSelectionBox.classList.add('pubWhereSelectionBox');
     pubWhereSelectionBox.classList.add('inactive');
