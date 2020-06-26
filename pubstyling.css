@@ -50,7 +50,7 @@
     margin-top: 5px;
 }
 
-.downloadBtn {
+.btn {
     border: none;
     outline: none;
     padding: 3px 10px;
@@ -58,7 +58,7 @@
     cursor: pointer;
 }
 
-.downloadBtn:hover {
+.btn:hover {
     background-color: #ddd;
 }
 
@@ -117,30 +117,6 @@
 .pubTypeSelection img {
     height: 42px;
     width: 42px;
-}
-
-.filterBtn {
-    margin-right: 1px;
-    margin-left: 1px;
-    border: none;
-    outline: none;
-    padding: 3px 10px;
-    background-color: white;
-    cursor: pointer;
-}
-
-.filterBtn:not(.active):enabled:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.filterBtn:disabled {
-    color: lightgrey;
-}
-
-.filterBtn.active {
-    background-color: #990000;
-    color: white;
 }
 
 .publications .yearsep {

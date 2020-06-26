@@ -2,7 +2,7 @@ function _addResetFilteringButton(pubs) {
     document.getElementById('resetFiltering').appendChild(function () {
         let resetFilteringButton = document.createElement('button');
         resetFilteringButton.id = 'resetFilteringButton';
-        resetFilteringButton.classList.add('resetFilteringButton');
+        resetFilteringButton.classList.add('btn');
         resetFilteringButton.innerHTML = 'Reset';
         resetFilteringButton.addEventListener("click", function() {
             const selectionBoxes = document.getElementsByClassName('selectionBox');
@@ -57,7 +57,7 @@ function _addPubWhereFiltering(pubs) {
             toggleVisibilityOfPublications(pubs);
         }
     );
-    _addOption('pubWhereOption', '─All J. and Conf.─', 'all', pubWhereSelectionBox);
+    _addOption('pubWhereOption', 'All J. and Conf.', 'all', pubWhereSelectionBox);
     pubWhereSelectionBox.appendChild(
         _addWhereTypeOptions('Journals', 'journal', pubWheres, pubWhereSelectionBox));
     pubWhereSelectionBox.appendChild(
@@ -214,7 +214,7 @@ function addAuthorFiltering(pubs) {
             filterAuthors(pubs);
         }
     );
-    _addOption('authorOption', '─All MLSM─', 'all', mlsmAuthorSelectionBox);
+    _addOption('authorOption', 'All MLSM', 'all', mlsmAuthorSelectionBox);
     for (let i = 0; i < mlsmAuthors.length; i++) {
         _addOption(
             'authorOption',
@@ -348,7 +348,7 @@ function downloadPubsAsJson(pubs) {
 function addDownloadButton(btnId, btnText) {
     const pubDownloading = document.getElementById("pubDownloading");
     pubDownloading.innerHTML += '<button ' +
-        ' class=downloadBtn' +
+        ' class=btn' +
         ' id=' + btnId +
         '>' + btnText +
         '</button>\n';
@@ -435,7 +435,7 @@ function addPubTypeSelection(pubs) {
     );
     _addOption(
         'pubTypeOption',
-        '─All Types─',
+        'All Types',
         'all',
         pubTypeSelectionBox
     );
