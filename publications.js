@@ -1175,7 +1175,7 @@ const mlsmPubs = [
         ],
         "where": {
             "full": "15th International Conference on Travel Behaviour Research",
-            "abbreviated": "Conf. Travel Behav. Res."
+            "abbreviated": "Travel Behav. Res."
         },
         "year": 2018,
         "links": {
@@ -1199,7 +1199,7 @@ const mlsmPubs = [
         ],
         "where": {
             "full": "7th Conference on Innovations in Travel Modeling, Transportation Research Board",
-            "abbreviated": "Conf. Innov. Travel Model."
+            "abbreviated": "Innov. Travel Model."
         },
         "year": 2018,
         "links": {
@@ -1602,7 +1602,7 @@ const mlsmPubs = [
         ],
         "where": {
             "full": "Proceedings of the 2017 5th Ieee International Conference on Models and Technologies for Intelligent Transportation Systems (mt-its)",
-            "abbreviated": "MT-ITS"
+            "abbreviated": "IEEE MT-ITS"
         },
         "year": 2017,
         "links": {
@@ -1709,7 +1709,7 @@ const mlsmPubs = [
         ],
         "where": {
             "full": "Book of Abstracts. DTU's Sustain Conference 2015",
-            "abbreviated": "DTU Sustain. Conf."
+            "abbreviated": "DTU Sustain."
         },
         "year": 2015,
         "links": {
@@ -1728,7 +1728,7 @@ const mlsmPubs = [
         ],
         "where": {
             "full": "International Conference on Formal Grammar",
-            "abbreviated": "Int. Conf. Form. Gramm."
+            "abbreviated": "Form. Gramm."
         },
         "year": 2017,
         "links": {

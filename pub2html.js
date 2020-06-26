@@ -1,7 +1,54 @@
-function getUniqueWhereAbbreviated(pubs) {
-    return _uniqueValues(pubs.map(function (item) {
-        return item['where'].abbreviated;
-    })).sort();
+function _addOption(cls, text, value, selectionBox) {
+    let option = document.createElement('option');
+    option.classList.add(cls);
+    option.value = value;
+    option.text = text;
+    selectionBox.appendChild(option);
+}
+
+function _addPubWhereFiltering(pubs) {
+    function _addWhereTypeOptions(whereType, pubWheres, pubWhereSelectionBox) {
+        for (let i = 0; i < pubWheres[whereType].length; i++) {
+            _addOption(
+                whereType + 'PubWhereOption',
+                pubWheres[whereType][i],
+                pubWheres[whereType][i],
+                pubWhereSelectionBox);
+        }
+    }
+    const pubWheres = _getJournalsAndConferences(pubs);
+    let pubWhereSelectionBox = document.createElement('select');
+    _addOption('pubWhereOption', '-- Venue --', 'all', pubWhereSelectionBox);
+    _addWhereTypeOptions('journal', pubWheres, pubWhereSelectionBox);
+    _addWhereTypeOptions('conference', pubWheres, pubWhereSelectionBox);
+    pubWhereSelectionBox.id = 'pubWhereSelectionBox';
+    pubWhereSelectionBox.classList.add('pubWhereSelectionBox');
+    pubWhereSelectionBox.classList.add('inactive');
+    pubWhereSelectionBox.addEventListener("change", function () {
+        filterPubWhere(pubs);
+    }, false);
+    document.getElementById('pubWhereSelection')
+        .appendChild(pubWhereSelectionBox);
+}
+
+function _getJournalsAndConferences(pubs) {
+    function _getUniqueByType(pubs, pubType) {
+        return _uniqueValues(pubs
+            .filter(function (item) {
+                return item['type'] === pubType;
+            })
+            .map(function (item) {
+                return item['where'].abbreviated;
+            }))
+            .sort(function (a, b) {
+                return a.toLowerCase().localeCompare(b.toLowerCase());
+            });
+    }
+
+    return {
+        'journal': _getUniqueByType(pubs, 'article'),
+        'conference': _getUniqueByType(pubs, 'conference')
+    };
 }
 
 function highlightChosenAuthor() {
@@ -83,6 +130,7 @@ function toggleVisibilityOfPublications(jsPubs) {
 function addFiltering(pubs) {
     addPubTypeSelection(pubs);
     addAuthorFiltering(pubs);
+    _addPubWhereFiltering(pubs);
 }
 
 function getMlsmAuthors(pubs) {
@@ -123,22 +171,15 @@ function filterAuthors(pubs) {
 }
 
 function addAuthorFiltering(pubs) {
-    function addOption(text, value, selectionBox) {
-        let option = document.createElement('option');
-        option.classList.add('authorOption');
-        option.value = value;
-        option.text = text;
-        selectionBox.appendChild(option);
-    }
-
     const mlsmAuthors = getMlsmAuthors(pubs);
     let mlsmAuthorSelectionBox = document.createElement('select');
     mlsmAuthorSelectionBox.id = 'mlsmAuthorSelectionBox';
     mlsmAuthorSelectionBox.classList.add('authorSelectionBox');
     mlsmAuthorSelectionBox.classList.add('inactive');
-    addOption('-- All MLSM --', 'all', mlsmAuthorSelectionBox);
+    _addOption('authorOption', '-- All MLSM --', 'all', mlsmAuthorSelectionBox);
     for (let i = 0; i < mlsmAuthors.length; i++) {
-        addOption(
+        _addOption(
+            'authorOption',
             toStylizedString(mlsmAuthors[i].slice(1)).replace(',', ''),
             mlsmAuthors[i],
             mlsmAuthorSelectionBox);
