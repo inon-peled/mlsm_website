@@ -24,7 +24,7 @@ function _addPubWhereFiltering(pubs) {
 
     const pubWheres = _getJournalsAndConferences(pubs);
     let pubWhereSelectionBox = document.createElement('select');
-    _addOption('pubWhereOption', 'All J. and Conf.', 'all', pubWhereSelectionBox);
+    _addOption('pubWhereOption', '── All J. and Conf. ──', 'all', pubWhereSelectionBox);
     pubWhereSelectionBox.appendChild(
         _addWhereTypeOptions('Journals', 'journal', pubWheres, pubWhereSelectionBox));
     pubWhereSelectionBox.appendChild(
@@ -192,7 +192,7 @@ function addAuthorFiltering(pubs) {
     mlsmAuthorSelectionBox.id = 'mlsmAuthorSelectionBox';
     mlsmAuthorSelectionBox.classList.add('authorSelectionBox');
     mlsmAuthorSelectionBox.classList.add('inactive');
-    _addOption('authorOption', '-- All MLSM --', 'all', mlsmAuthorSelectionBox);
+    _addOption('authorOption', '── All MLSM ──', 'all', mlsmAuthorSelectionBox);
     for (let i = 0; i < mlsmAuthors.length; i++) {
         _addOption(
             'authorOption',
