@@ -1,3 +1,13 @@
+function _createSelectionBox(parent, identifier, onChangeFunc) {
+    let selectionBox = document.createElement('select');
+    selectionBox.id = identifier;
+    selectionBox.classList.add('selectionBox');
+    selectionBox.classList.add('inactive');
+    selectionBox.addEventListener("change", onChangeFunc, false);
+    parent.appendChild(selectionBox);
+    return selectionBox;
+}
+
 function _addOption(cls, text, value, parent) {
     let option = document.createElement('option');
     option.classList.add(cls);
@@ -23,20 +33,18 @@ function _addPubWhereFiltering(pubs) {
     }
 
     const pubWheres = _getJournalsAndConferences(pubs);
-    let pubWhereSelectionBox = document.createElement('select');
-    _addOption('pubWhereOption', '── All J. and Conf. ──', 'all', pubWhereSelectionBox);
+    let pubWhereSelectionBox = _createSelectionBox(
+        document.getElementById('pubWhereSelection'),
+        'pubWhereSelectionBox',
+        function () {
+            toggleVisibilityOfPublications(pubs);
+        }
+    );
+    _addOption('pubWhereOption', '─All J. and Conf.─', 'all', pubWhereSelectionBox);
     pubWhereSelectionBox.appendChild(
         _addWhereTypeOptions('Journals', 'journal', pubWheres, pubWhereSelectionBox));
     pubWhereSelectionBox.appendChild(
         _addWhereTypeOptions('Conferences', 'conference', pubWheres, pubWhereSelectionBox));
-    pubWhereSelectionBox.id = 'pubWhereSelectionBox';
-    pubWhereSelectionBox.classList.add('pubWhereSelectionBox');
-    pubWhereSelectionBox.classList.add('inactive');
-    pubWhereSelectionBox.addEventListener("change", function () {
-        toggleVisibilityOfPublications(pubs);
-    }, false);
-    document.getElementById('pubWhereSelection')
-        .appendChild(pubWhereSelectionBox);
 }
 
 function _getJournalsAndConferences(pubs) {
@@ -100,12 +108,7 @@ function getOnlyShownJsPubs(jsPubs) {
 }
 
 function getActivePubType() {
-    const pubTypeButtons = document.getElementsByClassName('filterBtn');
-    for (let i = 0; i < pubTypeButtons.length; i++) {
-        if (pubTypeButtons[i].classList.contains('active')) {
-            return pubTypeButtons[i].id.slice('btn_'.length);
-        }
-    }
+    return document.getElementById('pubTypeSelectionBox').value;
 }
 
 function _pubMatchesWhereFilter(jsPubs, htmlPub) {
@@ -182,17 +185,19 @@ function getJsPub(jsPubs, htmlPub) {
 
 function filterAuthors(pubs) {
     toggleVisibilityOfPublications(pubs);
-    enableButtonsPerActiveAuthor(pubs);
     highlightChosenAuthor();
 }
 
 function addAuthorFiltering(pubs) {
     const mlsmAuthors = getMlsmAuthors(pubs);
-    let mlsmAuthorSelectionBox = document.createElement('select');
-    mlsmAuthorSelectionBox.id = 'mlsmAuthorSelectionBox';
-    mlsmAuthorSelectionBox.classList.add('authorSelectionBox');
-    mlsmAuthorSelectionBox.classList.add('inactive');
-    _addOption('authorOption', '── All MLSM ──', 'all', mlsmAuthorSelectionBox);
+    let mlsmAuthorSelectionBox = _createSelectionBox(
+        document.getElementById('authorSelection'),
+        'mlsmAuthorSelectionBox',
+        function () {
+            filterAuthors(pubs);
+        }
+    );
+    _addOption('authorOption', '─All MLSM─', 'all', mlsmAuthorSelectionBox);
     for (let i = 0; i < mlsmAuthors.length; i++) {
         _addOption(
             'authorOption',
@@ -200,11 +205,6 @@ function addAuthorFiltering(pubs) {
             mlsmAuthors[i],
             mlsmAuthorSelectionBox);
     }
-    mlsmAuthorSelectionBox.addEventListener("change", function () {
-        filterAuthors(pubs);
-    }, false);
-    document.getElementById('authorSelection')
-        .appendChild(mlsmAuthorSelectionBox);
 }
 
 function isShown(element) {
@@ -404,68 +404,32 @@ function toggleYears() {
     }
 }
 
-function countPubTypes(htmlPubs) {
-    let counters = { 'all': 0 };
-    for (let i = 0 ; i < htmlPubs.length ; i++) {
-        const pubType = htmlPubs[i].getAttribute('data-pub-type');
-        counters[pubType] = _get(pubType, 0, counters) + 1;
-        counters['all'] += 1;
-    }
-    return counters;
-}
-
-function enableButtonsPerActiveAuthor(jsPubs) {
-    const countsOfAuthorPubTypes = countPubTypes([].filter.call(
-        document.getElementsByClassName('pubDetails'),
-        function (htmlPub) {
-            return pubMatchesActiveAuthor(jsPubs, htmlPub);
-        }
-    ));
-    const pubTypeButtons = document.getElementsByClassName('filterBtn');
-    for (let i = 0 ; i < pubTypeButtons.length ; i++) {
-        pubTypeButtons[i].disabled = _get(
-            pubTypeButtons[i].id.slice('btn_'.length), 0, countsOfAuthorPubTypes
-        ) <= 0;
-    }
-}
-
-function activateButton(pubType) {
-    let allButtons = document.getElementsByClassName("filterBtn");
-    for (let i = 0; i < allButtons.length; i++) {
-        allButtons[i].classList.remove('active');
-        if (allButtons[i].id === 'btn_' + pubType) {
-            allButtons[i].classList.add('active');
-        }
-    }
-}
-
 function capitalizeFirstLetter(string) {
     return string[0].toUpperCase() + string.slice(1);
 }
 
-function addPubTypeButton(pubs, parent, pubType, txt) {
-    let button = document.createElement('button');
-    button.id = 'btn_' + pubType;
-    button.classList.add('filterBtn');
-    button.innerText = txt;
-    button.addEventListener("click", function () {
-        activateButton(pubType);
-        toggleVisibilityOfPublications(pubs);
-    }, false);
-    parent.appendChild(button);
-}
-
 function addPubTypeSelection(pubs) {
-    let selDiv = document.getElementById('pubTypeSelection');
-    addPubTypeButton(pubs, selDiv, 'all', 'Show all');
+    let pubTypeSelectionBox = _createSelectionBox(
+        document.getElementById('pubTypeSelection'),
+        'pubTypeSelectionBox',
+        function () {
+            toggleVisibilityOfPublications(pubs);
+        }
+    );
+    _addOption(
+        'pubTypeOption',
+        '─All Types─',
+        'all',
+        pubTypeSelectionBox
+    );
     for (let i = 0; i < publishedPubTypes(pubs).length; i++) {
-        addPubTypeButton(
-            pubs,
-            selDiv,
+        _addOption(
+            'pubTypeOption',
+            capitalizeFirstLetter(publishedPubTypes(pubs)[i]),
             publishedPubTypes(pubs)[i],
-            capitalizeFirstLetter(publishedPubTypes(pubs)[i]))
+            pubTypeSelectionBox
+        );
     }
-    activateButton('all');
 }
 
 function toStylizedString(author) {
