@@ -5,7 +5,7 @@ function makeYearsClickable() {
         yearControls[i].addEventListener("click", function () {
             _toggleClass(document.getElementById('pubsOfYear' + year), 'showMe', 'hideMe');
             document.getElementById('collapseYear' + year).innerHTML =
-                document.getElementById('pubsOfYear' + year).classList.contains('showMe') ? '&#9660;' : '&#9654;';
+                document.getElementById('pubsOfYear' + year).classList.contains('showMe') ? '&#9650;' : '&#9660;';
         }, false);
     }
 }
@@ -587,7 +587,7 @@ function showPublications(pubs) {
             '<div data-year="' + year + '" class="pubYear showMe" id=pubYear' + year + '>\n' +
             '<div data-year="' + year + '" class="yearControl">' +
                 '<h1 id="header' + year + '" class="headerYear">' + year + '</h1>\n' +
-                '<h4 id="collapseYear' + year +'" class="collapseYear">' + '&#9660;' + '</h4>\n' +
+                '<h4 id="collapseYear' + year +'" class="collapseYear">' + '&#9650;' + '</h4>\n' +
             '</div>' +
             '<div data-year="' + year + '" class="pubsOfYear showMe" id="' + ("pubsOfYear" + year) + '">' +
                 getItemsAsString(pubsOfYear) +
