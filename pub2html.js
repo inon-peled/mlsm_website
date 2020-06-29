@@ -523,9 +523,19 @@ function getWhereAndWhenPublished(pub) {
 }
 
 function onePubToHtml(pub) {
+    function _makeSpan(link, linkName) {
+        return '<span class="pubLink"> ' +
+            '<a target="_blank" href="' + link + '" rel="noopener noreferrer">[' + linkName + ']</a></span>';
+    }
+
     function link(pub, linkKey, linkName) {
-        return !pub.links[linkKey] ? '' : '<span class="pubLink"> <a target="_blank" href="' +
-            pub.links[linkKey] + '" rel="noopener noreferrer">[' + linkName + ']</a></span>';
+        return !pub.links[linkKey] ? '' : _makeSpan(pub.links[linkKey], linkName);
+    }
+
+    function _pdfLink(pub) {
+        return pub.links['doi'] ?
+            _makeSpan('https://doi.org/' + pub.links['doi'], 'PDF') :
+            link(pub, 'pdf', 'PDF');
     }
 
     return '<div' +
@@ -540,7 +550,7 @@ function onePubToHtml(pub) {
         '</div>\n' +
         '<div class="titleAndLinks">' +
         '<span class="pubTitle">' + pub.title + '</span>' +
-        link(pub, 'pdf', 'PDF') +
+        _pdfLink(pub) +
         link(pub, 'code', 'Code') +
         link(pub, 'data', 'Data') +
         '</div>\n' +
