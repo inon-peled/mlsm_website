@@ -3,7 +3,7 @@ function makeYearsClickable() {
     for (let i = 0; i < yearControls.length; i++) {
         const year = yearControls[i].getAttribute('data-year');
         yearControls[i].addEventListener("click", function () {
-            _toggleClass(document.getElementById('pubsOfYear' + year), 'shown', 'hidden');
+            _toggleClass(document.getElementById('pubsOfYear' + year), 'showMe', 'hideMe');
             _toggleClass(document.getElementById('triangle' + year), 'pointDown', 'pointRight');
         }, false);
     }
@@ -126,7 +126,7 @@ function getOnlyShownJsPubs(jsPubs) {
     const shownPubIds = [].filter.call(
         document.getElementsByClassName("pubDetails"),
         function (htmlPub) {
-            return htmlPub.classList.contains('shown');
+            return htmlPub.classList.contains('showMe');
         }
     ).map(getRefToPub);
     return [].filter.call(
@@ -237,7 +237,7 @@ function addAuthorFiltering(pubs) {
 }
 
 function isShown(element) {
-    return element.classList.contains('shown');
+    return element.classList.contains('showMe');
 }
 
 function addClass(element, cls) {
@@ -253,13 +253,13 @@ function removeClass(element, cls) {
 }
 
 function hideElement(element) {
-    removeClass(element, 'shown');
-    addClass(element, 'hidden');
+    removeClass(element, 'showMe');
+    addClass(element, 'hideMe');
 }
 
 function showElement(element) {
-    removeClass(element, 'hidden');
-    addClass(element, 'shown');
+    removeClass(element, 'hideMe');
+    addClass(element, 'showMe');
 }
 
 function _toggleClass(element, cls1, cls2) {
@@ -426,18 +426,16 @@ function publishedPubTypes(pubsObj) {
 }
 
 function toggleYears() {
-    let allYears = document.getElementsByClassName("pubYear");
+    let allYears = document.getElementsByClassName("pubsOfYear");
     for (let i = 0; i < allYears.length; i++) {
-        let visiblePubsInYear = [].filter.call(
+        const visiblePubsInYear = [].filter.call(
             allYears[i].childNodes,
             function (child) {
                 return child.classList && child.classList.contains('pubDetails') && isShown(child);
             });
-        if (visiblePubsInYear.length > 0) {
-            showElement(allYears[i]);
-        } else {
-            hideElement(allYears[i]);
-        }
+        (visiblePubsInYear.length > 0 ? showElement : hideElement)(
+            document.getElementById('pubYear' + allYears[i].getAttribute('data-year'))
+        );
     }
 }
 
@@ -533,7 +531,7 @@ function onePubToHtml(pub) {
         ' data-pub-where-abbrv="' + pub['where'].abbreviated + '"' +
         ' data-pub-type="' + getPubType(pub) + '"' +
         ' data-pubref="' + _getBibEntryIdentifier(pub) + '"' +
-        ' class="pubDetails pubType_' + getPubType(pub) + ' shown">\n' +
+        ' class="pubDetails pubType_' + getPubType(pub) + ' showMe">\n' +
         '<div class=pubTypeAndAuthors>' +
         '<span class="pubType">' + getPubTypeImage(getPubType(pub)) + '</span>\n' +
         '<span class=space></span>\n' +
@@ -584,12 +582,13 @@ function showPublications(pubs) {
     for (let i = 0; i < yearsInDescendingOrder.length; i += 1) {
         let year = yearsInDescendingOrder[i];
         let pubsOfYear = pubsGroupedByYear[year];
-        pubsDiv.innerHTML += '<div class="pubYear shown" id=pubYear' + year + '>\n' +
-            '<div data-year=' + year + ' class="yearControl">' +
+        pubsDiv.innerHTML +=
+            '<div data-year=""' + year + '" class="pubYear showMe" id=pubYear' + year + '>\n' +
+            '<div data-year=""' + year + '" class="yearControl">' +
                 '<h1 id="header' + year + '" class="headerYear">' + year + '</h1>\n' +
                 '<img alt="Toggle" id="triangle' + year +'" class="triangle pointDown" src="trgdown.png">' +
             '</div>' +
-            '<div class="pubsOfYear shown" id="' + ('pubsOfYear' + year) + '">' +
+            '<div data-year=""' + year + '" class="pubsOfYear showMe" id="' + ('pubsOfYear' + year) + '">' +
                 getItemsAsString(pubsOfYear) +
             '</div>' +
             '<div class="pub-su-divider pub-su-divider-style-default">' +
