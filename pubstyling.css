@@ -1,12 +1,21 @@
 /* BEGINNING OF STYLING FOR PUBLICATIONS: */
 
-.triangle {
-    user-select: none;
-    height: 10px;
+.yearControl {
+    clear: both;
 }
 
-.pointRight {
-    transform: rotate(-90deg);
+.yearControl:hover {
+    background-color: #eeeeee;
+}
+
+.headerYear {
+    float: left;
+    padding-right: 15px;
+}
+
+.collapse {
+    padding-top: 35px;
+    user-select: none;
 }
 
 .pubsOfYear.hideMe {
@@ -17,10 +26,6 @@
 .pubsOfYear.showMe {
     visibility: visible;
     height: auto;
-}
-
-.yearControl:hover {
-    background-color: #eeeeee;
 }
 
 .pubBtn {
@@ -56,11 +61,6 @@
 
 .pubButtons * {
     margin-top: 2px;
-}
-
-.pubYear h1 {
-    margin-top: 20px;
-    margin-bottom: 25px;
 }
 
 .pubYear.showMe {

@@ -4,7 +4,8 @@ function makeYearsClickable() {
         const year = yearControls[i].getAttribute('data-year');
         yearControls[i].addEventListener("click", function () {
             _toggleClass(document.getElementById('pubsOfYear' + year), 'showMe', 'hideMe');
-            _toggleClass(document.getElementById('triangle' + year), 'pointDown', 'pointRight');
+            document.getElementById('collapse' + year).innerHTML =
+                document.getElementById('pubsOfYear' + year).classList.contains('showMe') ? '&#9660;' : '&#9654;';
         }, false);
     }
 }
@@ -586,7 +587,7 @@ function showPublications(pubs) {
             '<div data-year="' + year + '" class="pubYear showMe" id=pubYear' + year + '>\n' +
             '<div data-year="' + year + '" class="yearControl">' +
                 '<h1 id="header' + year + '" class="headerYear">' + year + '</h1>\n' +
-                '<img alt="Toggle" id="triangle' + year +'" class="triangle pointDown" src="trgdown.png">' +
+                '<h3 id="collapse' + year +'" class="collapse">' + '&#9660;' + '</h3>\n' +
             '</div>' +
             '<div data-year="' + year + '" class="pubsOfYear showMe" id="' + ("pubsOfYear" + year) + '">' +
                 getItemsAsString(pubsOfYear) +
