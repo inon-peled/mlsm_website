@@ -583,12 +583,12 @@ function showPublications(pubs) {
         let year = yearsInDescendingOrder[i];
         let pubsOfYear = pubsGroupedByYear[year];
         pubsDiv.innerHTML +=
-            '<div data-year=""' + year + '" class="pubYear showMe" id=pubYear' + year + '>\n' +
-            '<div data-year=""' + year + '" class="yearControl">' +
+            '<div data-year="' + year + '" class="pubYear showMe" id=pubYear' + year + '>\n' +
+            '<div data-year="' + year + '" class="yearControl">' +
                 '<h1 id="header' + year + '" class="headerYear">' + year + '</h1>\n' +
                 '<img alt="Toggle" id="triangle' + year +'" class="triangle pointDown" src="trgdown.png">' +
             '</div>' +
-            '<div data-year=""' + year + '" class="pubsOfYear showMe" id="' + ('pubsOfYear' + year) + '">' +
+            '<div data-year="' + year + '" class="pubsOfYear showMe" id="' + ("pubsOfYear" + year) + '">' +
                 getItemsAsString(pubsOfYear) +
             '</div>' +
             '<div class="pub-su-divider pub-su-divider-style-default">' +
