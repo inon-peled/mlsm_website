@@ -1322,7 +1322,8 @@ const mlsmPubs = [
         },
         "year": 2018,
         "links": {
-            "pdf": "10.1109/TITS.2018.2817879",
+            "pdf": "https://ieeexplore.ieee.org/document/8352762",
+            "doi": "10.1109/TITS.2018.2817879",
             "code": "http://fprodrigues.com/multigp-imputation-code.zip",
             "data": null
         }
