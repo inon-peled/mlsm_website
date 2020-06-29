@@ -1,5 +1,28 @@
 /* BEGINNING OF STYLING FOR PUBLICATIONS: */
 
+.triangle {
+    height: 10px;
+}
+
+.pointRight {
+    transform: rotate(-90deg);
+}
+
+
+.pubsOfYear.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+.pubsOfYear.shown {
+    visibility: visible;
+    height: auto;
+}
+
+.yearControl:hover {
+    background-color: #eeeeee;
+}
+
 .pubBtn {
     color: black;
     border: none;

@@ -1,3 +1,15 @@
+function makeYearsClickable() {
+    const yearControls = document.getElementsByClassName('yearControl');
+    for (let i = 0; i < yearControls.length; i++) {
+        const year = yearControls[i].getAttribute('data-year');
+        yearControls[i].addEventListener("click", function () {
+            _toggleClass(document.getElementById('pubsOfYear' + year), 'shown', 'hidden');
+            _toggleClass(document.getElementById('triangle' + year), 'pointDown', 'pointRight');
+        }, false);
+    }
+}
+
+
 function _addResetFilteringButton(pubs) {
     document.getElementById('resetFiltering').appendChild(function () {
         let resetFilteringButton = document.createElement('button');
@@ -157,7 +169,7 @@ function toggleVisibilityOfPublications(jsPubs) {
             _pubMatchesWhereFilter(jsPubs, htmlPubs[i]) &&
             pubMatchesActivePubType(jsPubs, htmlPubs[i]) &&
             pubMatchesActiveAuthor(jsPubs, htmlPubs[i])
-            ) ? showDiv : hideDiv
+            ) ? showElement : hideElement
         )(htmlPubs[i]);
     }
     toggleYears();
@@ -240,15 +252,23 @@ function removeClass(element, cls) {
     }
 }
 
-function hideDiv(divElement) {
-    removeClass(divElement, 'shown');
-    addClass(divElement, 'hidden');
+function hideElement(element) {
+    removeClass(element, 'shown');
+    addClass(element, 'hidden');
 }
 
-function showDiv(divElement) {
-    removeClass(divElement, 'hidden');
-    addClass(divElement, 'shown');
+function showElement(element) {
+    removeClass(element, 'hidden');
+    addClass(element, 'shown');
 }
+
+function _toggleClass(element, cls1, cls2) {
+    const classToAdd = element.classList.contains(cls1) ? cls2 : cls1;
+    const classToRemove = element.classList.contains(cls1) ? cls1 : cls2;
+    element.classList.add(classToAdd);
+    element.classList.remove(classToRemove);
+}
+
 
 function downloadPubsNotIE(fileName, contents, contentType) {
     let element = document.createElement('a');
@@ -414,9 +434,9 @@ function toggleYears() {
                 return child.classList && child.classList.contains('pubDetails') && isShown(child);
             });
         if (visiblePubsInYear.length > 0) {
-            showDiv(allYears[i]);
+            showElement(allYears[i]);
         } else {
-            hideDiv(allYears[i]);
+            hideElement(allYears[i]);
         }
     }
 }
@@ -565,8 +585,13 @@ function showPublications(pubs) {
         let year = yearsInDescendingOrder[i];
         let pubsOfYear = pubsGroupedByYear[year];
         pubsDiv.innerHTML += '<div class="pubYear shown" id=pubYear' + year + '>\n' +
-            '<h1 class="headerYear">' + year + '</h1>\n' +
-            getItemsAsString(pubsOfYear) +
+            '<div data-year=' + year + ' class="yearControl">' +
+                '<h1 id="header' + year + '" class="headerYear">' + year + '</h1>\n' +
+                '<img alt="Toggle" id="triangle' + year +'" class="triangle pointDown" src="trgdown.png">' +
+            '</div>' +
+            '<div class="pubsOfYear shown" id="' + ('pubsOfYear' + year) + '">' +
+                getItemsAsString(pubsOfYear) +
+            '</div>' +
             '<div class="pub-su-divider pub-su-divider-style-default">' +
             '   <a href="#">Go to top</a>' +
             '</div>' +
@@ -580,4 +605,5 @@ function main(pubs) {
     showDownloading(pubs);
     showPublications(pubs);
     makeAuthorNamesClickable(pubs);
+    makeYearsClickable();
 }
