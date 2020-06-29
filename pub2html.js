@@ -587,7 +587,7 @@ function showPublications(pubs) {
             '<div data-year="' + year + '" class="pubYear showMe" id=pubYear' + year + '>\n' +
             '<div data-year="' + year + '" class="yearControl">' +
                 '<h1 id="header' + year + '" class="headerYear">' + year + '</h1>\n' +
-                '<h3 id="collapse' + year +'" class="collapse">' + '&#9660;' + '</h3>\n' +
+                '<h4 id="collapse' + year +'" class="collapse">' + '&#9660;' + '</h4>\n' +
             '</div>' +
             '<div data-year="' + year + '" class="pubsOfYear showMe" id="' + ("pubsOfYear" + year) + '">' +
                 getItemsAsString(pubsOfYear) +

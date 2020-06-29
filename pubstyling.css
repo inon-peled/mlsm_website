@@ -1,7 +1,10 @@
 /* BEGINNING OF STYLING FOR PUBLICATIONS: */
 
 .yearControl {
-    clear: both;
+    height: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .yearControl:hover {
@@ -9,12 +12,11 @@
 }
 
 .headerYear {
-    float: left;
+    user-select: none;
     padding-right: 15px;
 }
 
 .collapse {
-    padding-top: 35px;
     user-select: none;
 }
 
