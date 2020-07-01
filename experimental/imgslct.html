@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type = "text/css">
+        @font-face {
+            font-family: "mlsmpubs";
+            src: url("mlsmpubs.ttf");
+        }
+        select {
+            background-color: #990000;
+            color: white;
+            font-family: "mlsmpubs";
+        }
+    </style>
+</head>
+<body>
+<script>
+    function foo(start, end) {
+        let s = '';
+        for (let i = start; i < end + 1; i++) {
+            s += '&#' + i + ';' + i + ' ';
+            if (i % 20 === 0) {
+                s += '<br/>';
+            }
+        }
+        document.getElementById('hello').innerHTML = s;
+    }
+
+    function bar() {
+        document.getElementById('hello').innerHTML =
+            '&#x1f4d5;<br/>&#x1F4C4;<br/>&#x1F4AC;<br/>&#x1F393;'
+    }
+</script>
+<div>
+    <select>
+        <option>&#x1f4d5; Book</option>
+        <option>&#x1F393; Cap</option>
+        <option>&#x1f4c4; Article</option>
+        <option>&#x1F4AC; The quick brown fox jumped over the lazy dog! 0123456789</option>
+    </select>
+</div>
+<div id="hello">
+</div>
+<script>
+    // foo(127744, 128511);
+    bar();
+</script>
+</body>
+</html>
