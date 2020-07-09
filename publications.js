@@ -8,7 +8,10 @@
             "!Rodrigues, Filipe",
             "J{\\o}rgen, Gar{\\c{c}}on"
         ],
-        "where": "",
+        "where": {
+            "full": "",
+            "abbreviated": null
+        },
         "year": null,
         "links": {
             "doi": "",
@@ -20,6 +23,28 @@
 */
 
 const mlsmPubs = [
+    {
+        "type": "article",
+        "title": "Examining the potential of textual big data analytics for public policy decision-making: A case study with driverless cars in Denmark",
+        "authors": [
+            "Kinra, Aseem",
+            "Beheshti-Kashi, Samaneh",
+            "Buch, Rasmus",
+            "Sick, Thomas Alexander Nielsend",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": {
+            "full": "Transport Policy, in press",
+            "abbreviated": "Transp. Policy"
+        },
+        "year": 2020,
+        "links": {
+            "doi": "10.1016/j.tranpol.2020.05.026",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
     {
         "type": "article",
         "title": "Assessing the impacts of automated mobility-on-demand through agent-based simulation: A study of Singapore",
@@ -558,7 +583,7 @@ const mlsmPubs = [
             "Ferreira, Ana"
         ],
         "where": {
-            "full": "Accident Analysis & Prevention, in press",
+            "full": "Accident Analysis & Prevention",
             "abbreviated": "Accid. Anal. & Prev."
         },
         "year": 2019,
@@ -624,7 +649,7 @@ const mlsmPubs = [
             "Ben-Akiva, Moshe"
         ],
         "where": {
-            "full": "Environmental Research Letters, in press",
+            "full": "Environmental Research Letters",
             "abbreviated": "Environ. Res. Lett."
         },
         "year": 2019,
