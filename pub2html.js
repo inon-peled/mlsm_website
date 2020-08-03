@@ -394,6 +394,7 @@ function showDownloading(pubs) {
 
 function latexToHtml(string) {
     return string
+        .replace("{\\ae}", "&aelig;")
         .replace("{\\'o}", "&oacute;")
         .replace("{\\o}", "&oslash;")
         .replace("{\\~a}", "&atilde;")

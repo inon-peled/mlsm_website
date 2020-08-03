@@ -24,6 +24,32 @@
 
 const mlsmPubs = [
     {
+        "type": "conference",
+        "title": "Using Augmented Reality to Mitigate Blind Spots in Trucks",
+        "booktitle": "Lecture Notes in Computer Science",
+        "authors": [
+            "Persson, Dan Roland",
+            "!Servizi, Valentino",
+            "Hansen, Tanja Lind",
+            "B{\\ae}kgaard, Per"
+        ],
+        "where": {
+            "full": "International Conference on Human-Computer Interaction",
+            "abbreviated": "HCII",
+            "specific": "HCII 2020: HCI in Mobility, Transport, and Automotive Systems. Automated Driving and In-Vehicle Experience Design"
+        },
+        "year": 2020,
+        "volume": 12212,
+        "publisher": "Springer",
+        "pages": "379--392",
+        "links": {
+            "doi": "10.1007/978-3-030-50523-3_27",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "article",
         "title": "Examining the potential of textual big data analytics for public policy decision-making: A case study with driverless cars in Denmark",
         "authors": [
