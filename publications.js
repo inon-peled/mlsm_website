@@ -24,6 +24,29 @@
 
 const mlsmPubs = [
     {
+        "type": "article",
+        "title": "Formulation and solution approach for calibrating activity-based travel demand model-system via microsimulation",
+        "authors": [
+            "Chen, Siyu",
+            "Akkinepally, Arun Prakash",
+            "!Lima Azevedo, Carlos",
+            "Ben-Akiva, Moshe E."
+        ],
+        "where": {
+            "full": "Transportation Research Part C: Emerging Technologies",
+            "abbreviated": "Transp. Res. Part C"
+        },
+        "year": 2020,
+        "volume": 119,
+        "publisher": "Elsevier",
+        "links": {
+            "doi": "10.1016/j.trc.2020.102650",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "conference",
         "title": "Using Augmented Reality to Mitigate Blind Spots in Trucks",
         "booktitle": "Lecture Notes in Computer Science",
