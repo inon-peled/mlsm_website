@@ -25,6 +25,34 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Evaluating the systemic effects of automated mobility-on-demand services via large-scale agent-based simulation of auto-dependent prototype cities",
+        "authors": [
+            "Oke, Jimi",
+            "Akkinepally, Arun Prakash",
+            "Chen, Siyu",
+            "Xie, Yifei",
+            "Aboutaleb, Youssef Medhat",
+            "!Lima Azevedo, Carlos",
+            "Zegras, P. Christopher",
+            "Ferreira, Joseph",
+            "Ben-Akiva, Moshe E."
+        ],
+        "where": {
+            "full": "Transportation Research Part A: Policy and Practice",
+            "abbreviated": "Transp. Res. Part A"
+        },
+        "year": 2020,
+        "volume": 140,
+        "pages": "98--126",
+        "links": {
+            "doi": "10.1016/j.tra.2020.06.013",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Formulation and solution approach for calibrating activity-based travel demand model-system via microsimulation",
         "authors": [
             "Chen, Siyu",
