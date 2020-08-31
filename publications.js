@@ -44,6 +44,7 @@ const mlsmPubs = [
         "year": 2020,
         "volume": 140,
         "pages": "98--126",
+        "publisher": "Elsevier",
         "links": {
             "doi": "10.1016/j.tra.2020.06.013",
             "pdf": "",
