@@ -25,6 +25,23 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "SHAREd MObility REwards 1st Report (ID 20045): Qualitative Stakeholders Needs Analysis",
+        "authors": [
+            "!Lima Azevedo, Carlos",
+            "!Moraes Monteiro, Mayara"
+        ],
+        "where": {
+            "full": "DTU Orbit",
+            "abbreviated": "DTU Orbit"
+        },
+        "year": 2020,
+        "month": 5,
+        "links": {
+            "pdf": "https://orbit.dtu.dk/files/219662251/Report_final_version.pdf",
+        }
+    },
+    {
+        "type": "article",
         "title": "Evaluating the systemic effects of automated mobility-on-demand services via large-scale agent-based simulation of auto-dependent prototype cities",
         "authors": [
             "Oke, Jimi",
