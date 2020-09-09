@@ -92,6 +92,7 @@ function _toBibArticle(pub) {
         _strOrEmpty('number', _get('number', '', pub)) +
         _strOrEmpty('pages', _get('pages', '', pub)) +
         _strOrEmpty('year', _get('year', '', pub)) +
+        _strOrEmpty('month', _get('month', '', pub)) +
         _strOrEmpty('DOI', _get('doi', '', _get('links', {}, pub))) +
         _bibLinks(_get('links', {}, pub)) +
         '}\n';
