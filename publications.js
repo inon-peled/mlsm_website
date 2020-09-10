@@ -25,6 +25,46 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Bayesian Automatic Relevance Determination for Utility Function Specification in Discrete Choice Models",
+        "authors": [
+            "!Rodrigues, Filipe",
+            "!Ortelli, Nicola",
+            "Bierlaire, Michel",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
+        "year": 2019,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/1906.03855",
+            "code": "https://github.com/fmpr/DCM-ARD",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
+        "title": "Recurrent Flow Networks: A Recurrent Latent Variable Model for Spatio-Temporal Density Modelling",
+        "authors": [
+            "!Gammelli, Daniele",
+            "!Rodrigues, Filipe",
+        ],
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
+        "year": 2020,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/2006.05256",
+            "code": "https://github.com/DanieleGammelli/recurrent-flow-nets",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Beyond Expectation: Deep Joint Mean and Quantile Regression for Spatiotemporal Problems",
         "authors": [
             "!Rodrigues, Filipe",
@@ -442,7 +482,7 @@ const mlsmPubs = [
         "type": "article",
         "title": "Estimating Latent Demand of Shared Mobility through Censored Gaussian Processes",
         "authors": [
-            "!Gammeli, Daniele",
+            "!Gammelli, Daniele",
             "!Peled, Inon",
             "!Rodrigues, Filipe",
             "Pacino, Dario",
@@ -609,7 +649,7 @@ const mlsmPubs = [
         "type": "conference",
         "title": "A Machine Learning Approach to Censored Bike-Sharing Demand Modeling",
         "authors": [
-            "!Gammeli, Daniele",
+            "!Gammelli, Daniele",
             "!Rodrigues, Filipe",
             "Pacino, Dario",
             "Kurtaran, Haci Ahmet",
