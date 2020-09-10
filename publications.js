@@ -25,6 +25,27 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Beyond Expectation: Deep Joint Mean and Quantile Regression for Spatiotemporal Problems",
+        "authors": [
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": {
+            "full": "IEEE Transactions on Neural Networks and Learning Systems",
+            "abbreviated": "IEEE T-NNLS"
+        },
+        "year": 2020,
+        "month": 2,
+        "publisher": "IEEE",
+        "links": {
+            "doi": "10.1109/TNNLS.2020.2966745",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "SHAREd MObility REwards 1st Report (ID 20045): Qualitative Stakeholders Needs Analysis",
         "authors": [
             "!Lima Azevedo, Carlos",
