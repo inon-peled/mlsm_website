@@ -25,6 +25,27 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Generalized Multi-Output Gaussian Process Censored Regression",
+        "authors": [
+            "!Gammelli, Daniele",
+            "Rolsted, Kasper Pryds",
+            "Pacino, Dario",
+            "!Rodrigues, Filipe"
+        ],
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
+        "year": 2020,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/2009.04822",
+            "code": "https://github.com/DanieleGammelli/multi-output-gp-censored-regression",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Bayesian Automatic Relevance Determination for Utility Function Specification in Discrete Choice Models",
         "authors": [
             "!Rodrigues, Filipe",
