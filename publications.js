@@ -25,6 +25,28 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Semi-nonparametric Latent Class Choice Model with a Flexible Class Membership Component: A Mixture Model Approach",
+        "authors": [
+            "!Sfeir, Georges",
+            "Abou-Zeid, Maya",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara",
+            "Kaysi, Isam"
+        ],
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
+        "year": 2020,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/2007.02739",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Generalized Multi-Output Gaussian Process Censored Regression",
         "authors": [
             "!Gammelli, Daniele",
