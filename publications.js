@@ -25,6 +25,50 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Online Predictive Optimization Framework for Stochastic Demand-Responsive Transit Services",
+        "authors": [
+            "!Peled, Inon",
+            "Lee, Kelvin",
+            "Jiang, Yu",
+            "Dauwels, Justin",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
+        "year": 2019,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/1902.09745",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
+        "title": "Curb Your Normality: On the Quality Requirements of Demand Prediction for Dynamic Public Transport",
+        "authors": [
+            "!Peled, Inon",
+            "Lee, Kelvin",
+            "Jiang, Yu",
+            "Dauwels, Justin",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
+        "year": 2020,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/2008.13443",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Semi-nonparametric Latent Class Choice Model with a Flexible Class Membership Component: A Mixture Model Approach",
         "authors": [
             "!Sfeir, Georges",
@@ -533,8 +577,8 @@ const mlsmPubs = [
             "!Pereira, Francisco Camara"
         ],
         "where": {
-            "full": "arXiv",
-            "abbreviated": "arXiv"
+            "full": "Transportation Research Part C: Emerging Technologies, in press",
+            "abbreviated": "Transp. Res. Part C"
         },
         "year": 2020,
         "links": {
