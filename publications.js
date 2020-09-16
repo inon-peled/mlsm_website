@@ -25,6 +25,29 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Managing network congestion with tradable credit scheme: a trip-based MFD approach",
+        "authors": [
+            "!Liu, Renming",
+            "Chen, Siyu",
+            "Jiang, Yu",
+            "Seshadri, Ravi",
+            "Ben-Akiva, Moshe E.",
+            "!Lima Azevedo, Carlos"
+        ],
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
+        "year": 2020,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/2009.06965",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Online Predictive Optimization Framework for Stochastic Demand-Responsive Transit Services",
         "authors": [
             "!Peled, Inon",
