@@ -25,6 +25,27 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Introducing synthetic pseudo panels: application to transport behaviour dynamics",
+        "authors": [
+            "!Borysov, Stanislav",
+            "Rich, Jeppe"
+        ],
+        "where": {
+            "full": "Transportation",
+            "abbreviated": "Transp."
+        },
+        "year": 2020,
+        "month": 9,
+
+        "links": {
+            "doi": "10.1007/s11116-020-10137-5",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Managing network congestion with tradable credit scheme: a trip-based MFD approach",
         "authors": [
             "!Liu, Renming",
