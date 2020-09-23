@@ -621,13 +621,13 @@ const mlsmPubs = [
             "!Pereira, Francisco Camara"
         ],
         "where": {
-            "full": "Transportation Research Part C: Emerging Technologies, in press",
+            "full": "Transportation Research Part C: Emerging Technologies",
             "abbreviated": "Transp. Res. Part C"
         },
         "year": 2020,
         "links": {
-            "doi": "",
-            "pdf": "https://arxiv.org/abs/2001.07402",
+            "doi": "10.1016/j.trc.2020.102775",
+            "pdf": "",
             "code": "",
             "data": ""
         }
