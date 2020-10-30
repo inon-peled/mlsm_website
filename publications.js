@@ -164,13 +164,13 @@ const mlsmPubs = [
             "!Pereira, Francisco Camara"
         ],
         "where": {
-            "full": "arXiv",
-            "abbreviated": "arXiv"
+            "full": "IEEE Transactions on Intelligent Transportation Systems",
+            "abbreviated": "IEEE T-ITS"
         },
-        "year": 2019,
+        "year": 2020,
         "links": {
-            "doi": "",
-            "pdf": "https://arxiv.org/abs/1906.03855",
+            "doi": "10.1109/TITS.2020.3031965",
+            "pdf": "",
             "code": "https://github.com/fmpr/DCM-ARD",
             "data": ""
         }
