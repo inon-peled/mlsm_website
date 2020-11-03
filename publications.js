@@ -25,6 +25,27 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Stop detection for smartphone-based travel surveys using geo-spatial context and artificial neural networks",
+        "authors": [
+            "!Servizi, Valentino",
+            "!Petersen, Niklas Christoffer",
+            "!Pereira, Francisco Camara",
+            "Nielsen, Otto Anker"
+        ],
+        "where": {
+            "full": "Transportation Research Part C: Emerging Technologies",
+            "abbreviated": "Transp. Res. Part C"
+        },
+        "year": 2020,
+        "links": {
+            "doi": "10.1016/j.trc.2020.102834",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Introducing synthetic pseudo panels: application to transport behaviour dynamics",
         "authors": [
             "!Borysov, Stanislav",
