@@ -250,7 +250,7 @@ const mlsmPubs = [
         "year": 2020,
         "month": 5,
         "links": {
-            "pdf": "https://orbit.dtu.dk/files/219662251/Report_final_version.pdf",
+            "pdf": "",
         }
     },
     {
