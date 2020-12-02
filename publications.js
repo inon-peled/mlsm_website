@@ -24,6 +24,28 @@
 
 const mlsmPubs = [
     {
+        "type": "conference",
+        "title": "A blockchain-based user-centric emission monitoring and trading system for multi-modal mobility",
+        "authors": [
+            "Eckert, Johannes Benjamin",
+            "L{\\'o}pez, David",
+            "!Lima Azevedo, Carlos",
+            "Farooq, Bilal"
+        ],
+        "where": {
+            "full": "2020 Forum on Integrated and Sustainable Transportation Systems (FISTS)",
+            "abbreviated": "FISTS"
+        },
+        "year": 2020,
+        "month": 11,
+        "links": {
+            "doi": "10.1109/FISTS46898.2020.9264892",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "article",
         "title": "Stop detection for smartphone-based travel surveys using geo-spatial context and artificial neural networks",
         "authors": [
@@ -856,27 +878,6 @@ const mlsmPubs = [
         "links": {
             "doi": "",
             "pdf": "https://ieeexplore.ieee.org/document/8916878",
-            "code": "",
-            "data": ""
-        }
-    },
-    {
-        "type": "article",
-        "title": "A blockchain-based user-centric emission monitoring and trading system for multi-modal mobility",
-        "authors": [
-            "!Eckert, Johannes Benjamin",
-            "L{\\'o}pez, David",
-            "!Lima Azevedo, Carlos",
-            "Farooq, Bilal"
-        ],
-        "where": {
-            "full": "arXiv",
-            "abbreviated": "arXiv"
-        },
-        "year": 2019,
-        "links": {
-            "doi": "",
-            "pdf": "https://arxiv.org/abs/1908.05629",
             "code": "",
             "data": ""
         }
