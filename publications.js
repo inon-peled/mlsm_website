@@ -24,6 +24,27 @@
 
 const mlsmPubs = [
     {
+        "type": "article",
+        "title": "Open-Ended Versus Closed-Ended Responses: A Comparison Study Using Topic Modeling and Factor Analysis",
+        "authors": [
+            "!Baburajan, Vishnu",
+            "De Abreu e Silva, Jo{\\~a}o",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": {
+            "full": "IEEE Transactions on Intelligent Transportation Systems",
+            "abbreviated": "IEEE T-ITS"
+        },
+        "year": 2020,
+        "month": 9,
+        "links": {
+            "doi": "10.1109/TITS.2020.3040904",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "conference",
         "title": "A blockchain-based user-centric emission monitoring and trading system for multi-modal mobility",
         "authors": [
