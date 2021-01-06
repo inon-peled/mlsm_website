@@ -25,10 +25,31 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Urban travel behavior adaptation of temporary transnational residents",
+        "authors": [
+            "!Moraes Monteiro, Mayara",
+            "de Abreu e Silva, Jo{\\~a}o",
+            "Haustein, Sonja",
+            "Pinho de Sousa, Jorge"
+        ],
+        "where": {
+            "full": "Journal of Transport Geography",
+            "abbreviated": "J. Transp. Geogr."
+        },
+        "year": 2021,
+        "links": {
+            "doi": "10.1016/j.jtrangeo.2020.102935",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Open-Ended Versus Closed-Ended Responses: A Comparison Study Using Topic Modeling and Factor Analysis",
         "authors": [
             "!Baburajan, Vishnu",
-            "De Abreu e Silva, Jo{\\~a}o",
+            "de Abreu e Silva, Jo{\\~a}o",
             "!Pereira, Francisco Camara"
         ],
         "where": {
@@ -527,7 +548,7 @@ const mlsmPubs = [
         "title": "Opening Up the Conversation: Topic Modeling for Automated Text Analysis in Travel Survey",
         "authors": [
             "!Baburajan, Vishnu",
-            "De Abreu e Silva, Jo{\\~a}o",
+            "de Abreu e Silva, Jo{\\~a}o",
             "!Pereira, Francisco Camara"
         ],
         "where": {
@@ -634,7 +655,7 @@ const mlsmPubs = [
         "authors": [
             "!Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
-            "De Abreu e Silva, Jo{\\~a}o",
+            "de Abreu e Silva, Jo{\\~a}o",
             "Nielsen, Otto Anker",
             "!Pereira, Francisco Camara"
         ],
@@ -1124,7 +1145,7 @@ const mlsmPubs = [
         "authors": [
             "!Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
-            "De Abreu e Silva, Jo{\\~a}o",
+            "de Abreu e Silva, Jo{\\~a}o",
             "Nielsen, Otto Anker",
             "!Pereira, Francisco Camara"
         ],
@@ -1169,7 +1190,7 @@ const mlsmPubs = [
         "authors": [
             "!Dastjerdi, Aliasghar Mehdizadeh",
             "Kaplan, Sigal",
-            "De Abreu e Silva, Jo{\\~a}o",
+            "de Abreu e Silva, Jo{\\~a}o",
             "Nielsen, Otto Anker",
             "!Pereira, Francisco Camara"
         ],
