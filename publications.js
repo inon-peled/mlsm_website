@@ -57,7 +57,7 @@ const mlsmPubs = [
             "full": "9th Symposium of the European Association for Research in Transportation (hEART)",
             "abbreviated": "hEART"
         },
-        "year": 2021,
+        "year": 2020,
         "links": {
             "doi": "",
             "pdf": "https://transp-or.epfl.ch/heart/2020/abstracts/HEART_2020_paper_175.pdf",
