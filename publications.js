@@ -24,6 +24,48 @@
 
 const mlsmPubs = [
     {
+        "type": "conference",
+        "title": "Traffic Prediction with Convolutional Long Short-Term Memory",
+        "authors": [
+            "!Peled, Inon",
+            "!Pereira, Francisco Camara",
+            "Winther, Ole"
+        ],
+        "where": {
+            "full": "7th Symposium of the European Association for Research in Transportation (hEART)",
+            "abbreviated": "hEART"
+        },
+        "year": 2018,
+        "links": {
+            "doi": "",
+            "pdf": "https://transp-or.epfl.ch/heart/2018/abstracts/5510.pdf",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "conference",
+        "title": "Modeling Transport Data under Stochastic and Latent Censorship",
+        "authors": [
+            "!Peled, Inon",
+            "!Gammelli, Daniele",
+            "!Rodrigues, Filipe",
+            "Pacino, Dario",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": {
+            "full": "9th Symposium of the European Association for Research in Transportation (hEART)",
+            "abbreviated": "hEART"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "",
+            "pdf": "https://transp-or.epfl.ch/heart/2020/abstracts/HEART_2020_paper_175.pdf",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "article",
         "title": "Urban travel behavior adaptation of temporary transnational residents",
         "authors": [
@@ -1524,7 +1566,7 @@ const mlsmPubs = [
             "Ben-Akiva, Moshe"
         ],
         "where": {
-            "full": "hEART 2018, 7th Symposium of the European Association for Research in Transportation",
+            "full": "7th Symposium of the European Association for Research in Transportation (hEART)",
             "abbreviated": "hEART"
         },
         "year": 2018,
