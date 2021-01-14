@@ -24,6 +24,46 @@
 
 const mlsmPubs = [
     {
+        "type": "",
+        "title": "",
+        "authors": [
+            "!Rodrigues, Filipe",
+            "J{\\o}rgen, Gar{\\c{c}}on"
+        ],
+        "where": {
+            "full": "",
+            "abbreviated": null
+        },
+        "year": null,
+        "links": {
+            "doi": "",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
+        "title": "How fair is the allocation of bike-sharing infrastructure? Framework for a qualitative and quantitative spatial fairness assessment",
+        "authors": [
+            "Duran-Rodas, David",
+            "Villeneuve, Dominic",
+            "!Pereira, Francisco Camara",
+            "Wulfhorst, Gebhard"
+        ],
+        "where": {
+            "full": "Transportation Research Part A: Policy and Practice",
+            "abbreviated": "Transp. Res. Part A"
+        },
+        "year": 2020,
+        "links": {
+            "doi": "10.1016/j.tra.2020.08.007",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "conference",
         "title": "Traffic Prediction with Convolutional Long Short-Term Memory",
         "authors": [
