@@ -80,7 +80,7 @@ const mlsmPubs = [
         "year": 2021,
         "links": {
             "doi": "",
-            "pdf": "",
+            "pdf": "https://orbit.dtu.dk/files/239347069/TRB_POSTER_FINAL.pdf",
             "code": "",
             "data": ""
         }
