@@ -24,17 +24,83 @@
 
 const mlsmPubs = [
     {
-        "type": "",
-        "title": "",
+        "type": "conference",
+        "title": "The Role Of Accessibility To Public Transport On Residential Location Choice Of Temporary Residents: The Case Of Porto And Copenhagen",
         "authors": [
-            "!Rodrigues, Filipe",
-            "J{\\o}rgen, Gar{\\c{c}}on"
+            "!Moraes Monteiro, Mayara",
+            "Thorhauge, Mikkel",
+            "de Abreu e Silva, Jo{\\~a}o",
+            "Sousa, Jorge"
         ],
         "where": {
-            "full": "",
-            "abbreviated": null
+            "full": "100th Transportation Research Board Annual Meeting",
+            "abbreviated": "TRB"
         },
-        "year": null,
+        "year": 2021,
+        "links": {
+            "doi": "",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "conference",
+        "title": "Demand And/oR Equity (DARE) Method to Plan Bike-sharing Systems: A Structural Equation Modelling Approach",
+        "authors": [
+            "Duran, David",
+            "!Pereira, Francisco Camara",
+            "Wulfhorst, Gebhard"
+        ],
+        "where": {
+            "full": "100th Transportation Research Board Annual Meeting",
+            "abbreviated": "TRB"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "conference",
+        "title": "Generation of Activity Sequences using Dynamic Bayesian Networks with Latent Variables",
+        "authors": [
+            "!Arkoudi, Ioanna",
+            "Viegas de Lima, Isabel",
+            "!Lima Azevedo, Carlos",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": {
+            "full": "100th Transportation Research Board Annual Meeting",
+            "abbreviated": "TRB"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "conference",
+        "title": "Optimal Multimodal and Multicriteria Path Set Computation for Dynamic Trip Planning in Mobility as a Service Systems",
+        "authors": [
+            "Lampros, Yfantis",
+            "Chaniotakis, Emmanouil",
+            "Dominguez, Francisco Perez",
+            "Rasmussen, Thomas",
+            "Kamargianni, Maria",
+            "!Lima Azevedo, Carlos"
+        ],
+        "where": {
+            "full": "100th Transportation Research Board Annual Meeting",
+            "abbreviated": "TRB"
+        },
+        "year": 2021,
         "links": {
             "doi": "",
             "pdf": "",
@@ -1365,7 +1431,7 @@ const mlsmPubs = [
         "title": "Incorporating the Mobility as a Service Concept into Transport Modelling and Simulation Frameworks",
         "authors": [
             "Kamargianni, Maria",
-            "!Lampros, Yfantis",
+            "Lampros, Yfantis",
             "Muscat, Jakub",
             "!Lima Azevedo, Carlos",
             "Ben-Akiva, Moshe"
