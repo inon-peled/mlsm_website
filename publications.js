@@ -24,6 +24,40 @@
 
 const mlsmPubs = [
     {
+        "type": "article",
+        "title": "SHAREd MObility Rewards: summary report",
+        "authors": [
+            "Shiftan, Yoram",
+            "Frenkel, Amnon",
+            "Gal-Tzur, Ayelet",
+            "Shoshany, Sharon",
+            "Tavory, Ofer Lerner",
+            "Antoniou, Constantinos",
+            "Cantelmo, Guido",
+            "Amini, Roja Ezzati",
+            "!Lima Azevedo, Carlos",
+            "!Moraes Monteiro, Mayara",
+            "Kamargianni, Maria",
+            "Scheinkman Shachar, Fabio",
+            "Israel, Dror",
+            "Behrisch, Christiane",
+            "Schiff, Karen",
+            "Shalev, Jonathan",
+            "Peretz, Daniel"
+        ],
+        "where": {
+            "full": "DTU Orbit",
+            "abbreviated": "DTU Orbit"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "",
+            "pdf": "https://backend.orbit.dtu.dk/ws/portalfiles/portal/244346184/Share_More_concise_final_report.pdf",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "conference",
         "title": "The Role Of Accessibility To Public Transport On Residential Location Choice Of Temporary Residents: The Case Of Porto And Copenhagen",
         "authors": [
