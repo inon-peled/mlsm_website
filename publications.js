@@ -25,6 +25,29 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Graph Neural Network Reinforcement Learning for Autonomous Mobility-on-Demand Systems",
+        "authors": [
+            "!Gammelli, Daniele",
+            "Yang, Kaidi",
+            "Harrison, James",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara",
+            "Pavone, Marco"
+        ],
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/2104.11434",
+            "code": "https://github.com/DanieleGammelli/gnn-rl-for-amod",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "SHAREd MObility Rewards: summary report",
         "authors": [
             "Shiftan, Yoram",
