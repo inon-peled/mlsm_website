@@ -25,6 +25,27 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Deep survival modelling for shared mobility\n",
+        "authors": [
+            "!Kostic, Bojan",
+            "Loft, Mathilde Pryds",
+            "!Rodrigues, Filipe",
+            "!Borysov, Stanislav"
+        ],
+        "where": {
+            "full": "Transportation Research Part C: Emerging Technologies",
+            "abbreviated": "Transp. Res. Part C"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "10.1016/j.trc.2021.103213",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Graph Neural Network Reinforcement Learning for Autonomous Mobility-on-Demand Systems",
         "authors": [
             "!Gammelli, Daniele",
