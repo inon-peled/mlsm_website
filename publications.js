@@ -24,7 +24,7 @@
 
 const mlsmPubs = [
     {
-        "type": "article",
+        "type": "conference",
         "title": "Deep Spatio-Temporal Forecasting of Electrical Vehicle Charging Demand",
         "authors": [
             "!H{\\\"u}ttel, Frederik Boe",
