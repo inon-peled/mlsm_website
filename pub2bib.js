@@ -4,6 +4,7 @@ function _getWhereFull(pub) {
 
 function _toPlainEnglishLowercase(str) {
     return str
+        .replace(/\\/g, "")
         .replace(/[\u0300-\u036f]/g, "")
         .replace(/[^a-zA-z]/g, "")
         .toLowerCase()
