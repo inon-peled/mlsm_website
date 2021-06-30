@@ -6,7 +6,7 @@
         "title": "",
         "authors": [
             "!Rodrigues, Filipe",
-            "J{\\o}rgen, Gar{\\c{c}}on"
+            "J{\\o}rgen, Gar{\\c{c}}on M{\\\"u}ller"
         ],
         "where": {
             "full": "",
@@ -23,6 +23,27 @@
 */
 
 const mlsmPubs = [
+    {
+        "type": "article",
+        "title": "Deep Spatio-Temporal Forecasting of Electrical Vehicle Charging Demand",
+        "authors": [
+            "!H{\\\"u}ttel, Frederik Boe",
+            "!Peled, Inon",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": {
+            "full": "38th International Conference on Machine Learning, in press",
+            "abbreviated": "ICML"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/2106.10940",
+            "code": "",
+            "data": ""
+        }
+    },
     {
         "type": "article",
         "title": "Deep survival modelling for shared mobility\n",

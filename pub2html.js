@@ -17,7 +17,7 @@ function _addResetFilteringButton(pubs) {
         resetFilteringButton.id = 'resetFilteringButton';
         resetFilteringButton.classList.add('pubBtn');
         resetFilteringButton.innerHTML = 'Reset';
-        resetFilteringButton.addEventListener("click", function() {
+        resetFilteringButton.addEventListener("click", function () {
             const selectionBoxes = document.getElementsByClassName('selectionBox');
             for (let i = 0; i < selectionBoxes.length; i++) {
                 selectionBoxes[i].value = 'all';
@@ -54,10 +54,10 @@ function _addPubWhereFiltering(pubs) {
         optGroup.classList.add('whereTypeOptGroup');
         for (let i = 0; i < pubWheres[whereType].length; i++) {
             _addOption(
-            whereType + 'PubWhereOption',
-            pubWheres[whereType][i],
-            pubWheres[whereType][i],
-            optGroup);
+                whereType + 'PubWhereOption',
+                pubWheres[whereType][i],
+                pubWheres[whereType][i],
+                optGroup);
         }
         return optGroup;
     }
@@ -99,7 +99,7 @@ function _getJournalsAndConferences(pubs) {
 
 function highlightChosenAuthor() {
     const authors = document.getElementsByClassName('authorName');
-    for (let i = 0 ; i < authors.length ; i++) {
+    for (let i = 0; i < authors.length; i++) {
         authors[i].classList.remove('chosen');
         if (authors[i].getAttribute('data-js-author-name') === getActiveAuthor()) {
             authors[i].classList.add('chosen');
@@ -160,16 +160,20 @@ function getActiveAuthor() {
 
 function pubMatchesActiveAuthor(jsPubs, htmlPub) {
     return (getActiveAuthor() === 'all') ||
-        (getJsPub(jsPubs, htmlPub).authors.indexOf(getActiveAuthor()) >= 0);
+        (getJsPub(jsPubs, htmlPub)
+                .authors
+                .map(latexToPlainAscii)
+                .indexOf(getActiveAuthor()) >= 0
+        );
 }
 
 function toggleVisibilityOfPublications(jsPubs) {
     let htmlPubs = document.getElementsByClassName("pubDetails");
     for (let i = 0; i < htmlPubs.length; i++) {
         ((
-            _pubMatchesWhereFilter(jsPubs, htmlPubs[i]) &&
-            pubMatchesActivePubType(jsPubs, htmlPubs[i]) &&
-            pubMatchesActiveAuthor(jsPubs, htmlPubs[i])
+                _pubMatchesWhereFilter(jsPubs, htmlPubs[i]) &&
+                pubMatchesActivePubType(jsPubs, htmlPubs[i]) &&
+                pubMatchesActiveAuthor(jsPubs, htmlPubs[i])
             ) ? showElement : hideElement
         )(htmlPubs[i]);
     }
@@ -231,8 +235,8 @@ function addAuthorFiltering(pubs) {
     for (let i = 0; i < mlsmAuthors.length; i++) {
         _addOption(
             'authorOption',
-            toStylizedString(mlsmAuthors[i].slice(1)).replace(',', ''),
-            mlsmAuthors[i],
+            fromHtmlCodesToPlainAscii(toStylizedString(mlsmAuthors[i].slice(1)).replace(',', '')),
+            latexToPlainAscii(mlsmAuthors[i]),
             mlsmAuthorSelectionBox);
     }
 }
@@ -392,8 +396,31 @@ function showDownloading(pubs) {
     addClickListernerToDownloadButton(pubs, 'risDownloadBtn', downloadPubsAsRis);
 }
 
+function latexToPlainAscii(string) {
+    return string
+        .replace("{\\\"u}", "u")
+        .replace("{\\ae}", "ae")
+        .replace("{\\'o}", "o")
+        .replace("{\\o}", "oe")
+        .replace("{\\~a}", "a")
+        .replace("{\\^a}", "a")
+        .replace("{\\c{c}}", "c")
+}
+
+function fromHtmlCodesToPlainAscii(string) {
+    return string
+        .replace("&uuml;", "u")
+        .replace("&aelig;", "ae")
+        .replace("&oacute;", "o")
+        .replace("&oslash;", "oe")
+        .replace("&atilde;", "a")
+        .replace("&acirc;", "a")
+        .replace("&ccedil;", "a")
+}
+
 function latexToHtml(string) {
     return string
+        .replace("{\\\"u}", "&uuml;")
         .replace("{\\ae}", "&aelig;")
         .replace("{\\'o}", "&oacute;")
         .replace("{\\o}", "&oslash;")
@@ -479,7 +506,7 @@ function toStylizedString(author) {
 
 function getAuthorSpan(author) {
     return '<span' +
-        ' data-js-author-name="' + author + '"' +
+        ' data-js-author-name="' + latexToPlainAscii(author) + '"' +
         ' class="authorName ' + (author[0] === '!' ? 'mlsmAuthor' : 'nonMlsmAuthor') + '"' +
         '>' +
         toStylizedString(author[0] === '!' ? author.slice(1) : author) +
@@ -597,11 +624,11 @@ function showPublications(pubs) {
         pubsDiv.innerHTML +=
             '<div data-year="' + year + '" class="pubYear showMe" id=pubYear' + year + '>\n' +
             '<div data-year="' + year + '" class="yearControl">' +
-                '<h1 id="header' + year + '" class="headerYear">' + year + '</h1>\n' +
-                '<h4 id="collapseYear' + year +'" class="collapseYear">' + '&#9650;' + '</h4>\n' +
+            '<h1 id="header' + year + '" class="headerYear">' + year + '</h1>\n' +
+            '<h4 id="collapseYear' + year + '" class="collapseYear">' + '&#9650;' + '</h4>\n' +
             '</div>' +
             '<div data-year="' + year + '" class="pubsOfYear showMe" id="' + ("pubsOfYear" + year) + '">' +
-                getItemsAsString(pubsOfYear) +
+            getItemsAsString(pubsOfYear) +
             '</div>' +
             '<div class="pub-su-divider pub-su-divider-style-default">' +
             '   <a href="#">Go to top</a>' +
