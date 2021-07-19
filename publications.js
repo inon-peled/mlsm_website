@@ -24,6 +24,24 @@
 
 const mlsmPubs = [
     {
+        "type": "phdthesis",
+        "title": "Machine Learning Methods for Transportation under Uncertainty",
+        "authors": [
+            "!Peled, Inon"
+        ],
+        "where": {
+            "full": "DTU Orbit",
+            "abbreviated": "DTU Orbit"
+        },
+        "year": 2020,
+        "links": {
+            "doi": "",
+            "pdf": "https://backend.orbit.dtu.dk/admin/files/254675343/Inon_Peled_Phd_thesis.pdf",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "conference",
         "title": "Deep Spatio-Temporal Forecasting of Electrical Vehicle Charging Demand",
         "authors": [
@@ -885,8 +903,8 @@ const mlsmPubs = [
             "!Dastjerdi, Aliasghar Mehdizadeh"
         ],
         "where": {
-            "full": "DTU Management",
-            "abbreviated": null
+            "full": "DTU Orbit",
+            "abbreviated": "DTU Orbit"
         },
         "year": 2018,
         "links": {
@@ -1307,8 +1325,8 @@ const mlsmPubs = [
             "!Markou, Ioulia"
         ],
         "where": {
-            "full": "DTU Management",
-            "abbreviated": null
+            "full": "DTU Orbit",
+            "abbreviated": "DTU Orbit"
         },
         "year": 2019,
         "links": {
