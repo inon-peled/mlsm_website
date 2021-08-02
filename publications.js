@@ -33,7 +33,7 @@ const mlsmPubs = [
             "full": "DTU Orbit",
             "abbreviated": "DTU Orbit"
         },
-        "year": 2020,
+        "year": 2021,
         "links": {
             "doi": "",
             "pdf": "https://backend.orbit.dtu.dk/admin/files/254675343/Inon_Peled_Phd_thesis.pdf",
