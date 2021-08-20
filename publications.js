@@ -24,20 +24,43 @@
 
 const mlsmPubs = [
     {
-        "type": "phdthesis",
-        "title": "Machine Learning Methods for Transportation under Uncertainty",
+        "type": "article",
+        "title": "Semi-nonparametric Latent Class Choice Model with a Flexible Class Membership Component: A Mixture Model Approach",
         "authors": [
-            "!Peled, Inon"
+            "!Sfeir, Georges",
+            "Abou-Zeid, Maya",
+            "!Rodrigues, Filipe",
+            "!Pereira, Francisco Camara",
+            "Kaysi, Isam"
         ],
         "where": {
-            "full": "DTU Orbit",
-            "abbreviated": "DTU Orbit"
+            "full": "Journal of Choice Modelling",
+            "abbreviated": "Choice Model."
         },
         "year": 2021,
         "links": {
             "doi": "",
-            "pdf": "https://backend.orbit.dtu.dk/admin/files/254675343/Inon_Peled_Phd_thesis.pdf",
+            "pdf": "https://arxiv.org/abs/2007.02739",
             "code": "",
+            "data": ""
+        }
+},
+    {
+        "type": "conference",
+        "title": "Recurrent Flow Networks: A Recurrent Latent Variable Model for Density Modelling of Urban Mobility",
+        "authors": [
+            "!Gammelli, Daniele",
+            "!Rodrigues, Filipe"
+        ],
+        "where": {
+            "full": "ICML Workshop on Invertible Neural Networks, Normalizing Flows, and Explicit Likelihood Models",
+            "abbreviated": "ICML"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "",
+            "pdf": "https://openreview.net/pdf?id=AsdwkIqO74",
+            "code": "https://github.com/DanieleGammelli/recurrent-flow-nets",
             "data": ""
         }
     },
@@ -51,13 +74,31 @@ const mlsmPubs = [
             "!Pereira, Francisco Camara"
         ],
         "where": {
-            "full": "38th International Conference on Machine Learning, in press",
+            "full": "ICML Workshop on Tackling Climate Change with Machine Learning",
             "abbreviated": "ICML"
         },
         "year": 2021,
         "links": {
             "doi": "",
             "pdf": "https://arxiv.org/abs/2106.10940",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "phdthesis",
+        "title": "Machine Learning Methods for Transportation under Uncertainty",
+        "authors": [
+            "!Peled, Inon"
+        ],
+        "where": {
+            "full": "DTU Orbit",
+            "abbreviated": "DTU Orbit"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "",
+            "pdf": "https://backend.orbit.dtu.dk/admin/files/254675343/Inon_Peled_Phd_thesis.pdf",
             "code": "",
             "data": ""
         }
@@ -95,8 +136,8 @@ const mlsmPubs = [
             "Pavone, Marco"
         ],
         "where": {
-            "full": "arXiv",
-            "abbreviated": "arXiv"
+            "full": " The 60th IEEE Conference on Decision and Control",
+            "abbreviated": "CDC"
         },
         "year": 2021,
         "links": {
