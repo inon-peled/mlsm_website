@@ -25,6 +25,72 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Improving the accuracy and efficiency of online calibration for simulation-based Dynamic Traffic Assignment",
+        "authors": [
+            "Ortelli, Nicola",
+            "Hillel, Tim",
+            "!Pereira, Francisco Camara",
+            "de Lapparent, Matthieu",
+            "Bierlaire, Michel"
+        ],
+        "where": {
+            "full": "Journal of Choice Modelling",
+            "abbreviated": "Choice Model."
+        },
+        "year": 2021,
+        "links": {
+            "doi": "https://doi.org/10.1016/j.jocm.2021.100285",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
+        "title": "Improving the accuracy and efficiency of online calibration for simulation-based Dynamic Traffic Assignment",
+        "authors": [
+            "Zhang, Haizheng",
+            "Seshadri, Ravi",
+            "Akkinepally, Arun Prakash",
+            "Antoniou, Constantinos",
+            "!Pereira, Francisco Camara",
+            "Ben-Akiva, Moshe E."
+        ],
+        "where": {
+            "full": "Transportation Research Part C: Emerging Technologies",
+            "abbreviated": "Transp. Res. Part C"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "https://doi.org/10.1016/j.trc.2021.103195",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
+        "title": "Demand And/oR Equity (DARE) method for planning bike-sharing",
+        "authors": [
+            "!Duran-Rodas, David",
+            "Wright, Benjamin",
+            "!Pereira, Francisco Camara",
+            "Wulfhorst, Gebhard"
+        ],
+        "where": {
+            "full": "Transportation Research Part D: Transport and Environment",
+            "abbreviated": "Transp. Res. Part D"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "https://doi.org/10.1016/j.trd.2021.102914",
+            "pdf": "",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Semi-nonparametric Latent Class Choice Model with a Flexible Class Membership Component: A Mixture Model Approach",
         "authors": [
             "!Sfeir, Georges",
