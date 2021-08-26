@@ -25,6 +25,29 @@
 const mlsmPubs = [
     {
         "type": "article",
+        "title": "Predictive and Prescriptive Performance of Bike-Sharing Demand Forecasts for Inventory Management",
+        "authors": [
+            "!Gammelli, Daniele",
+            "Wang, Yihua",
+            "Prak, Dennis",
+            "!Rodrigues, Filipe",
+            "Minner, Stefan",
+            "!Pereira, Francisco Camara"
+        ],
+        "where": {
+            "full": "arXiv",
+            "abbreviated": "arXiv"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "",
+            "pdf": "https://arxiv.org/abs/2108.00858",
+            "code": "https://github.com/DanieleGammelli/variational-poisson-rnn",
+            "data": ""
+        }
+    },
+    {
+        "type": "article",
         "title": "Improving the accuracy and efficiency of online calibration for simulation-based Dynamic Traffic Assignment",
         "authors": [
             "Ortelli, Nicola",
