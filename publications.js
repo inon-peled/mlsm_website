@@ -24,6 +24,26 @@
 
 const mlsmPubs = [
     {
+        "type": "conference",
+        "title": "Bayesian Optimization of Area-based Road Pricing",
+        "authors": [
+            "!Liu, Renming",
+            "Jiang, Yu",
+            "!Lima Azevedo, Carlos"
+        ],
+        "where": {
+            "full": "Proceedings of the 2021 7'th Ieee International Conference on Models and Technologies for Intelligent Transportation Systems (mt-its)",
+            "abbreviated": "IEEE MT-ITS"
+        },
+        "year": 2021,
+        "links": {
+            "doi": "10.1109/MT-ITS49943.2021.9529326",
+            "pdf": "https://ieeexplore.ieee.org/document/9529326",
+            "code": "",
+            "data": ""
+        }
+    },
+    {
         "type": "article",
         "title": "Predictive and Prescriptive Performance of Bike-Sharing Demand Forecasts for Inventory Management",
         "authors": [
